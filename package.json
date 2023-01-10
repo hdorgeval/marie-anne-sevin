@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npm run dev",
     "build": "rimraf dist && npm run lint && tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "npm run lint -- --fix",
