@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { Button } from 'react-bootstrap'
+import { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import './App.css';
+import reactLogo from './assets/react.svg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -18,26 +18,19 @@ function App() {
       </div>
       <h1>Vite + React with Typescript + Bootstrap 5.3 + Dark theme</h1>
       <div className="card">
-        <Button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </Button>
+        <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Button variant="primary">Primary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="success">Success</Button>{' '}
-      <Button variant="warning">Warning</Button>{' '}
-      <Button variant="danger">Danger</Button>{' '}
-      <Button variant="info">Info</Button>{' '}
-      <Button variant="light">Light</Button>{' '}
-      <Button variant="dark">Dark</Button> <Button variant="link">Link</Button>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <Button variant="primary">Primary</Button> <Button variant="secondary">Secondary</Button>{' '}
+      <Button variant="success">Success</Button> <Button variant="warning">Warning</Button>{' '}
+      <Button variant="danger">Danger</Button> <Button variant="info">Info</Button>{' '}
+      <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
+      <Button variant="link">Link</Button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
