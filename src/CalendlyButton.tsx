@@ -9,8 +9,8 @@ export const CalendlyButton: React.FC = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Réserver ici
+      <Button variant="primary w-100" onClick={handleShow}>
+        S'inscrire
       </Button>
 
       <Modal show={show} onHide={handleClose} fullscreen={true}>

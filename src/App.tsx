@@ -1,36 +1,29 @@
-import { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Card } from 'react-bootstrap';
+import { ActivityCard } from './ActivityCard';
 import './App.css';
-import reactLogo from './assets/react.svg';
-import { CalendlyButton } from './CalendlyButton';
+import photoMarieAnneSevin from './assets/marie-anne-sevin.webp';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + Typescript + Bootstrap 5.3 + Dark theme</h1>
-      <div className="card">
-        <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-      <Button variant="primary">Primary</Button> <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="success">Success</Button> <Button variant="warning">Warning</Button>{' '}
-      <Button variant="danger">Danger</Button> <Button variant="info">Info</Button>{' '}
-      <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
-      <Button variant="link">Link</Button>
-      <CalendlyButton />
+      <Card className="bg-dark text-white">
+        <Card.Img src={photoMarieAnneSevin} alt="..." />
+        <Card.ImgOverlay>
+          <Card.Body className="h-100">
+            <div className="d-flex flex-row mb-3 justify-content-center align-items-start h-100">
+              <ActivityCard />
+            </div>
+          </Card.Body>
+        </Card.ImgOverlay>
+      </Card>
+      <footer>
+        <div className="d-flex flex-column align-items-center">
+          <span>
+            <i className="bi bi-c-circle"></i> Marie-Anne Sévin - 2023 - site beta
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
