@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import { CalendlyButton } from './CalendlyButton';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
       <Button variant="danger">Danger</Button> <Button variant="info">Info</Button>{' '}
       <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
       <Button variant="link">Link</Button>
+      <CalendlyButton />
     </div>
   );
 }
