@@ -4,7 +4,7 @@ import { CalendlyButton } from './CalendlyButton';
 export const ActivityCard: React.FC = () => {
   return (
     <>
-      <Card className="" border="primary" style={{ maxWidth: '21rem' }}>
+      <Card className="" border="primary" style={{ maxWidth: '21rem', minWidth: '10rem' }}>
         <Card.Img src={photoMarieAnneSevin} alt="..." />
         <Card.ImgOverlay
           style={{
