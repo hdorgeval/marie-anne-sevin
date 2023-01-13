@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="d-flex flex-row mb-3 mt-3 justify-content-center align-items-center">
+      <div className="d-flex flex-row justify-content-center align-items-center">
         <ActivityCard />
       </div>
       <footer>
