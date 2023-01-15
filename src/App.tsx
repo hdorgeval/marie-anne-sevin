@@ -1,11 +1,12 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ActivityCard } from './ActivityCard';
 import './App.css';
+import photoMarieAnneSevin from './assets/marie-anne-sevin.webp';
 function App() {
   return (
     <div className="App">
       <div className="d-flex flex-row justify-content-center align-items-center">
-        <ActivityCard />
+        <ActivityCard backgroundImage={photoMarieAnneSevin} />
       </div>
       <footer>
         <div className="d-flex flex-column align-items-center">
