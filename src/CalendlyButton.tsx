@@ -12,7 +12,7 @@ export const CalendlyButton: React.FC<CalendlyButtonOwnProps> = ({ link, title }
 
   return (
     <>
-      <Button variant="primary w-100" onClick={handleShow}>
+      <Button variant="primary fw-bolder w-100" onClick={handleShow}>
         {title}
       </Button>
 

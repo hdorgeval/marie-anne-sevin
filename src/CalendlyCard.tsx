@@ -42,7 +42,7 @@ export const CalendlyCard: React.FC<ActivityCardOwnProps> = ({
             background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
           }}
         >
-          <Card.Header className="fs-5 w-100" style={{ backgroundColor: 'inherit' }}>
+          <Card.Header className="fs-5 fw-bolder w-100" style={{ backgroundColor: 'inherit' }}>
             {title}
           </Card.Header>
           <Card.Body className="w-100">
