@@ -5,7 +5,9 @@ export interface ActivityCardOwnProps {
   backgroundImage: string;
   title: string;
   shortDescription: string;
+  shortDescriptionColor: 'text-light' | 'text-dark';
   calendlyLinkTitle: string;
+
   calendlyLink: string;
 }
 
@@ -13,6 +15,7 @@ export const CalendlyCard: React.FC<ActivityCardOwnProps> = ({
   backgroundImage,
   title,
   shortDescription,
+  shortDescriptionColor,
   calendlyLink,
   calendlyLinkTitle,
 }) => {
@@ -20,10 +23,11 @@ export const CalendlyCard: React.FC<ActivityCardOwnProps> = ({
   const cardHeight = 17;
   const cardWidth = 23;
   const backgroundImageHeight = cardHeight * 0.991;
+
   return (
     <>
       <Card
-        className="m-3 ratio ratio-4x3"
+        className="m-1 ratio ratio-4x3"
         border="primary"
         style={{
           maxWidth: `${cardWidth}${dimensionsUnit}`,
@@ -46,7 +50,7 @@ export const CalendlyCard: React.FC<ActivityCardOwnProps> = ({
             {title}
           </Card.Header>
           <Card.Body className="w-100">
-            <Card.Text className="fs-7">{shortDescription}</Card.Text>
+            <Card.Text className={`fs-7 ${shortDescriptionColor}`}>{shortDescription}</Card.Text>
           </Card.Body>
           <Card.Footer className="opacity-75 w-100" style={{ backgroundColor: 'inherit' }}>
             <CalendlyButton link={calendlyLink} title={calendlyLinkTitle} />

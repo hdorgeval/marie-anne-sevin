@@ -1,18 +1,29 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 import photoMarieAnneSevin from './assets/marie-anne-sevin.webp';
+import photoVishuda from './assets/vishudda.jpg';
 import { CalendlyCard } from './CalendlyCard';
 function App() {
   return (
     <div className="App">
-      <div className="d-flex flex-row justify-content-center align-items-center">
+      <div className="mt-1 d-flex flex-row flex-wrap justify-content-center align-items-center">
         <CalendlyCard
           backgroundImage={photoMarieAnneSevin}
           title="Soirée tantra"
           shortDescription="Soirée tantra à la yourte des Mousseaux (78). Un lieu magique niché au coeur de la nature
               et rempli de vibrations."
+          shortDescriptionColor="text-light"
           calendlyLink="https://calendly.com/marie-anne-sevin/soiree-tantra-yourte?hide_gdpr_banner=1"
           calendlyLinkTitle="S'inscrire"
+        />
+
+        <CalendlyCard
+          backgroundImage={photoVishuda}
+          title="Entretien préalable"
+          shortDescription="L'entretien téléphonique est l'occasion d'échanger pour valider des deux côtés votre démarche pour toute nouvelle inscription."
+          shortDescriptionColor="text-light"
+          calendlyLink="https://calendly.com/marie-anne-sevin/entretien-telephonique?hide_gdpr_banner=1"
+          calendlyLinkTitle="Prendre rendez-vous"
         />
       </div>
       <footer>
