@@ -13,7 +13,7 @@ export const ActivityCard: React.FC<ActivityCardOwnProps> = ({ backgroundImage }
   return (
     <>
       <Card
-        className="mt-3 mb-3 ratio ratio-4x3"
+        className="m-3 ratio ratio-4x3"
         border="primary"
         style={{
           maxWidth: `${cardWidth}${dimensionsUnit}`,
