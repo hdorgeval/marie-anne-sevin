@@ -3,9 +3,19 @@ import { CalendlyButton } from './CalendlyButton';
 
 export interface ActivityCardOwnProps {
   backgroundImage: string;
+  title: string;
+  shortDescription: string;
+  calendlyLinkTitle: string;
+  calendlyLink: string;
 }
 
-export const ActivityCard: React.FC<ActivityCardOwnProps> = ({ backgroundImage }) => {
+export const ActivityCard: React.FC<ActivityCardOwnProps> = ({
+  backgroundImage,
+  title,
+  shortDescription,
+  calendlyLink,
+  calendlyLinkTitle,
+}) => {
   const dimensionsUnit = 'rem';
   const cardHeight = 17;
   const cardWidth = 23;
@@ -33,16 +43,13 @@ export const ActivityCard: React.FC<ActivityCardOwnProps> = ({ backgroundImage }
           }}
         >
           <Card.Header className="fs-5 w-100" style={{ backgroundColor: 'inherit' }}>
-            Soirée tantra
+            {title}
           </Card.Header>
           <Card.Body className="w-100">
-            <Card.Text className="fs-7">
-              Soirée tantra à la yourte des Mousseaux. Un lieu magique niché au coeur de la nature
-              et rempli de vibrations
-            </Card.Text>
+            <Card.Text className="fs-7">{shortDescription}</Card.Text>
           </Card.Body>
           <Card.Footer className="opacity-75 w-100" style={{ backgroundColor: 'inherit' }}>
-            <CalendlyButton />
+            <CalendlyButton link={calendlyLink} title={calendlyLinkTitle} />
           </Card.Footer>
         </Card.ImgOverlay>
       </Card>

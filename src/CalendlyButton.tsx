@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
-export const CalendlyButton: React.FC = () => {
+export interface CalendlyButtonOwnProps {
+  link: string;
+  title: string;
+}
+export const CalendlyButton: React.FC<CalendlyButtonOwnProps> = ({ link, title }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const link = 'https://calendly.com/marie-anne-sevin/soiree-tantra-yourte?hide_gdpr_banner=1';
 
   return (
     <>
       <Button variant="primary w-100" onClick={handleShow}>
-        S'inscrire
+        {title}
       </Button>
 
       <Modal show={show} onHide={handleClose} fullscreen={true}>
@@ -19,7 +22,7 @@ export const CalendlyButton: React.FC = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Fermer
           </Button>
         </Modal.Footer>
       </Modal>
