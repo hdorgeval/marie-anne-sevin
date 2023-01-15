@@ -9,7 +9,7 @@ export interface ActivityCardOwnProps {
   calendlyLink: string;
 }
 
-export const ActivityCard: React.FC<ActivityCardOwnProps> = ({
+export const CalendlyCard: React.FC<ActivityCardOwnProps> = ({
   backgroundImage,
   title,
   shortDescription,
@@ -57,4 +57,4 @@ export const ActivityCard: React.FC<ActivityCardOwnProps> = ({
   );
 };
 
-ActivityCard.displayName = 'ActivityCard';
+CalendlyCard.displayName = 'CalendlyCard';

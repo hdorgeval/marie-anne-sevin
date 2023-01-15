@@ -1,12 +1,12 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { ActivityCard } from './ActivityCard';
 import './App.css';
 import photoMarieAnneSevin from './assets/marie-anne-sevin.webp';
+import { CalendlyCard } from './CalendlyCard';
 function App() {
   return (
     <div className="App">
       <div className="d-flex flex-row justify-content-center align-items-center">
-        <ActivityCard
+        <CalendlyCard
           backgroundImage={photoMarieAnneSevin}
           title="Soirée tantra"
           shortDescription="Soirée tantra à la yourte des Mousseaux (78). Un lieu magique niché au coeur de la nature
