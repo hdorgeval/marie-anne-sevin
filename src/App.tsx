@@ -1,5 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
+import photoConstellations from './assets/constellations.png';
 import photoMarieAnneSevin from './assets/marie-anne-sevin.webp';
 import photoVishuda from './assets/vishudda.jpg';
 import { CalendlyCard } from './CalendlyCard';
@@ -24,6 +25,15 @@ function App() {
           shortDescriptionColor="text-light"
           calendlyLink="https://calendly.com/marie-anne-sevin/entretien-telephonique?hide_gdpr_banner=1"
           calendlyLinkTitle="Prendre rendez-vous"
+        />
+
+        <CalendlyCard
+          backgroundImage={photoConstellations}
+          title="Tantra et Constellations"
+          shortDescription="4 jours de stage en immersion. La rencontre du tantra et des constellations est un appel à une transformation profonde."
+          shortDescriptionColor="text-light"
+          calendlyLink="https://calendly.com/marie-anne-sevin/tantra-constellations?hide_gdpr_banner=1"
+          calendlyLinkTitle="S'inscrire"
         />
       </div>
       <footer>
