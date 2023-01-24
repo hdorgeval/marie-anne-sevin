@@ -66,6 +66,16 @@ function App() {
                       <i className="bi bi-telephone-outbound"></i>
                     </a>
                   </span>
+                  <span className="fs-1 ms-4">
+                    <a
+                      className="nav-link"
+                      href="mailto:arts78.mas@gmail.com"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-envelope-at"></i>
+                    </a>
+                  </span>
                 </div>
 
                 <span>
