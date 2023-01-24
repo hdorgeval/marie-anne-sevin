@@ -12,7 +12,7 @@ function App() {
       >
         <div
           style={{
-            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
+            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(79, 79, 93, 0.30))',
             height: '100vh',
           }}
         >
