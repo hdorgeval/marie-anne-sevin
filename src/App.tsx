@@ -61,6 +61,11 @@ function App() {
                       <i className="bi bi-instagram"></i>
                     </a>
                   </span>
+                  <span className="fs-1 ms-4">
+                    <a className="nav-link" href="tel:0683479774" rel="nofollow" target="_blank">
+                      <i className="bi bi-telephone-outbound"></i>
+                    </a>
+                  </span>
                 </div>
 
                 <span>
