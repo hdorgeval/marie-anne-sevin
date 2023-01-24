@@ -34,6 +34,16 @@ function App() {
                   <span className="fs-1 ms-4">
                     <a
                       className="nav-link"
+                      href="https://wa.me/33683479774"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-whatsapp"></i>
+                    </a>
+                  </span>
+                  <span className="fs-1 ms-4">
+                    <a
+                      className="nav-link"
                       href="https://www.youtube.com/channel/UC3zRsrGmij6pjczLlm8kpXA"
                       rel="nofollow"
                       target="_blank"
