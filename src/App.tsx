@@ -20,6 +20,39 @@ function App() {
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <footer className="">
               <div className="d-flex flex-column align-items-center">
+                <div className="d-flex p-4 flex-row align-items-center">
+                  <span className="fs-1">
+                    <a
+                      className="nav-link"
+                      href="https://www.facebook.com/mariemusique"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-facebook"></i>
+                    </a>
+                  </span>
+                  <span className="fs-1 ms-4">
+                    <a
+                      className="nav-link"
+                      href="https://www.youtube.com/channel/UC3zRsrGmij6pjczLlm8kpXA"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-youtube"></i>
+                    </a>
+                  </span>
+                  <span className="fs-1 ms-4">
+                    <a
+                      className="nav-link"
+                      href="https://www.instagram.com/marieannemusique/?hl=fr"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-instagram"></i>
+                    </a>
+                  </span>
+                </div>
+
                 <span>
                   <i className="bi bi-c-circle"></i> Marie-Anne Sévin - 2023 - site beta
                 </span>
