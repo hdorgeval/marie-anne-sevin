@@ -39,7 +39,7 @@ function App() {
                       <i className="bi bi-facebook"></i>
                     </a>
                   </span>
-                  <span className="fs-1 ms-4">
+                  <span className="fs-1 ms-3">
                     <a
                       className="nav-link"
                       href="https://wa.me/33683479774"
@@ -49,7 +49,7 @@ function App() {
                       <i className="bi bi-whatsapp"></i>
                     </a>
                   </span>
-                  <span className="fs-1 ms-4">
+                  <span className="fs-1 ms-3">
                     <a
                       className="nav-link"
                       href="https://www.youtube.com/channel/UC3zRsrGmij6pjczLlm8kpXA"
@@ -59,7 +59,7 @@ function App() {
                       <i className="bi bi-youtube"></i>
                     </a>
                   </span>
-                  <span className="fs-1 ms-4">
+                  <span className="fs-1 ms-3">
                     <a
                       className="nav-link"
                       href="https://www.instagram.com/marieannemusique/?hl=fr"
@@ -69,12 +69,12 @@ function App() {
                       <i className="bi bi-instagram"></i>
                     </a>
                   </span>
-                  <span className="fs-1 ms-4">
+                  <span className="fs-1 ms-3">
                     <a className="nav-link" href="tel:0683479774" rel="nofollow" target="_blank">
                       <i className="bi bi-telephone-outbound"></i>
                     </a>
                   </span>
-                  <span className="fs-1 ms-4">
+                  <span className="fs-1 ms-3">
                     <a
                       className="nav-link"
                       href="mailto:arts78.mas@gmail.com"
@@ -82,6 +82,16 @@ function App() {
                       target="_blank"
                     >
                       <i className="bi bi-envelope-at"></i>
+                    </a>
+                  </span>
+                  <span className="fs-1 ms-3">
+                    <a
+                      className="nav-link"
+                      href="https://amzn.eu/d/dd3iN4K"
+                      rel="nofollow"
+                      target="_blank"
+                    >
+                      <i className="bi bi-book"></i>
                     </a>
                   </span>
                 </div>
