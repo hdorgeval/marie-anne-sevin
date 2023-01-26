@@ -21,8 +21,8 @@ function App() {
               <span className="text-uppercase fs-1 fw-bolder">Marie-Anne Sévin</span>
             </div>
             <div>
-              <span className="text-capitalize fs-7 fw-bolder font-monospace">
-                musicienne, masseuse, thérapeute
+              <span className="fs-7 fw-bolder font-monospace">
+                Accompagnement Relationnel, Thérapeutique et Systémique
               </span>
             </div>
             <div className="p-2 flex-grow-1 bd-highlight"></div>
