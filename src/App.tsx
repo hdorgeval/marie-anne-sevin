@@ -22,7 +22,7 @@ function App() {
             </div>
             <div>
               <span className="text-capitalize fs-7 fw-bolder font-monospace">
-                musicienne, masseuse et thérapeute
+                musicienne, masseuse, thérapeute
               </span>
             </div>
             <div className="p-2 flex-grow-1 bd-highlight"></div>
