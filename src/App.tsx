@@ -97,7 +97,8 @@ function App() {
                 </div>
 
                 <span>
-                  <i className="bi bi-c-circle"></i> Marie-Anne Sévin - 2023 - site beta
+                  <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin -
+                  2023
                 </span>
               </div>
             </footer>
