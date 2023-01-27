@@ -96,7 +96,7 @@ function App() {
                   </span>
                 </div>
 
-                <span>
+                <span className="fs-6 fw-lighter">
                   <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin -
                   2023
                 </span>
