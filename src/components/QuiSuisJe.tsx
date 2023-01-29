@@ -15,7 +15,7 @@ export const QuiSuisJe: FC = () => {
           height: '100vh',
         }}
       >
-        <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
+        <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
           <div className="mt-4">
             <span className="text-uppercase fs-1 fw-bolder">Marie-Anne Sévin</span>
           </div>
