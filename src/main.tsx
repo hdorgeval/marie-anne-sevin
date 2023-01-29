@@ -5,12 +5,17 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import { ErrorPage } from './components/ErrorPage';
 import { LandingPage } from './components/LandingPage';
+import { QuiSuisJe } from './components/QuiSuisJe';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <LandingPage />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: '/qui-suis-je',
+    element: <QuiSuisJe />,
   },
 ]);
 
