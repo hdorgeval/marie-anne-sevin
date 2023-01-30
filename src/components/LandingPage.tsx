@@ -1,9 +1,12 @@
 import { FC } from 'react';
+import { usePublicPage } from '../contexts/userContext';
 import { HambugerMenu } from './HamburgerMenu';
 export const LandingPage: FC = () => {
+  usePublicPage();
   return (
     <>
       <HambugerMenu />
+
       <div
         className="bg-image"
         style={{

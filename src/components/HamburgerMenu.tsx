@@ -1,5 +1,11 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import {
+  AccountFullNameBadge,
+  CreateAccountBadge,
+  LoginAccountBadge,
+  LogoutAccountBadge,
+} from './MyAccount';
 
 export const HambugerMenu: FC = () => {
   return (
@@ -25,6 +31,7 @@ export const HambugerMenu: FC = () => {
               Marie-Anne Sévin
             </h5>
             <button
+              id="hamburger-close-button"
               type="button"
               className="btn-close btn-close-white"
               data-bs-dismiss="offcanvas"
@@ -81,6 +88,17 @@ export const HambugerMenu: FC = () => {
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     lorem ipsum
                   </span>
+                </div>
+              </li>
+              <li className="nav-item w-100 text-start mt-4">
+                <div className="w-100 border-bottom border-secondary fs-3 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
+                  <span>Mon compte</span>
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <AccountFullNameBadge />
+                  <CreateAccountBadge />
+                  <LoginAccountBadge />
+                  <LogoutAccountBadge />
                 </div>
               </li>
             </ul>

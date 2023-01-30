@@ -1,7 +1,9 @@
 import { FC } from 'react';
+import { usePublicPage } from '../contexts/userContext';
 import { HambugerMenu } from './HamburgerMenu';
 
 export const QuiSuisJe: FC = () => {
+  usePublicPage();
   return (
     <>
       <HambugerMenu />
