@@ -1,7 +1,9 @@
 import { FC } from 'react';
+import { HambugerMenu } from './HamburgerMenu';
 export const LandingPage: FC = () => {
   return (
     <>
+      <HambugerMenu />
       <div
         className="bg-image"
         style={{
