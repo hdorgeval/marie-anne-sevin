@@ -31,32 +31,50 @@ export const HambugerMenu: FC = () => {
               aria-label="Close"
             ></button>
           </div>
-          <div className="offcanvas-body fs-4">
+          <div className="offcanvas-body fs-6 pt-0">
             <ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
               <li className="nav-item w-100 text-start">
-                <Link to="/" className="nav-link" aria-current="page">
-                  Acceuil
-                </Link>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <Link to="/" className="nav-link text-light" aria-current="page">
+                      Acceuil
+                    </Link>
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <Link to="/qui-suis-je" className="nav-link text-light">
+                      Qui suis-je ?
+                    </Link>
+                  </span>
+                </div>
               </li>
-              <li className="nav-item w-100 text-start">
-                <Link to="/qui-suis-je" className="nav-link">
-                  Qui suis-je ?
-                </Link>
-              </li>
+              <li className="nav-item w-100 text-start"></li>
               <li className="nav-item w-100 text-start mt-4">
-                <div className=" w-100 border-bottom border-secondary fs-3">Particuliers</div>
-                <div className="d-flex p-1 flex-row align-items-center">
+                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
+                  Particuliers
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     Massage tantrique
                   </span>
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Soirées Tantra
+                    Soirée Tantra
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    Matinée Tantra
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    Tantra Homme
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    Codev
                   </span>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
-                <div className=" w-100 border-bottom border-secondary fs-3">Institutionnels</div>
-                <div className="d-flex p-1 flex-row align-items-center">
+                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
+                  Institutionnels
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     lorem ipsum
                   </span>
