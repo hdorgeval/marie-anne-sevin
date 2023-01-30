@@ -31,7 +31,7 @@ export const HambugerMenu: FC = () => {
               aria-label="Close"
             ></button>
           </div>
-          <div className="offcanvas-body fs-3">
+          <div className="offcanvas-body fs-4">
             <ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
               <li className="nav-item w-100 text-start">
                 <Link to="/" className="nav-link" aria-current="page">
@@ -45,22 +45,22 @@ export const HambugerMenu: FC = () => {
               </li>
               <li className="nav-item w-100 text-start mt-4">
                 <div className=" w-100 border-bottom border-secondary fs-3">Particuliers</div>
-                <div>
-                  <span className="badge rounded-pill text-bg-dark fs-4 border border-secondary m-1">
+                <div className="d-flex p-1 flex-row align-items-center">
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     Massage tantrique
                   </span>
-                  <span className="badge rounded-pill text-bg-dark fs-4 border border-secondary m-1">
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     Soirées Tantra
                   </span>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
                 <div className=" w-100 border-bottom border-secondary fs-3">Institutionnels</div>
-                <div>
-                  <span className="badge rounded-pill text-bg-dark fs-4 border border-secondary m-1">
+                <div className="d-flex p-1 flex-row align-items-center">
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     lorem ipsum
                   </span>
-                  <span className="badge rounded-pill text-bg-dark fs-4 border border-secondary m-1">
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     lorem ipsum
                   </span>
                 </div>
