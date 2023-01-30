@@ -36,12 +36,12 @@ export const HambugerMenu: FC = () => {
               <li className="nav-item w-100 text-start">
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    <Link to="/" className="nav-link text-light" aria-current="page">
+                    <Link to="/" className="text-decoration-none text-light" aria-current="page">
                       Acceuil
                     </Link>
                   </span>
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    <Link to="/qui-suis-je" className="nav-link text-light">
+                    <Link to="/qui-suis-je" className="text-decoration-none text-light">
                       Qui suis-je ?
                     </Link>
                   </span>
