@@ -92,7 +92,7 @@ export const HambugerMenu: FC = () => {
               </li>
               <li className="nav-item w-100 text-start mt-4">
                 <div className="w-100 border-bottom border-secondary fs-3 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
-                  <span>Mon compte</span>
+                  <span>Mon espace client</span>
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <AccountFullNameBadge />

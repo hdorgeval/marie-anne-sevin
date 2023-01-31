@@ -16,7 +16,7 @@ export const QuiSuisJe: FC = () => {
       >
         <div
           style={{
-            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.60))',
+            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.70))',
             height: '100vh',
           }}
         >
@@ -25,10 +25,10 @@ export const QuiSuisJe: FC = () => {
               <span className="text-uppercase fs-1 fw-bolder">Marie-Anne Sévin</span>
             </div>
             <div>
-              <span className="fs-2 fw-bolder font-monospace">Qui suis-je ?</span>
+              <span className="fs-2 fw-bolder">Qui suis-je ?</span>
             </div>
 
-            <div className="fs-7 fw-bolder font-monospace mt-4 mx-4 text-start">
+            <div className="fs-5 fw-bolder font-playfair mt-4 mx-4 text-start">
               <p className="">
                 Musicienne, masseuse, thérapeute, formatrice et auteure, je conçois et j'anime des
                 ateliers pédagogiques et thérapeutiques.
