@@ -101,7 +101,7 @@ export const userContextInfo: UserInfo = {
     if (hamburgerMenuCloseButton) {
       hamburgerMenuCloseButton.click();
     }
-    addPaswwordVisibilityToggler();
+    window.setTimeout(() => addPaswwordVisibilityToggler(), 3000);
   },
   signup: () => {
     netlifyIdentity.open('signup');
@@ -111,7 +111,7 @@ export const userContextInfo: UserInfo = {
     if (hamburgerMenuCloseButton) {
       hamburgerMenuCloseButton.click();
     }
-    addPaswwordVisibilityToggler();
+    window.setTimeout(() => addPaswwordVisibilityToggler(), 3000);
   },
   logout: async () => {
     await netlifyIdentity.logout();
