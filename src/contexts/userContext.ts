@@ -94,7 +94,6 @@ export const userContextInfo: UserInfo = {
   isAuthenticated: currentUser() !== null,
   user: currentUser(),
   login: () => {
-    addPaswwordVisibilityToggler();
     netlifyIdentity.open('login');
     const hamburgerMenuCloseButton: HTMLButtonElement | null = document?.querySelector(
       'button#hamburger-close-button',
@@ -102,6 +101,7 @@ export const userContextInfo: UserInfo = {
     if (hamburgerMenuCloseButton) {
       hamburgerMenuCloseButton.click();
     }
+    addPaswwordVisibilityToggler();
   },
   signup: () => {
     netlifyIdentity.open('signup');
@@ -111,6 +111,7 @@ export const userContextInfo: UserInfo = {
     if (hamburgerMenuCloseButton) {
       hamburgerMenuCloseButton.click();
     }
+    addPaswwordVisibilityToggler();
   },
   logout: async () => {
     await netlifyIdentity.logout();
