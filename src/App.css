@@ -45,3 +45,7 @@
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
+
+.fs-7 {
+  font-size: 0.8rem !important;
+}
