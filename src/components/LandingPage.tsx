@@ -21,6 +21,12 @@ export const LandingPage: FC = () => {
             height: '100vh',
           }}
         >
+          <div
+            className=" position-absolute top-50 start-0 rotate-90"
+            style={{ marginTop: '117px' }}
+          >
+            <span className="text-muted">Crédit photo : Nicolas Rilat</span>
+          </div>
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">

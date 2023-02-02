@@ -37,3 +37,11 @@
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+
+.rotate-90 {
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
