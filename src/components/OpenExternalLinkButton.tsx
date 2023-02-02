@@ -8,7 +8,7 @@ export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = 
   className,
   children,
 }) => {
-  const linkClassNames = `btn btn-primary ${className}`;
+  const linkClassNames = `${className}`;
 
   return (
     <>

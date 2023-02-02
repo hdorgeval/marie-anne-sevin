@@ -22,17 +22,19 @@ export const LandingPage: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
+            <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">
-              <span className="text-uppercase fs-1 fw-bolder font-monserrat">Marie-Anne Sévin</span>
+              <span className="text-uppercase text-light fs-1 fw-bolder font-monserrat ">
+                Marie-Anne Sévin
+              </span>
             </div>
             <div>
-              <span className="fs-7 fw-bolder font-monserrat">
+              <span className="fs-7 text-light fw-bolder font-monserrat">
                 Accompagnement Relationnel, Thérapeutique et Systémique
               </span>
             </div>
-            <div className="p-2 flex-grow-1 bd-highlight"></div>
             <OpenExternalLinkButton
-              className="primary fw-bolder w-100 opacity-75"
+              className="btn btn-outline-light fw-bolder w-75 mt-4"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
             >
               <div className="d-flex flex-column align-items-center">
