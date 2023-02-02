@@ -17,7 +17,7 @@ export const LandingPage: FC = () => {
       >
         <div
           style={{
-            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(79, 79, 93, 0.30))',
+            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.40))',
             height: '100vh',
           }}
         >
