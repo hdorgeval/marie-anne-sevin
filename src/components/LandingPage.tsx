@@ -25,7 +25,7 @@ export const LandingPage: FC = () => {
             className=" position-absolute top-50 start-0 rotate-90"
             style={{ marginTop: '117px', marginLeft: '-3px' }}
           >
-            <i className="bi bi-c-circle me-2"></i>
+            <i className="bi bi-c-circle me-1 text-muted fs-7"></i>
             <span className="text-muted fs-7">Nicolas Rilat photography</span>
           </div>
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
