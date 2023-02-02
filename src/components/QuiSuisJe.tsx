@@ -25,7 +25,7 @@ export const QuiSuisJe: FC = () => {
               <span className="text-uppercase fs-1 fw-bolder">Marie-Anne Sévin</span>
             </div>
             <div>
-              <span className="fs-2 fw-bolder">Qui suis-je ?</span>
+              <span className="fs-2 fw-bolder font-monserrat">Qui suis-je ?</span>
             </div>
 
             <div className="fs-5 fw-bolder font-playfair mt-4 mx-4 text-start">
