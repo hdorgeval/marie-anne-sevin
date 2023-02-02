@@ -23,9 +23,10 @@ export const LandingPage: FC = () => {
         >
           <div
             className=" position-absolute top-50 start-0 rotate-90"
-            style={{ marginTop: '151px', marginLeft: '-3px' }}
+            style={{ marginTop: '117px', marginLeft: '-3px' }}
           >
-            <span className="text-muted fs-7">Crédit photo : Nicolas Rilat photography</span>
+            <i className="bi bi-c-circle me-2"></i>
+            <span className="text-muted fs-7">Nicolas Rilat photography</span>
           </div>
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
