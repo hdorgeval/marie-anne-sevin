@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
+import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 export const LandingPage: FC = () => {
@@ -21,13 +22,6 @@ export const LandingPage: FC = () => {
             height: '100vh',
           }}
         >
-          <div
-            className=" position-absolute top-50 start-0 rotate-90"
-            style={{ marginTop: '117px', marginLeft: '-3px' }}
-          >
-            <i className="bi bi-c-circle me-1 text-muted fs-7"></i>
-            <span className="text-muted fs-7">Nicolas Rilat photography</span>
-          </div>
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">
@@ -50,82 +44,7 @@ export const LandingPage: FC = () => {
                 <span>Prendre un rendez-vous</span>
               </div>
             </OpenExternalLinkButton>
-            <footer className="">
-              <div className="d-flex flex-column align-items-center">
-                <div className="d-flex p-4 flex-row align-items-center">
-                  <span className="fs-1">
-                    <a
-                      className="nav-link"
-                      href="https://www.facebook.com/mariemusique"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-facebook"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a
-                      className="nav-link"
-                      href="https://wa.me/33683479774"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-whatsapp"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a
-                      className="nav-link"
-                      href="https://www.youtube.com/channel/UC3zRsrGmij6pjczLlm8kpXA"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-youtube"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a
-                      className="nav-link"
-                      href="https://www.instagram.com/marieannemusique/?hl=fr"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-instagram"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a className="nav-link" href="tel:0683479774" rel="nofollow" target="_blank">
-                      <i className="bi bi-telephone-outbound"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a
-                      className="nav-link"
-                      href="mailto:arts78.mas@gmail.com"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-envelope-at"></i>
-                    </a>
-                  </span>
-                  <span className="fs-1 ms-3">
-                    <a
-                      className="nav-link"
-                      href="https://amzn.eu/d/dd3iN4K"
-                      rel="nofollow"
-                      target="_blank"
-                    >
-                      <i className="bi bi-book"></i>
-                    </a>
-                  </span>
-                </div>
-
-                <span className="fs-6 fw-lighter">
-                  <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin -
-                  2023
-                </span>
-              </div>
-            </footer>
+            <Footer />
           </div>
         </div>
       </div>
