@@ -22,7 +22,7 @@ export const QuiSuisJe: FC = () => {
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="mt-4">
-              <span className="text-uppercase fs-1 fw-bolder">Marie-Anne Sévin</span>
+              <span className="text-uppercase fs-1 fw-bolder font-raleway">Marie-Anne Sévin</span>
             </div>
             <div>
               <span className="fs-2 fw-bolder font-monserrat">Qui suis-je ?</span>

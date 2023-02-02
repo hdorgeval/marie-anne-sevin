@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Raleway&display=swap');
 
 :root {
-  --bs-body-font-family: 'Raleway', sans-serif;
+  --bs-body-font-family: 'Montserrat', sans-serif;
 }
 
 #root {

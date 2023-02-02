@@ -24,7 +24,9 @@ export const LandingPage: FC = () => {
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">
-              <span className="text-uppercase text-light fs-1 fw-bolder">Marie-Anne Sévin</span>
+              <span className="text-uppercase text-light fs-1 fw-bolder font-raleway">
+                Marie-Anne Sévin
+              </span>
             </div>
             <div>
               <span className="fs-7 text-light fw-bolder">
