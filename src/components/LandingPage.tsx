@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
-import { IFrameModalButton } from '../IFrameModalButton';
 import { HambugerMenu } from './HamburgerMenu';
+import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 export const LandingPage: FC = () => {
   usePublicPage();
   return (
@@ -31,8 +31,8 @@ export const LandingPage: FC = () => {
               </span>
             </div>
             <div className="p-2 flex-grow-1 bd-highlight"></div>
-            <IFrameModalButton
-              variant="primary fw-bolder w-100 opacity-75"
+            <OpenExternalLinkButton
+              className="primary fw-bolder w-100 opacity-75"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
             >
               <div className="d-flex flex-column align-items-center">
@@ -40,7 +40,7 @@ export const LandingPage: FC = () => {
                 <span>ou</span>
                 <span>Prendre un rendez-vous</span>
               </div>
-            </IFrameModalButton>
+            </OpenExternalLinkButton>
             <footer className="">
               <div className="d-flex flex-column align-items-center">
                 <div className="d-flex p-4 flex-row align-items-center">
