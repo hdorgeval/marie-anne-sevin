@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-export type MyAnalyticsEvent = 'load-app';
+export type MyAnalyticsEvent = 'open-external-link';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {
@@ -10,12 +10,20 @@ declare global {
 }
 
 export const useAnalytics = () => {
-  const sendSimpleEvent = useCallback((myEvent: MyAnalyticsEvent) => {
+  const trackSimpleEvent = useCallback((myEvent: MyAnalyticsEvent) => {
     try {
       window.gtag('event', myEvent);
     } catch (error) {
       // no op
     }
   }, []);
-  return [sendSimpleEvent];
+
+  const trackOpenExternalLinkEvent = useCallback((url: string) => {
+    try {
+      window.gtag('event', 'open-external-link', { url });
+    } catch (error) {
+      // no op
+    }
+  }, []);
+  return { trackSimpleEvent, trackOpenExternalLinkEvent };
 };
