@@ -30,8 +30,8 @@ export const QuiSuisJe: FC = () => {
             <div>
               <span className="fs-2 fw-bolder text-light font-monserrat">Qui suis-je ?</span>
             </div>
-            <div className="" style={{ minHeight: '11rem' }}></div>
-            <div className="fs-5 fw-bolder font-playfair mt-4 mx-4 text-start text-light">
+            <div className="" style={{ minHeight: '15rem' }}></div>
+            <div className="fs-6 fw-bolder font-playfair mt-4 mx-4 text-start text-light">
               <p className="">
                 Musicienne, masseuse, thérapeute, formatrice et auteure, je conçois et j'anime des
                 ateliers pédagogiques et thérapeutiques.
