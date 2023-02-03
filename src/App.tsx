@@ -3,6 +3,7 @@ import { ErrorPage } from './components/ErrorPage';
 import { LandingPage } from './components/LandingPage';
 import { QuiSuisJe } from './components/QuiSuisJe';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
+import { useAnalytics } from './hooks/useAnalytics';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
 
 function App() {
   const [userInfo] = useUserContextInfo();
+  const [sendSimpleEvent] = useAnalytics();
+  sendSimpleEvent('load-app');
 
   return (
     <div className="App">
