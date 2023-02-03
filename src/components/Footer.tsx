@@ -62,7 +62,7 @@ export const Footer: FC = () => {
           </span>
         </div>
 
-        <span className="fs-7 fw-lighter">
+        <span className="fs-7 fw-lighter mb-2">
           <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin - 2023
         </span>
       </div>
