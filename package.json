@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "start": "npm run dev",
+    "start-netlify": "ntl dev",
     "build": "rimraf dist && npm run lint && tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "npm run lint -- --fix",
@@ -34,6 +35,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react-hooks": "4.6.0",
+    "netlify-cli": "12.10.0",
     "rimraf": "3.0.2",
     "typescript": "4.9.4",
     "vite": "4.0.4"
