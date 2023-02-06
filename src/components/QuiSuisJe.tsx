@@ -1,10 +1,12 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
+import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 
 export const QuiSuisJe: FC = () => {
   usePublicPage();
+  useTitle('Qui-suis je? | Marie-Anne Sévin');
   return (
     <>
       <HambugerMenu />
