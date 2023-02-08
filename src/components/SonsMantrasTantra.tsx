@@ -53,9 +53,9 @@ export const SonsMantrasTantra: FC = () => {
                     }}
                   >
                     <div className="d-flex flex-row align-items-center card-subtitle">
-                      <i className="bi bi-house-heart fs-1 me-4"></i>
+                      <i className="bi bi-house-heart fs-3 me-4"></i>
                       <div className="d-flex flex-column card-subtitle">
-                        <span className="text-nowrap">Stage en résidentiel</span>
+                        <span className="text-nowrap fs-7">Stage en résidentiel</span>
                       </div>
                     </div>
                   </li>
@@ -66,10 +66,10 @@ export const SonsMantrasTantra: FC = () => {
                     }}
                   >
                     <div className="d-flex flex-row align-items-center card-subtitle">
-                      <i className="bi bi-geo-alt fs-1 me-4"></i>
+                      <i className="bi bi-geo-alt fs-3 me-4"></i>
                       <div className="d-flex flex-column card-subtitle">
-                        <span className="text-nowrap">Yourte des Mousseaux.</span>
-                        <span className="text-nowrap"> Jouars Ponchartrain (78)</span>
+                        <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
+                        <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
                       </div>
                     </div>
                   </li>
