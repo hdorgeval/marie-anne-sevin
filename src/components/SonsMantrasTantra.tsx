@@ -158,7 +158,7 @@ export const SonsMantrasTantra: FC = () => {
                         <span className="">Animation : 220€</span>
                         <span className="">Hébergement : 35€</span>
                         <span className="">
-                          Repas : non compris (possibilité de commander ds repas)
+                          Repas : non compris (possibilité de commander des repas)
                         </span>
                       </div>
                     </div>
@@ -176,7 +176,7 @@ export const SonsMantrasTantra: FC = () => {
                         <span className="">
                           Marie-Anne Sévin{' '}
                           <a
-                            className="text-light"
+                            className="text-light text-decoration-none"
                             href="tel:0683479774"
                             rel="nofollow"
                             target="_blank"
@@ -191,7 +191,7 @@ export const SonsMantrasTantra: FC = () => {
                         <span className="">
                           Floriane Fagot{' '}
                           <a
-                            className="text-light"
+                            className="text-light text-decoration-none"
                             href="tel:0683479774"
                             rel="nofollow"
                             target="_blank"
