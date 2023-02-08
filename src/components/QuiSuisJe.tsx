@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import logo from '../assets/arts-logo-medium.png';
 import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
@@ -42,10 +43,18 @@ export const QuiSuisJe: FC = () => {
                 Riche de plusieurs approches artistiques, j'accompagne aussi bien des clients
                 institutionnels que des particuliers, de la périnatalité jusqu'à la fin de vie.
               </p>
-              <p>
+              <p className="mb-0 pb-0">
                 Très impliquée dans le bien-être par la voix et la musique, le massage tantrique, la
                 méditation, la sonothératpie et les constellations familiales et systémiques, je
                 crée en 2021 A.R.T.S - Accompagnement Relationnel Thérapeutique et Systémique.
+              </p>
+              <p className="text-center mt-0 pt-0">
+                <img
+                  src={logo}
+                  alt="logo A.R.T.S"
+                  style={{ objectFit: 'none', width: '110px' }}
+                  className="d-inline-block"
+                />
               </p>
             </div>
 
