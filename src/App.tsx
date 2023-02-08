@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './components/ErrorPage';
 import { LandingPage } from './components/LandingPage';
 import { QuiSuisJe } from './components/QuiSuisJe';
+import { SonsMantrasTantra } from './components/SonsMantrasTantra';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/qui-suis-je',
     element: <QuiSuisJe />,
+  },
+  {
+    path: '/sons-mantras-tantra',
+    element: <SonsMantrasTantra />,
   },
 ]);
 

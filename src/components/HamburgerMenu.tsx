@@ -60,10 +60,12 @@ export const HambugerMenu: FC = () => {
                   Particuliers
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Massage tantrique
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                  <Link to="/sons-mantras-tantra">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Stage Sons Mantras Tantra
+                    </span>
+                  </Link>
+                  {/* <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     Soirée Tantra
                   </span>
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
@@ -74,10 +76,10 @@ export const HambugerMenu: FC = () => {
                   </span>
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     Codev
-                  </span>
+                  </span> */}
                 </div>
               </li>
-              <li className="nav-item w-100 text-start mt-4">
+              {/* <li className="nav-item w-100 text-start mt-4">
                 <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
                   Institutionnels
                 </div>
@@ -89,7 +91,7 @@ export const HambugerMenu: FC = () => {
                     lorem ipsum
                   </span>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-item w-100 text-start mt-4">
                 <div className="w-100 border-bottom border-secondary fs-3 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Mon espace client</span>
