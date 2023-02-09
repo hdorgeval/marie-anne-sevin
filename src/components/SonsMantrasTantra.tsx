@@ -211,6 +211,29 @@ export const SonsMantrasTantra: FC = () => {
                   <p>Un acompte de 70€ est demandé à l'inscription.</p>
                 </div>
               </div>
+              <div
+                className="card text-start text-light font-playfair mt-4"
+                style={{
+                  background:
+                    'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
+                }}
+              >
+                <div className="card-body">
+                  <figure className="p-3 rounded" style={{ borderLeft: '.25rem solid #a34e78;' }}>
+                    <blockquote className="blockquote pb-2">
+                      <p>
+                        <sup>
+                          <i className="bi bi-quote fs-5"></i>
+                        </sup>
+                        <span className="ps-1">Sois une voix, pas un écho</span>
+                      </p>
+                    </blockquote>
+                    <figcaption className="blockquote-footer mb-0 font-italic text-muted">
+                      Albert Einstein
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <Footer />
