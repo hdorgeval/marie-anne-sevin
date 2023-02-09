@@ -24,7 +24,7 @@ export const SonsMantrasTantra: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div className="mt-4 pt-4 ">
+            <div className="mt-4 pt-4">
               <span className="text-uppercase text-light fs-1 fw-bolder font-raleway">
                 Sons Mantras Tantra
               </span>
@@ -34,7 +34,7 @@ export const SonsMantrasTantra: FC = () => {
                 Du 10 au 12 mars 2023
               </span>
             </div>
-            <div className="d-flex p-1 flex-column justify-content-between">
+            <div className="d-flex px-0 flex-column justify-content-between">
               <div
                 className="card text-start text-light font-playfair"
                 style={{
