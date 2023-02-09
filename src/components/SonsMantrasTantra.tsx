@@ -34,7 +34,7 @@ export const SonsMantrasTantra: FC = () => {
                 Du 10 au 12 mars 2023
               </span>
             </div>
-            <div className="d-flex px-0 flex-column justify-content-between">
+            <div className="d-flex px-0 pt-4 flex-column justify-content-between">
               <div
                 className="card text-start text-light font-playfair"
                 style={{
