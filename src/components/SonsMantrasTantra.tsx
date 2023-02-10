@@ -248,16 +248,23 @@ export const SonsMantrasTantra: FC = () => {
                 }}
               >
                 <div className="card-body">
-                  <figure className="p-3 rounded" style={{ borderLeft: '.25rem solid #a34e78;' }}>
-                    <blockquote className="blockquote pb-2">
+                  <figure className="pt-3 rounded">
+                    <blockquote className="blockquote pb-0">
                       <p>
-                        <sup>
+                        <sup className="pe-1">
                           <i className="bi bi-quote fs-5"></i>
                         </sup>
-                        <span className="ps-1">Sois une voix, pas un écho</span>
+                        <span className="fs-5 fst-italic">Sois une voix, pas un</span>
+                        <span className="text-nowrap">
+                          {' '}
+                          écho
+                          <sup className="ps-1">
+                            <i className="bi bi-quote fs-5 bi-rotate-180"></i>
+                          </sup>
+                        </span>
                       </p>
                     </blockquote>
-                    <figcaption className="blockquote-footer mb-0 font-italic text-muted">
+                    <figcaption className="blockquote-footer mb-0 mt-2 font-italic text-muted">
                       Albert Einstein
                     </figcaption>
                   </figure>

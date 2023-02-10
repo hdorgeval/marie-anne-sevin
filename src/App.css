@@ -49,3 +49,10 @@
 .fs-7 {
   font-size: 0.8rem !important;
 }
+
+.bi-rotate-180::before {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
