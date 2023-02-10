@@ -4,6 +4,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
+import { PageSubTitle } from './PageSubTitle';
 import { PageTitle } from './PageTitle';
 
 export const QuiSuisJe: FC = () => {
@@ -30,7 +31,7 @@ export const QuiSuisJe: FC = () => {
               <PageTitle>Marie-Anne Sévin</PageTitle>
             </div>
             <div>
-              <span className="fs-2 fw-bolder text-light font-monserrat">Qui suis-je ?</span>
+              <PageSubTitle>Qui suis-je ?</PageSubTitle>
             </div>
             <div className="" style={{ minHeight: '15rem' }}></div>
             <div className="fs-6 fw-bolder font-playfair mt-4 mx-4 text-start text-light">

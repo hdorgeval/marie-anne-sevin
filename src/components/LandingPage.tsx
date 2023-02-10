@@ -3,6 +3,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { PageSubTitle } from './PageSubTitle';
 import { PageTitle } from './PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
@@ -29,9 +30,9 @@ export const LandingPage: FC = () => {
               <PageTitle>Marie-Anne Sévin</PageTitle>
             </div>
             <div>
-              <span className="fs-7 text-light fw-bolder">
+              <PageSubTitle className="fs-7">
                 Accompagnement Relationnel, Thérapeutique et Systémique
-              </span>
+              </PageSubTitle>
             </div>
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"

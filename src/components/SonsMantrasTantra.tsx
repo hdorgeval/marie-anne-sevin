@@ -4,6 +4,7 @@ import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { PageSubTitle } from './PageSubTitle';
 import { PageTitle } from './PageTitle';
 
 export const SonsMantrasTantra: FC = () => {
@@ -30,9 +31,7 @@ export const SonsMantrasTantra: FC = () => {
               <PageTitle>Sons Mantras Tantra</PageTitle>
             </div>
             <div>
-              <span className="fs-2 fw-bolder text-light font-monserrat">
-                Du 10 au 12 mars 2023
-              </span>
+              <PageSubTitle>Du 10 au 12 mars 2023</PageSubTitle>
             </div>
             <div className="d-flex px-0 pt-4 flex-column justify-content-between">
               <div
