@@ -3,6 +3,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { PageTitle } from './PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   return (
@@ -25,9 +26,7 @@ export const LandingPage: FC = () => {
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">
-              <span className="text-uppercase text-light fs-1 fw-bolder font-raleway">
-                Marie-Anne Sévin
-              </span>
+              <PageTitle>Marie-Anne Sévin</PageTitle>
             </div>
             <div>
               <span className="fs-7 text-light fw-bolder">

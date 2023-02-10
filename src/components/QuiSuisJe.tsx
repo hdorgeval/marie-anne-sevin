@@ -4,6 +4,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
+import { PageTitle } from './PageTitle';
 
 export const QuiSuisJe: FC = () => {
   usePublicPage();
@@ -26,9 +27,7 @@ export const QuiSuisJe: FC = () => {
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="mt-2">
-              <span className="text-uppercase text-light fs-1 fw-bolder font-raleway">
-                Marie-Anne Sévin
-              </span>
+              <PageTitle>Marie-Anne Sévin</PageTitle>
             </div>
             <div>
               <span className="fs-2 fw-bolder text-light font-monserrat">Qui suis-je ?</span>

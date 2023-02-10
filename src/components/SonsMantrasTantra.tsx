@@ -4,6 +4,7 @@ import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { PageTitle } from './PageTitle';
 
 export const SonsMantrasTantra: FC = () => {
   usePublicPage();
@@ -26,9 +27,7 @@ export const SonsMantrasTantra: FC = () => {
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="mt-4 pt-4">
-              <span className="text-uppercase text-light fs-1 fw-bolder font-raleway">
-                Sons Mantras Tantra
-              </span>
+              <PageTitle>Sons Mantras Tantra</PageTitle>
             </div>
             <div>
               <span className="fs-2 fw-bolder text-light font-monserrat">
