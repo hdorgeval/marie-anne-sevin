@@ -21,8 +21,10 @@ export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = 
   return (
     <>
       <a className={linkClassNames} href={link} target="_blank" onClick={handleOnClick}>
-        {children}
-        <i className="bi bi-box-arrow-up-right"></i>
+        <div className="d-flex flex-row align-items-center justify-content-center">
+          <div>{children}</div>
+          <i className="bi bi-box-arrow-up-right ms-3"></i>
+        </div>
       </a>
     </>
   );

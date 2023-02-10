@@ -3,6 +3,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
+import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 
 export const SonsMantrasTantra: FC = () => {
   usePublicPage();
@@ -143,6 +144,14 @@ export const SonsMantrasTantra: FC = () => {
                         <span className="">
                           Inscription validée uniquement après entretien téléphonique
                         </span>
+                        <OpenExternalLinkButton
+                          className="btn btn-outline-light fw-bolder w-100 mt-1"
+                          link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
+                        >
+                          <div className="d-flex flex-column align-items-center">
+                            <span>Prendre rendez-vous pour l'entretien préalable</span>
+                          </div>
+                        </OpenExternalLinkButton>
                       </div>
                     </div>
                   </li>
@@ -156,9 +165,9 @@ export const SonsMantrasTantra: FC = () => {
                       <i className="bi bi-currency-euro fs-1 me-4"></i>
                       <div className="d-flex flex-column justify-content-between ">
                         <span className="">Animation : 220€</span>
-                        <span className="">Hébergement : 35€</span>
+                        <span className="">Hébergement : 35€ par nuitée</span>
                         <span className="">
-                          Repas : non compris (possibilité de commander des repas)
+                          Repas : repas partagés (possibilité de commander des repas)
                         </span>
                       </div>
                     </div>
@@ -211,6 +220,26 @@ export const SonsMantrasTantra: FC = () => {
                   <p>Un acompte de 70€ est demandé à l'inscription.</p>
                 </div>
               </div>
+
+              <div
+                className="card text-start text-light font-playfair mt-4"
+                style={{
+                  background:
+                    'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
+                }}
+              >
+                <div className="card-body">
+                  <OpenExternalLinkButton
+                    className="btn btn-outline-light fw-bolder w-100 mt-0"
+                    link="https://forms.gle/4U937a7KkQ5hGDZD9"
+                  >
+                    <div className="d-flex flex-column align-items-center">
+                      <span>Se pré-inscrire au stage</span>
+                    </div>
+                  </OpenExternalLinkButton>
+                </div>
+              </div>
+
               <div
                 className="card text-start text-light font-playfair mt-4"
                 style={{
