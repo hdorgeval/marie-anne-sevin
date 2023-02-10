@@ -3,8 +3,8 @@ import { usePublicPage } from '../contexts/userContext';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
-import { PageSubTitle } from './PageSubTitle';
-import { PageTitle } from './PageTitle';
+import { PageSubTitle } from './page-layout/PageSubTitle';
+import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   return (

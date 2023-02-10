@@ -4,8 +4,8 @@ import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
-import { PageSubTitle } from './PageSubTitle';
-import { PageTitle } from './PageTitle';
+import { PageSubTitle } from './page-layout/PageSubTitle';
+import { PageTitle } from './page-layout/PageTitle';
 
 export const SonsMantrasTantra: FC = () => {
   usePublicPage();
@@ -22,7 +22,7 @@ export const SonsMantrasTantra: FC = () => {
       >
         <div
           style={{
-            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.50))',
+            background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.40))',
             height: '100vh',
           }}
         >
