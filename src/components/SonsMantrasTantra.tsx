@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import portrait2 from '../assets/portrait-ff-1.png';
+import portrait1 from '../assets/portrait-mas-1.png';
 import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './Footer';
@@ -6,7 +8,6 @@ import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
-
 export const SonsMantrasTantra: FC = () => {
   usePublicPage();
   useTitle('Sons Mantras Tantra | Marie-Anne Sévin');
@@ -268,8 +269,68 @@ export const SonsMantrasTantra: FC = () => {
                   </figure>
                 </div>
               </div>
+
+              <div
+                className="card text-start text-light font-playfair mt-4"
+                style={{
+                  background:
+                    'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
+                }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Animé par Marie-Anne Sévin assistée de Floriane Fagot
+                  </h5>
+                </div>
+                <ul className="list-group list-group-flush">
+                  <li
+                    className="list-group-item"
+                    style={{
+                      background: 'transparent',
+                    }}
+                  >
+                    <div className="d-flex flex-row align-items-center">
+                      <div className="photo-crop-elipse-portrait">
+                        <img src={portrait1} className="card-img" />
+                      </div>
+                      <div className="w-100">
+                        <p className="ps-3">Marie-Anne, musicienne, masseuse et thérapeute.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    className="list-group-item"
+                    style={{
+                      background: 'transparent',
+                    }}
+                  >
+                    <div className="d-flex flex-row justify-content-center align-items-center">
+                      <div className="photo-crop-elipse-portrait">
+                        <img src={portrait2} className="card-img" />
+                      </div>
+                      <div className="w-100">
+                        <p className="ps-3">
+                          Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
+                          boutique Bien-être & Ésotérisme.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p>
+                        Ma sensibilité à l'harmonie des formes, des matières, des couleurs, m'a
+                        amenée à m'intéresser à la résonance des sons et créer le pôle sonothérapie
+                        de la boutique.
+                      </p>
+                      <p>
+                        Soucieuse de l'harmonie sonore, je cherche et propose des instruments
+                        artisanaux de qualité : bols, carillons koshi, ...
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="p-2 flex-grow-1 bd-highlight"></div>
+
             <Footer />
           </div>
         </div>

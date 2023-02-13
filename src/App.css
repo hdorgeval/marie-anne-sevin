@@ -56,3 +56,22 @@
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
+.photo-crop-elipse-portrait {
+  border: solid 5px rgba(200, 200, 200, 0.1);
+  position: relative;
+  width: 150px;
+  height: 87px;
+  border-radius: 50% / 50%;
+  overflow: hidden;
+  transform: rotate(-40deg);
+}
+
+.photo-crop-elipse-portrait img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(40deg);
+  min-width: 100%;
+  min-height: 100%;
+}
