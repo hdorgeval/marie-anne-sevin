@@ -3,6 +3,7 @@ import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
+import { CallablePhoneNumber } from './CallablePhoneNumber';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
@@ -182,34 +183,10 @@ export const SonsMantrasTantra: FC = () => {
                       <div className="d-flex flex-column justify-content-between ">
                         <span className="">Pour toute question ou renseignement :</span>
                         <span className="">
-                          Marie-Anne Sévin{' '}
-                          <a
-                            className="text-light text-decoration-none"
-                            href="tel:0683479774"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <span>06</span>
-                            <span className="ps-1">83</span>
-                            <span className="ps-1">47</span>
-                            <span className="ps-1">97</span>
-                            <span className="ps-1">74</span>
-                          </a>
+                          Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                         </span>
                         <span className="">
-                          Floriane Fagot{' '}
-                          <a
-                            className="text-light text-decoration-none"
-                            href="tel:0683479774"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <span>07</span>
-                            <span className="ps-1">71</span>
-                            <span className="ps-1">57</span>
-                            <span className="ps-1">87</span>
-                            <span className="ps-1">00</span>
-                          </a>
+                          Floriane Fagot <CallablePhoneNumber phoneNumber="07 71 57 87 00" />
                         </span>
                       </div>
                     </div>
