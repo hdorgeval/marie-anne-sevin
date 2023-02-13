@@ -294,7 +294,7 @@ export const SonsMantrasTantra: FC = () => {
                         <img src={portrait1} className="card-img" />
                       </div>
                       <div className="w-100">
-                        <p className="ps-3">Marie-Anne, musicienne, masseuse et thérapeute.</p>
+                        <p className="ps-3 mb-0">Marie-Anne, musicienne, masseuse et thérapeute.</p>
                       </div>
                     </div>
                   </li>
@@ -309,14 +309,14 @@ export const SonsMantrasTantra: FC = () => {
                         <img src={portrait2} className="card-img" />
                       </div>
                       <div className="w-100">
-                        <p className="ps-3">
+                        <p className="ps-3 mb-0">
                           Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
                           boutique Bien-être & Ésotérisme.
                         </p>
                       </div>
                     </div>
                     <div>
-                      <p>
+                      <p className="pt-2">
                         Ma sensibilité à l'harmonie des formes, des matières, des couleurs, m'a
                         amenée à m'intéresser à la résonance des sons et créer le pôle sonothérapie
                         de la boutique.
