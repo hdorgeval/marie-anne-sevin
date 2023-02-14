@@ -1,5 +1,5 @@
 import { FC, useCallback, useContext, useMemo, useState } from 'react';
-import { UserContext } from '../contexts/userContext';
+import { UserContext } from '../../contexts/userContext';
 export const CreateAccountBadge: FC = () => {
   const userInfo = useContext(UserContext);
   const handleSignUp = useCallback(() => {

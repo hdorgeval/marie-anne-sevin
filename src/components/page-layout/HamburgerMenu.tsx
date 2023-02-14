@@ -5,7 +5,7 @@ import {
   CreateAccountBadge,
   LoginAccountBadge,
   LogoutAccountBadge,
-} from '../MyAccount';
+} from '../auth/MyAccount';
 
 export const HambugerMenu: FC = () => {
   return (
