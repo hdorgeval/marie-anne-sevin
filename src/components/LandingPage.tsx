@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
-import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { Footer } from './page-layout/Footer';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
