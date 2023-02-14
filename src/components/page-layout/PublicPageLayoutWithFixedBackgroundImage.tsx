@@ -1,8 +1,8 @@
 import { FC, useMemo } from 'react';
 import { usePublicPage } from '../../contexts/userContext';
 import { useTitle } from '../../hooks/useTitle';
-import { HambugerMenu } from '../HamburgerMenu';
 import { Footer } from './Footer';
+import { HambugerMenu } from './HamburgerMenu';
 export interface PageLyoutOwnProps {
   backgroundImageUrl: string;
   backgroundOverlay?: string;

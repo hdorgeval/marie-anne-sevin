@@ -2,8 +2,8 @@ import { FC } from 'react';
 import logo from '../assets/arts-logo-medium.png';
 import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
-import { HambugerMenu } from './HamburgerMenu';
 import { Footer } from './page-layout/Footer';
+import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 
