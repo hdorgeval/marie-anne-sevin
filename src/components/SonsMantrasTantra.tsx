@@ -3,9 +3,9 @@ import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from './CallablePhoneNumber';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
-import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PageLayoutWithFixedBackgroundImage';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
+import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 export const SonsMantrasTantra: FC = () => {
   return (
     <>
