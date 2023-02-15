@@ -70,12 +70,12 @@ export const HambugerMenu: FC = () => {
               <li className="nav-item w-100 text-start"></li>
               <li className="nav-item w-100 text-start mt-4">
                 <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
-                  Particuliers
+                  Stages
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <Link to="/sons-mantras-tantra">
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                      Stage Sons Mantras Tantra
+                      Sons Mantras Tantra
                     </span>
                   </Link>
                   {/* <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
@@ -106,7 +106,7 @@ export const HambugerMenu: FC = () => {
                 </div>
               </li> */}
               <li className="nav-item w-100 text-start mt-4">
-                <div className="w-100 border-bottom border-secondary fs-3 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
+                <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Mon espace client</span>
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
