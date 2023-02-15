@@ -3,6 +3,7 @@ import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from './CallablePhoneNumber';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { AnimatedBy } from './page-layout/AnimatedBy';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
@@ -60,8 +61,8 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
               </ul>
-              <div className="card-body">
-                <p>
+              <div className="card-body pt-2">
+                <p className="pt-2">
                   Lors de ce stage, nous utiliserons les mantras afin d'harmoniser l'axe énergétique
                   allant du périnée au sommet du crâne en prenant particulièrement soin du chakra de
                   la gorge, Vishuddha.
@@ -247,14 +248,12 @@ export const SonsMantrasTantra: FC = () => {
                     background: 'transparent',
                   }}
                 >
-                  <div className="d-flex flex-row align-items-center">
-                    <div className="photo-crop-elipse-portrait">
-                      <img src={portrait1} className="card-img" />
-                    </div>
-                    <div className="w-100">
-                      <p className="ps-3 mb-0">Marie-Anne, musicienne, masseuse et thérapeute.</p>
-                    </div>
-                  </div>
+                  <AnimatedBy>
+                    <AnimatedBy.Img src={portrait1} />
+                    <AnimatedBy.FigCaption>
+                      Marie-Anne, musicienne, masseuse et thérapeute.
+                    </AnimatedBy.FigCaption>
+                  </AnimatedBy>
                 </li>
                 <li
                   className="list-group-item"
@@ -262,28 +261,19 @@ export const SonsMantrasTantra: FC = () => {
                     background: 'transparent',
                   }}
                 >
-                  <div className="d-flex flex-row justify-content-center align-items-center">
-                    <div className="photo-crop-elipse-portrait">
-                      <img src={portrait2} className="card-img" />
-                    </div>
-                    <div className="w-100">
-                      <p className="ps-3 mb-0">
-                        Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
-                        boutique Bien-être & Ésotérisme.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="pt-2">
+                  <AnimatedBy>
+                    <AnimatedBy.Img src={portrait2} />
+                    <AnimatedBy.FigCaption>
+                      Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
+                      boutique Bien-être & Ésotérisme.
+                    </AnimatedBy.FigCaption>
+                    <AnimatedBy.Description>
                       Ma sensibilité à l'harmonie des formes, des matières, des couleurs, m'a amenée
                       à m'intéresser à la résonance des sons et créer le pôle sonothérapie de la
-                      boutique.
-                    </p>
-                    <p>
-                      Soucieuse de l'harmonie sonore, je cherche et propose des instruments
-                      artisanaux de qualité : bols, carillons koshi, ...
-                    </p>
-                  </div>
+                      boutique. Soucieuse de l'harmonie sonore, je cherche et propose des
+                      instruments artisanaux de qualité : bols, carillons koshi, ...
+                    </AnimatedBy.Description>
+                  </AnimatedBy>
                 </li>
               </ul>
             </div>
