@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://marie-anne-sevin.com/sitemap.xml
+Host: https://marie-anne-sevin.com
