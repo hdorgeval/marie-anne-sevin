@@ -10,7 +10,7 @@ export const CreateAccountBadge: FC = () => {
     return (
       <>
         <span
-          className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1 cursor-pointer"
+          className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1 cursor-pointer"
           onClick={handleSignUp}
         >
           Créer un compte
@@ -32,7 +32,7 @@ export const LoginAccountBadge: FC = () => {
     return (
       <>
         <span
-          className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1 cursor-pointer"
+          className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1 cursor-pointer"
           onClick={handleSignIn}
         >
           Se connecter
@@ -59,12 +59,12 @@ export const LogoutAccountBadge: FC = () => {
     return (
       <>
         {isDisconnecting ? (
-          <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1 cursor-pointer">
+          <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1 cursor-pointer">
             Déconnexion en cours ...
           </span>
         ) : (
           <span
-            className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1 cursor-pointer"
+            className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1 cursor-pointer"
             onClick={handleLogout}
           >
             Se déconnecter
@@ -92,7 +92,7 @@ export const AccountFullNameBadge: FC = () => {
     return (
       <>
         {hasFullName ? (
-          <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+          <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
             {fullName}
           </span>
         ) : null}
