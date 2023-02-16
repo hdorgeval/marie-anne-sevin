@@ -155,7 +155,7 @@ export const FemmeSauvage: FC = () => {
                       <span className="">
                         Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                       </span>
-                      <span className="">
+                      <span className="mt-2">
                         Pour toute question ou renseignement pour l'hébergement:
                       </span>
                       <span className="">
