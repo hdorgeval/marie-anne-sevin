@@ -2,6 +2,7 @@ import { FC } from 'react';
 import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from './CallablePhoneNumber';
+import { Description } from './Description';
 import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 import { AnimatedBy } from './page-layout/AnimatedBy';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -62,22 +63,16 @@ export const SonsMantrasTantra: FC = () => {
                 </li>
               </ul>
               <div className="card-body pt-2">
-                <p className="pt-2">
+                <Description>
                   Lors de ce stage, nous utiliserons les mantras afin d'harmoniser l'axe énergétique
                   allant du périnée au sommet du crâne en prenant particulièrement soin du chakra de
-                  la gorge, Vishuddha.
-                </p>
-                <p>
-                  Les méditations actives, l'utilisation des instruments thérapeutiques comme les
-                  bols tibétains, les carillons, les tambours ainsi que le travail corporel aideront
-                  à libérer la parole, la voix et à découvrir le pouvoir du son sur le corps et
-                  l'esprit.
-                </p>
-                <p>Vous pouvez venir avec un instrument si le cœur vous en dit.</p>
-                <p>
-                  Nous viendrons également avec les bols tibétains et tambours de coffret d'alumine
-                  que nous vous mettrons à disposition en prêt ou à la vente.
-                </p>
+                  la gorge, Vishuddha. Les méditations actives, l'utilisation des instruments
+                  thérapeutiques comme les bols tibétains, les carillons, les tambours ainsi que le
+                  travail corporel aideront à libérer la parole, la voix et à découvrir le pouvoir
+                  du son sur le corps et l'esprit. Vous pouvez venir avec un instrument si le cœur
+                  vous en dit. Nous viendrons également avec les bols tibétains et tambours de
+                  coffret d'alumine que nous vous mettrons à disposition en prêt ou à la vente.
+                </Description>
               </div>
             </div>
 

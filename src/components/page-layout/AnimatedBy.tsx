@@ -1,4 +1,5 @@
 import React, { FC, ReactElement } from 'react';
+import { Description, DescriptionOwnProps } from '../Description';
 
 export interface AnimatedByOwnProps {
   children: React.ReactNode;
@@ -63,52 +64,4 @@ const Img: FC<ImgOwnProps> = ({ src }) => {
 };
 Img.displayName = 'Img';
 AnimatedBy.Img = Img;
-
-interface DescriptionOwnProps {
-  children: React.ReactNode;
-}
-const Description: FC<DescriptionOwnProps> = ({ children }) => {
-  if (typeof children !== 'string') {
-    return <>{children}</>;
-  }
-  const text = children as string;
-  const sentences = encodeThreeDots(text)
-    .split('.')
-    .map((s) => s.trim());
-
-  return (
-    <>
-      {sentences.map((sentence, index) =>
-        index === 0 ? (
-          <p key={0} className="pt-2">
-            {toClosedSentence(sentence)}
-          </p>
-        ) : (
-          <p key={index}>{toClosedSentence(sentence)}</p>
-        ),
-      )}
-    </>
-  );
-};
-Description.displayName = 'Description';
 AnimatedBy.Description = Description;
-
-function toClosedSentence(sentence: string): string {
-  const result = hasThreeDotsAtTheEnd(sentence)
-    ? decodeThreeDots(sentence)
-    : `${decodeThreeDots(sentence)}.`;
-
-  return result;
-}
-
-function encodeThreeDots(sentence: string): string {
-  return sentence.replaceAll('...', '|||');
-}
-
-function decodeThreeDots(sentence: string): string {
-  return sentence.replaceAll('|||', '...');
-}
-
-function hasThreeDotsAtTheEnd(sentence: string): boolean {
-  return sentence.endsWith('|||');
-}
