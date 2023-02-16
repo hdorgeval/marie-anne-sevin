@@ -1,34 +1,34 @@
 import { FC } from 'react';
-import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
-import { CallablePhoneNumber } from './CallablePhoneNumber';
-import { Description } from './Description';
-import { OpenExternalLinkButton } from './OpenExternalLinkButton';
+import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
+import { Description } from '../components/Description';
+import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
+import { Quote } from '../components/Quote';
 import { AnimatedBy } from './page-layout/AnimatedBy';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
-import { Quote } from './Quote';
-export const SonsMantrasTantra: FC = () => {
+export const FemmeSauvage: FC = () => {
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
-        backgroundImageUrl="/images/background-sons-mantras-tantra.jpg"
-        backgroundPosition="33%"
-        htmlTitle="Sons Mantras Tantra | Stage | Marie-Anne Sévin"
+        backgroundImageUrl="/images/background-femme-sauvage.webp"
+        backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.0))"
+        backgroundPosition="42%"
+        htmlTitle="À la rencontre de la femme sauvage | Stage | Marie-Anne Sévin"
       >
         <div>
           <div className="mt-4 pt-4">
-            <PageTitle>Sons Mantras Tantra</PageTitle>
+            <PageTitle>À la rencontre de la femme sauvage</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Du 10 au 12 mars 2023</PageSubTitle>
+            <PageSubTitle>Du 24 au 26 mars 2023</PageSubTitle>
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">En chemin sur la voix tantrique</h5>
+                <h5 className="card-title mb-0 fw-bolder">Un weekend pour explorer votre nature</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
                 <li
@@ -61,14 +61,14 @@ export const SonsMantrasTantra: FC = () => {
               </ul>
               <div className="card-body pt-2">
                 <Description>
-                  Lors de ce stage, nous utiliserons les mantras afin d'harmoniser l'axe énergétique
-                  allant du périnée au sommet du crâne en prenant particulièrement soin du chakra de
-                  la gorge, Vishuddha. Les méditations actives, l'utilisation des instruments
-                  thérapeutiques comme les bols tibétains, les carillons, les tambours ainsi que le
-                  travail corporel aideront à libérer la parole, la voix et à découvrir le pouvoir
-                  du son sur le corps et l'esprit. Vous pouvez venir avec un instrument si le cœur
-                  vous en dit. Nous viendrons également avec les bols tibétains et tambours de
-                  coffret d'alumine que nous vous mettrons à disposition en prêt ou à la vente.
+                  Ce module tantra femme est une invitation à vous relier au côté animal et
+                  archaïque de la femme. Rituels en pleine nature, méditations, chants et danses
+                  vous amèneront petit à petit à laisser cette part sauvage s'exprimer et ainsi
+                  libérer désir, créativité et sexualité. En accueillant l'expression de votre
+                  ventre, vous pourrez la relier au cœur ainsi qu'à la conscience et rayonner à
+                  partir de cet axe puissant, en confiance. La synergie créée par la rencontre de
+                  ces femmes uniques permet de se soutenir mutuellement dans cette initiation, cette
+                  rencontre avec la nature, avec votre nature.
                 </Description>
               </div>
             </SemiTransparentTile>
@@ -156,8 +156,11 @@ export const SonsMantrasTantra: FC = () => {
                       <span className="">
                         Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                       </span>
+                      <span className="mt-2">
+                        Pour toute question ou renseignement pour l'hébergement:
+                      </span>
                       <span className="">
-                        Floriane Fagot <CallablePhoneNumber phoneNumber="07 71 57 87 00" />
+                        Christine Lorand <CallablePhoneNumber phoneNumber="06 13 05 01 76" />
                       </span>
                     </div>
                   </div>
@@ -171,7 +174,7 @@ export const SonsMantrasTantra: FC = () => {
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
-                  link="https://forms.gle/4U937a7KkQ5hGDZD9"
+                  link="https://forms.gle/fcZ58rbSjWJXmo9F7"
                 >
                   <div className="d-flex flex-column align-items-center">
                     <span>Se pré-inscrire au stage</span>
@@ -181,14 +184,12 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
-                <Quote sentence="Sois une voix, pas un écho" author="Albert Einstein" />
+                <Quote sentence="Sauvage est la proximité du sacré" author="Friedrich Hölderlin" />
               </div>
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">
-                  Animé par Marie-Anne Sévin assistée de Floriane Fagot
-                </h5>
+                <h5 className="card-title mb-0 fw-bolder">Animé par Marie-Anne Sévin</h5>
               </div>
               <ul className="list-group list-group-flush">
                 <li
@@ -202,25 +203,10 @@ export const SonsMantrasTantra: FC = () => {
                     <AnimatedBy.FigCaption>
                       Marie-Anne, musicienne, masseuse et thérapeute.
                     </AnimatedBy.FigCaption>
-                  </AnimatedBy>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
-                  <AnimatedBy>
-                    <AnimatedBy.Img src={portrait2} />
-                    <AnimatedBy.FigCaption>
-                      Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
-                      boutique Bien-être & Ésotérisme.
-                    </AnimatedBy.FigCaption>
                     <AnimatedBy.Description>
-                      Ma sensibilité à l'harmonie des formes, des matières, des couleurs, m'a amenée
-                      à m'intéresser à la résonance des sons et créer le pôle sonothérapie de la
-                      boutique. Soucieuse de l'harmonie sonore, je cherche et propose des
-                      instruments artisanaux de qualité : bols, carillons koshi, ...
+                      Mon accompagnement se nourrit des nombreuses approches que j'ai rencontrées
+                      dans ma vie. Sur le chemin du tantra depuis plus de 10 ans, je propose stages,
+                      retraites et soirées tantra ainsi que des soins individuels ou couple.
                     </AnimatedBy.Description>
                   </AnimatedBy>
                 </li>
@@ -233,4 +219,4 @@ export const SonsMantrasTantra: FC = () => {
   );
 };
 
-SonsMantrasTantra.displayName = 'SonsMantrasTantra';
+FemmeSauvage.displayName = 'FemmeSauvage';

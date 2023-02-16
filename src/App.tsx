@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ErrorPage } from './components/ErrorPage';
-import { FemmeSauvage } from './components/FemmeSauvage';
-import { LandingPage } from './components/LandingPage';
-import { QuiSuisJe } from './components/QuiSuisJe';
-import { SonsMantrasTantra } from './components/SonsMantrasTantra';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
+import { ErrorPage } from './pages/ErrorPage';
+import { FemmeSauvage } from './pages/FemmeSauvage';
+import { LandingPage } from './pages/LandingPage';
+import { QuiSuisJe } from './pages/QuiSuisJe';
+import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 
 const router = createBrowserRouter([
   {

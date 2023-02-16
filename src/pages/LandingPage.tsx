@@ -1,6 +1,6 @@
 import { FC } from 'react';
+import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { usePublicPage } from '../contexts/userContext';
-import { OpenExternalLinkButton } from './OpenExternalLinkButton';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';

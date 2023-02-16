@@ -1,5 +1,5 @@
 import React, { FC, ReactElement } from 'react';
-import { Description, DescriptionOwnProps } from '../Description';
+import { Description, DescriptionOwnProps } from '../../components/Description';
 
 export interface AnimatedByOwnProps {
   children: React.ReactNode;

@@ -5,7 +5,7 @@ import {
   CreateAccountBadge,
   LoginAccountBadge,
   LogoutAccountBadge,
-} from '../auth/MyAccount';
+} from '../../components/auth/MyAccount';
 
 export const HambugerMenu: FC = () => {
   const location = useLocation();
@@ -81,6 +81,11 @@ export const HambugerMenu: FC = () => {
                   <Link to="/stage/femme-sauvage">
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       À la rencontre de la femme sauvage
+                    </span>
+                  </Link>
+                  <Link to="/stage/tantra-et-constellations">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Tantra et Constellations
                     </span>
                   </Link>
                   {/* <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
