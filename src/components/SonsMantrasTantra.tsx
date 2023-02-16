@@ -28,7 +28,7 @@ export const SonsMantrasTantra: FC = () => {
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">
               <div className="card-body">
-                <h5 className="card-title mb-0">En chemin sur la voix tantrique</h5>
+                <h5 className="card-title mb-0 fw-bolder">En chemin sur la voix tantrique</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
                 <li
@@ -74,7 +74,7 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0">Détails</h5>
+                <h5 className="card-title mb-0 fw-bolder">Détails</h5>
               </div>
               <ul className="list-group list-group-flush">
                 <li
@@ -186,7 +186,7 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0">
+                <h5 className="card-title mb-0 fw-bolder">
                   Animé par Marie-Anne Sévin assistée de Floriane Fagot
                 </h5>
               </div>
