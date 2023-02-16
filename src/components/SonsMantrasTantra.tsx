@@ -26,9 +26,9 @@ export const SonsMantrasTantra: FC = () => {
             <PageSubTitle>Du 10 au 12 mars 2023</PageSubTitle>
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
-            <SemiTransparentTile className="card text-start text-light font-playfair">
+            <SemiTransparentTile className="card text-start text-light font-monserrat">
               <div className="card-body">
-                <h5 className="card-title pt-1">En chemin sur la voix tantrique</h5>
+                <h5 className="card-title mb-0">En chemin sur la voix tantrique</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
                 <li
@@ -72,13 +72,13 @@ export const SonsMantrasTantra: FC = () => {
                 </Description>
               </div>
             </SemiTransparentTile>
-            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title">Détails</h5>
+                <h5 className="card-title mb-0">Détails</h5>
               </div>
               <ul className="list-group list-group-flush">
                 <li
-                  className="list-group-item"
+                  className="list-group-item pb-0"
                   style={{
                     background: 'transparent',
                   }}
@@ -91,7 +91,7 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
                 <li
-                  className="list-group-item"
+                  className="list-group-item pb-0"
                   style={{
                     background: 'transparent',
                   }}
@@ -104,7 +104,7 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
                 <li
-                  className="list-group-item"
+                  className="list-group-item py-3"
                   style={{
                     background: 'transparent',
                   }}
@@ -127,7 +127,7 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
                 <li
-                  className="list-group-item"
+                  className="list-group-item py-3"
                   style={{
                     background: 'transparent',
                   }}
@@ -144,7 +144,7 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
                 <li
-                  className="list-group-item"
+                  className="list-group-item py-3"
                   style={{
                     background: 'transparent',
                   }}
@@ -163,11 +163,11 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </li>
               </ul>
-              <div className="card-body">
+              <div className="card-body pb-0">
                 <p>Un acompte de 70€ est demandé à l'inscription.</p>
               </div>
             </SemiTransparentTile>
-            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
@@ -184,9 +184,9 @@ export const SonsMantrasTantra: FC = () => {
                 <Quote sentence="Sois une voix, pas un écho" author="Albert Einstein" />
               </div>
             </SemiTransparentTile>
-            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title">
+                <h5 className="card-title mb-0">
                   Animé par Marie-Anne Sévin assistée de Floriane Fagot
                 </h5>
               </div>
