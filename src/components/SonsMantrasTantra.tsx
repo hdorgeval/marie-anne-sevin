@@ -8,13 +8,15 @@ import { AnimatedBy } from './page-layout/AnimatedBy';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
+import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
+import { Quote } from './Quote';
 export const SonsMantrasTantra: FC = () => {
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
         backgroundImageUrl="/images/background-sons-mantras-tantra.jpg"
         backgroundPosition="33%"
-        htmlTitle="Sons Mantras Tantra | Marie-Anne Sévin"
+        htmlTitle="Sons Mantras Tantra | Stage | Marie-Anne Sévin"
       >
         <div>
           <div className="mt-4 pt-4">
@@ -24,12 +26,7 @@ export const SonsMantrasTantra: FC = () => {
             <PageSubTitle>Du 10 au 12 mars 2023</PageSubTitle>
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
-            <div
-              className="card text-start text-light font-playfair"
-              style={{
-                background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
-              }}
-            >
+            <SemiTransparentTile className="card text-start text-light font-playfair">
               <div className="card-body">
                 <h5 className="card-title pt-1">En chemin sur la voix tantrique</h5>
               </div>
@@ -74,14 +71,8 @@ export const SonsMantrasTantra: FC = () => {
                   coffret d'alumine que nous vous mettrons à disposition en prêt ou à la vente.
                 </Description>
               </div>
-            </div>
-
-            <div
-              className="card text-start text-light font-playfair mt-4"
-              style={{
-                background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
-              }}
-            >
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
                 <h5 className="card-title">Détails</h5>
               </div>
@@ -175,14 +166,8 @@ export const SonsMantrasTantra: FC = () => {
               <div className="card-body">
                 <p>Un acompte de 70€ est demandé à l'inscription.</p>
               </div>
-            </div>
-
-            <div
-              className="card text-start text-light font-playfair mt-4"
-              style={{
-                background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
-              }}
-            >
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
@@ -193,44 +178,13 @@ export const SonsMantrasTantra: FC = () => {
                   </div>
                 </OpenExternalLinkButton>
               </div>
-            </div>
-
-            <div
-              className="card text-start text-light font-playfair mt-4"
-              style={{
-                background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
-              }}
-            >
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
-                <figure className="pt-3 rounded">
-                  <blockquote className="blockquote pb-0">
-                    <p>
-                      <sup className="pe-1">
-                        <i className="bi bi-quote fs-5"></i>
-                      </sup>
-                      <span className="fs-5 fst-italic">Sois une voix, pas un</span>
-                      <span className="text-nowrap">
-                        {' '}
-                        écho
-                        <sup className="ps-1">
-                          <i className="bi bi-quote fs-5 bi-rotate-180"></i>
-                        </sup>
-                      </span>
-                    </p>
-                  </blockquote>
-                  <figcaption className="blockquote-footer mb-0 mt-2 font-italic text-muted">
-                    Albert Einstein
-                  </figcaption>
-                </figure>
+                <Quote sentence="Sois une voix, pas un écho" author="Albert Einstein" />
               </div>
-            </div>
-
-            <div
-              className="card text-start text-light font-playfair mt-4"
-              style={{
-                background: 'linear-gradient(to bottom,rgba(0, 0, 0, 0.8), rgba(79, 79, 93, 0.30))',
-              }}
-            >
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
                 <h5 className="card-title">
                   Animé par Marie-Anne Sévin assistée de Floriane Fagot
@@ -271,7 +225,7 @@ export const SonsMantrasTantra: FC = () => {
                   </AnimatedBy>
                 </li>
               </ul>
-            </div>
+            </SemiTransparentTile>
           </div>
         </div>
       </PublicPageLayoutWithFixedBackgroundImage>
