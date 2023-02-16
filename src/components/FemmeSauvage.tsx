@@ -14,6 +14,7 @@ export const FemmeSauvage: FC = () => {
     <>
       <PublicPageLayoutWithFixedBackgroundImage
         backgroundImageUrl="/images/background-femme-sauvage.webp"
+        backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.0))"
         backgroundPosition="42%"
         htmlTitle="À la rencontre de la femme sauvage | Stage | Marie-Anne Sévin"
       >
