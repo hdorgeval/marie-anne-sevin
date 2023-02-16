@@ -19,7 +19,13 @@
   </url>
   
   <url>
-    <loc>https://marie-anne-sevin.com/sons-mantras-tantra</loc>
+    <loc>https://marie-anne-sevin.com/stage/sons-mantras-tantra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://marie-anne-sevin.com/stage/femme-sauvage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

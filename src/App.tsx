@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './components/ErrorPage';
+import { FemmeSauvage } from './components/FemmeSauvage';
 import { LandingPage } from './components/LandingPage';
 import { QuiSuisJe } from './components/QuiSuisJe';
 import { SonsMantrasTantra } from './components/SonsMantrasTantra';
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
     element: <QuiSuisJe />,
   },
   {
-    path: '/sons-mantras-tantra',
+    path: '/stage/sons-mantras-tantra',
     element: <SonsMantrasTantra />,
+  },
+  {
+    path: '/stage/femme-sauvage',
+    element: <FemmeSauvage />,
   },
 ]);
 

@@ -73,9 +73,14 @@ export const HambugerMenu: FC = () => {
                   Stages
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <Link to="/sons-mantras-tantra">
+                  <Link to="/stage/sons-mantras-tantra">
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Sons Mantras Tantra
+                    </span>
+                  </Link>
+                  <Link to="/stage/femme-sauvage">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      À la rencontre de la femme sauvage
                     </span>
                   </Link>
                   {/* <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
