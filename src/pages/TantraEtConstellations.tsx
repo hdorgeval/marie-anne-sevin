@@ -171,7 +171,8 @@ export const TantraEtConstellations: FC = () => {
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">
                         Nous organiserons un <span className="text-light">co-voiturage</span>, ou
-                        venon vous chercher à la gare qui se situe à 5 minutes de la vallée rose.
+                        venon vous chercher à la gare de Houdan qui se situe à 5 minutes de la
+                        vallée rose.
                       </span>
                     </div>
                   </div>
