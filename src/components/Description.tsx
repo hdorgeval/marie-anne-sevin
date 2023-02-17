@@ -1,11 +1,14 @@
 import { FC } from 'react';
 
 function toClosedSentence(sentence: string): string {
-  const result = hasThreeDotsAtTheEnd(sentence)
-    ? decodeThreeDots(sentence)
-    : `${decodeThreeDots(sentence)}.`;
+  if (hasColonsAtTheEnd(sentence) || hasSemiColonsAtTheEnd(sentence)) {
+    return decodeThreeDots(sentence);
+  }
+  if (hasThreeDotsAtTheEnd(sentence)) {
+    return decodeThreeDots(sentence);
+  }
 
-  return result;
+  return `${decodeThreeDots(sentence)}.`;
 }
 
 function encodeThreeDots(sentence: string): string {
@@ -18,6 +21,14 @@ function decodeThreeDots(sentence: string): string {
 
 function hasThreeDotsAtTheEnd(sentence: string): boolean {
   return sentence.endsWith('|||');
+}
+
+function hasColonsAtTheEnd(sentence: string): boolean {
+  return sentence.endsWith(':');
+}
+
+function hasSemiColonsAtTheEnd(sentence: string): boolean {
+  return sentence.endsWith(';');
 }
 
 function toEmphasized(
@@ -43,8 +54,6 @@ function toEmphasized(
   for (let index = 0; index < words.length; index++) {
     const word = words[index];
     if (result.includes(word)) {
-      // eslint-disable-next-line no-console
-      console.log('HDO > toEmphsized', { word });
       result = result.replaceAll(
         word,
         `<span class="${(wordsCssClassNames ?? []).join(' ')}">${word}</span>`,

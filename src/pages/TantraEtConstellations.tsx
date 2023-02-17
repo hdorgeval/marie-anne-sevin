@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import chalet1 from '../assets/la-vallee-rose/chalet1.jpg';
 import exterieur1 from '../assets/la-vallee-rose/exterieur1.jpg';
 import exterieur2 from '../assets/la-vallee-rose/exterieur2.jpg';
 import repas1 from '../assets/la-vallee-rose/repas1.jpg';
@@ -350,6 +351,29 @@ export const TantraEtConstellations: FC = () => {
                       <Description>
                         Nous organiserons des tours de préparation des repas qui feront partie
                         intégrante du stage qui comprendront :
+                      </Description>
+                      <Description>rangement vaisselle et dressage de table</Description>
+                      <Description>
+                        préparation du repas (choix des plats, épluchage, coupage, réchauffage ou
+                        cuisson)
+                      </Description>
+                      <Description>débarrassage, rangement et nettoyage cuisine</Description>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={chalet1} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        Afin de préserver l'harmonie, nous prendrons soin de ce magnifique lieu en
+                        remettant en ordre notre espace de travail. Merci à tous pour votre
+                        participation, essentielle à la réussite de ce stage.
                       </Description>
                     </div>
                   </div>
