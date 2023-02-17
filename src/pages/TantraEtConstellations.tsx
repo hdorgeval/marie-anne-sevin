@@ -380,6 +380,18 @@ export const TantraEtConstellations: FC = () => {
                 </li>
               </ul>
             </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
+                <OpenExternalLinkButton
+                  className="btn btn-outline-light fw-bolder w-100 mt-0"
+                  link="https://forms.gle/TFiyJeEoLSmG5QDCA"
+                >
+                  <div className="d-flex flex-column align-items-center">
+                    <span>Se pré-inscrire au stage</span>
+                  </div>
+                </OpenExternalLinkButton>
+              </div>
+            </SemiTransparentTile>
           </div>
         </div>
       </PublicPageLayoutWithFixedBackgroundImage>
