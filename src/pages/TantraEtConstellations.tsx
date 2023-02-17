@@ -320,7 +320,7 @@ export const TantraEtConstellations: FC = () => {
                     <div className="card-body">
                       <Description>
                         La vallée rose est un merveilleux lieu de stage pouvant accueillir jusqu'à
-                        28 stagiares.
+                        28 stagiaires.
                       </Description>
                     </div>
                   </div>
