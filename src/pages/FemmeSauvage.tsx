@@ -175,6 +175,7 @@ export const FemmeSauvage: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/fcZ58rbSjWJXmo9F7"
+                  analyticsEvent="open-formulaire-pre-inscription-femme-sauvage"
                 >
                   <div className="d-flex flex-column align-items-center">
                     <span>Se pré-inscrire au stage</span>

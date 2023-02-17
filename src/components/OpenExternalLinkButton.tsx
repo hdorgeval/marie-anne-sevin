@@ -1,7 +1,8 @@
 import { useCallback } from 'react';
-import { useAnalytics } from '../hooks/useAnalytics';
+import { MyAnalyticsEvent, useAnalytics } from '../hooks/useAnalytics';
 
 export interface OpenExternalLinkButtonOwnProps {
+  analyticsEvent?: MyAnalyticsEvent;
   link: string;
   className?: string;
   children?: React.ReactNode;
@@ -10,13 +11,17 @@ export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = 
   link,
   className,
   children,
+  analyticsEvent,
 }) => {
-  const { trackOpenExternalLinkEvent } = useAnalytics();
+  const { trackOpenExternalLinkEvent, trackSimpleEvent } = useAnalytics();
   const linkClassNames = `${className}`;
 
   const handleOnClick = useCallback(() => {
     trackOpenExternalLinkEvent(link);
-  }, [link, trackOpenExternalLinkEvent]);
+    if (analyticsEvent) {
+      trackSimpleEvent(analyticsEvent);
+    }
+  }, [analyticsEvent, link, trackOpenExternalLinkEvent, trackSimpleEvent]);
 
   return (
     <>

@@ -226,6 +226,7 @@ export const TantraEtConstellations: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/TFiyJeEoLSmG5QDCA"
+                  analyticsEvent="open-formulaire-pre-inscription-tantra-et-constellations"
                 >
                   <div className="d-flex flex-column align-items-center">
                     <span>Se pré-inscrire au stage</span>
@@ -414,6 +415,7 @@ export const TantraEtConstellations: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/TFiyJeEoLSmG5QDCA"
+                  analyticsEvent="open-formulaire-pre-inscription-tantra-et-constellations"
                 >
                   <div className="d-flex flex-column align-items-center">
                     <span>Se pré-inscrire au stage</span>
