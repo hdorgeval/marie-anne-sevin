@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import exterieur1 from '../assets/la-vallee-rose/exterieur1.jpg';
+import exterieur2 from '../assets/la-vallee-rose/exterieur2.jpg';
+import repas1 from '../assets/la-vallee-rose/repas1.jpg';
 import salle1 from '../assets/la-vallee-rose/salle1.jpg';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
@@ -312,7 +314,42 @@ export const TantraEtConstellations: FC = () => {
                     <div className="card-body">
                       <Description>
                         Les couchages se font en chambres, chalets, caravanes aménagées pour 2 à 4
-                        personnes.
+                        personnes. De nombreux sanitaires sont à disposition et les espaces
+                        permettent de partager avec le groupe ou de prendre des moments d'intimité
+                        ou d'introspection.
+                      </Description>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={exterieur2} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        La nature est généreuse et nous offres sa beauté végétale, minérale et
+                        animale invitant à la méditation. Alexandre, notre hôte, est un véritable
+                        artiste et les œuvres d'arts sont partout apportant leurs énergies.
+                      </Description>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={repas1} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        Nous organiserons des tours de préparation des repas qui feront partie
+                        intégrante du stage qui comprendront :
                       </Description>
                     </div>
                   </div>
