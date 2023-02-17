@@ -299,7 +299,7 @@ export const TantraEtConstellations: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-0"
-                        link="https://maps.google.com/maps/dir//Vignes+d'Orval+28410+Goussainville/@48.795614,1.564922,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x47e6a5f91366dbe5:0x5585705fa1c734d4"
+                        link="https://goo.gl/maps/jsFxkfk2EMvRNQsF6"
                       >
                         <div className="d-flex flex-column align-items-center">
                           <span>Itinéraires</span>
