@@ -291,7 +291,7 @@ export const TantraEtConstellations: FC = () => {
                     background: 'transparent',
                   }}
                 >
-                  <div>
+                  <div className="card bg-color-dark-semi-transparent">
                     <img src={salle1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                       <Description>
@@ -307,7 +307,7 @@ export const TantraEtConstellations: FC = () => {
                     background: 'transparent',
                   }}
                 >
-                  <div>
+                  <div className="card bg-color-dark-semi-transparent">
                     <img src={exterieur1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                       <Description>

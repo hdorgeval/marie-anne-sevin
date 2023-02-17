@@ -83,3 +83,7 @@
   min-width: 100%;
   min-height: 100%;
 }
+
+.bg-color-dark-semi-transparent {
+  background-color: rgba(25, 25, 25, 0.8) !important;
+}
