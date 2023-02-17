@@ -5,6 +5,7 @@ import { FemmeSauvage } from './pages/FemmeSauvage';
 import { LandingPage } from './pages/LandingPage';
 import { QuiSuisJe } from './pages/QuiSuisJe';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
+import { TantraEtConstellations } from './pages/TantraEtConstellations';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/femme-sauvage',
     element: <FemmeSauvage />,
+  },
+  {
+    path: '/stage/tantra-et-constellations',
+    element: <TantraEtConstellations />,
   },
 ]);
 

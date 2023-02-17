@@ -38,6 +38,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.fs-larger {
+  font-size: larger !important;
+}
+
 .rotate-90 {
   transform-origin: 0 0;
   transform: rotate(-90deg);
