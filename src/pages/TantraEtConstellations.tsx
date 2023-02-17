@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import exterieur1 from '../assets/la-vallee-rose/exterieur1.jpg';
+import salle1 from '../assets/la-vallee-rose/salle1.jpg';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
@@ -260,6 +262,60 @@ export const TantraEtConstellations: FC = () => {
                       plaisir et le jeu.
                     </AnimatedBy.Description>
                   </AnimatedBy>
+                </li>
+              </ul>
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
+                <h5 className="card-title mb-0 fw-bolder">La Vallée Rose ...</h5>
+              </div>
+              <ul className="list-group list-group-flush mt-0 pt-0">
+                <li
+                  className="list-group-item mt-0 pt-3"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-geo-alt fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <span className="text-nowrap fs-7">
+                        Une oasis de vie à proximité de Paris
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div>
+                    <img src={salle1} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        La vallée rose est un merveilleux lieu de stage pouvant accueillir jusqu'à
+                        28 stagiares.
+                      </Description>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div>
+                    <img src={exterieur1} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        Les couchages se font en chambres, chalets, caravanes aménagées pour 2 à 4
+                        personnes.
+                      </Description>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </SemiTransparentTile>
