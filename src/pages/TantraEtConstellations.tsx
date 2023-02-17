@@ -289,6 +289,26 @@ export const TantraEtConstellations: FC = () => {
                   </div>
                 </li>
                 <li
+                  className="list-group-item mt-0 pt-3"
+                  style={{
+                    background: 'transparent',
+                  }}
+                >
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-sign-turn-right fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <OpenExternalLinkButton
+                        className="btn btn-outline-light fw-bolder w-100 mt-0"
+                        link="https://maps.google.com/maps/dir//Vignes+d'Orval+28410+Goussainville/@48.795614,1.564922,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x47e6a5f91366dbe5:0x5585705fa1c734d4"
+                      >
+                        <div className="d-flex flex-column align-items-center">
+                          <span>Itinéraires</span>
+                        </div>
+                      </OpenExternalLinkButton>
+                    </div>
+                  </div>
+                </li>
+                <li
                   className="list-group-item"
                   style={{
                     background: 'transparent',
