@@ -14,6 +14,7 @@ import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
+import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraEtConstellations: FC = () => {
   return (
     <>
@@ -35,25 +36,15 @@ export const TantraEtConstellations: FC = () => {
                 <h5 className="card-title mb-0 fw-bolder">Le désir, la sexualité, le sacré</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
-                <li
-                  className="list-group-item mt-0 pt-1 pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="mt-0 pt-1 pb-0">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-house-heart fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="text-nowrap fs-7">Stage en résidentiel</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item mt-0 pt-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="mt-0 pt-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -61,7 +52,7 @@ export const TantraEtConstellations: FC = () => {
                       <span className="text-nowrap fs-7"> À proximité de Houdan (78)</span>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
               </ul>
               <div className="card-body pt-2">
                 <Description>
@@ -78,38 +69,25 @@ export const TantraEtConstellations: FC = () => {
                 <h5 className="card-title mb-0 fw-bolder">Détails</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <li
-                  className="list-group-item pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="pb-0">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-calendar-event fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Début du stage : le vendredi à 19h</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-calendar-x fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Fin du stage : le dimanche à 16h30</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-exclamation-diamond fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -126,13 +104,9 @@ export const TantraEtConstellations: FC = () => {
                       </OpenExternalLinkButton>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -143,13 +117,9 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-info-circle fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -159,13 +129,9 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-car-front-fill fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -176,14 +142,9 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
 
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-handbag fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -214,13 +175,14 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
               </ul>
               <div className="card-body pb-0">
                 <p>Un acompte de 70€ est demandé à l'inscription.</p>
                 <p>L'hébergement est à régler séparément sur place.</p>
               </div>
             </SemiTransparentTile>
+
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <OpenExternalLinkButton
@@ -242,17 +204,13 @@ export const TantraEtConstellations: FC = () => {
                 />
               </div>
             </SemiTransparentTile>
+
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">Animé par Marie-Anne Sévin</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="">
                   <AnimatedBy>
                     <AnimatedBy.Img src={portrait1} />
                     <AnimatedBy.FigCaption>
@@ -267,20 +225,16 @@ export const TantraEtConstellations: FC = () => {
                       plaisir et le jeu.
                     </AnimatedBy.Description>
                   </AnimatedBy>
-                </li>
+                </TransparentListGroupItem>
               </ul>
             </SemiTransparentTile>
+
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">La Vallée Rose ...</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
-                <li
-                  className="list-group-item mt-0 pt-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="mt-0 pt-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -289,13 +243,8 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item mt-0 pt-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="mt-0 pt-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-sign-turn-right fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -303,27 +252,19 @@ export const TantraEtConstellations: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-0"
                         link="https://goo.gl/maps/jsFxkfk2EMvRNQsF6"
                       >
-                        <div className="d-flex flex-column align-items-center">
-                          <span>Itinéraire via G. Maps</span>
-                        </div>
+                        Itinéraire via G. Maps
                       </OpenExternalLinkButton>
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-2"
                         link="https://ul.waze.com/ul?place=ChIJYYIhXYml5kcR0L9615bDcBw&ll=48.79570880%2C1.56493040&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
                       >
-                        <div className="d-flex flex-column align-items-center">
-                          <span>Itinéraire via Waze</span>
-                        </div>
+                        Itinéraire via Waze
                       </OpenExternalLinkButton>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
                     <img src={salle1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
@@ -333,13 +274,8 @@ export const TantraEtConstellations: FC = () => {
                       </Description>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
                     <img src={exterieur1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
@@ -351,13 +287,8 @@ export const TantraEtConstellations: FC = () => {
                       </Description>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
                     <img src={exterieur2} className="card-img-top" alt="..."></img>
                     <div className="card-body">
@@ -368,13 +299,8 @@ export const TantraEtConstellations: FC = () => {
                       </Description>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
                     <img src={repas1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
@@ -390,13 +316,8 @@ export const TantraEtConstellations: FC = () => {
                       <Description>débarrassage, rangement et nettoyage cuisine</Description>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
                     <img src={chalet1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
@@ -407,9 +328,10 @@ export const TantraEtConstellations: FC = () => {
                       </Description>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
               </ul>
             </SemiTransparentTile>
+
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <OpenExternalLinkButton
