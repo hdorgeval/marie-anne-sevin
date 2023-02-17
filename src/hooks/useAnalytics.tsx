@@ -2,9 +2,9 @@ import { useCallback } from 'react';
 
 export type MyAnalyticsEvent =
   | 'open-external-link'
-  | 'open-formulaire-pre-inscription-tantra-et-constellations'
-  | 'open-formulaire-pre-inscription-sons-mantras-tantra'
-  | 'open-formulaire-pre-inscription-femme-sauvage';
+  | 'pre-inscription-tantra-et-constellations'
+  | 'pre-inscription-sons-mantras-tantra'
+  | 'pre-inscription-femme-sauvage';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {

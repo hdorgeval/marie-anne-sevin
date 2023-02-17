@@ -172,7 +172,7 @@ export const SonsMantrasTantra: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/4U937a7KkQ5hGDZD9"
-                  analyticsEvent="open-formulaire-pre-inscription-sons-mantras-tantra"
+                  analyticsEvent="pre-inscription-sons-mantras-tantra"
                 >
                   <div className="d-flex flex-column align-items-center">
                     <span>Se pré-inscrire au stage</span>
