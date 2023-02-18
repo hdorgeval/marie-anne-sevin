@@ -79,19 +79,18 @@ export const RituelTantrique: FC = () => {
                 <Description>
                   Bien plus qu'un massage tantrique, ce rituel est une invitation à célébrer la
                   personne que vous êtes dans l'harmonisation corps, cœur, conscience. Ce massage se
-                  déroule au sol, sur une toile Kygliss*, à l'huile de coco désodorisée et chaude
-                  après un temps de méditation et de connexion masseur-massé. Tout le corps peut
-                  être massé et la nudité est possible dans le respect du cadre que nous
-                  co-construirons lors de l'entretien téléphonique préalable. L'objectif de ce
-                  massage est d'accompagner votre énergie vitale ou énergie sexuelle dans votre
-                  corps, de la relier au cœur et à la conscience afin qu'elle vous nourrisse voire
-                  vous guérisse. Le temps de massage dure environs 2h précédées d'un temps de brief
-                  et douche et suivies d'un temps d'intégration et de débrief. à l'issue de ce
-                  rendez-vous, je vous invite à prévoir un sas de "rien" avant de replonger dans
-                  votre activité. Je masse les personnes quelques soit leur genre, leur âge ou leur
-                  physique pour peu qu'elles soient majeures, en capacité de mobilité et de
-                  décision. Je ne propose pas de prestation sexuelle (ni génitale, ni
-                  bucco-génitale).
+                  déroule au sol, sur une toile, à l'huile de coco désodorisée et chaude après un
+                  temps de méditation et de connexion masseur-massé. Tout le corps peut être massé
+                  et la nudité est possible dans le respect du cadre que nous co-construirons lors
+                  de l'entretien téléphonique préalable. L'objectif de ce massage est d'accompagner
+                  votre énergie vitale ou énergie sexuelle dans votre corps, de la relier au cœur et
+                  à la conscience afin qu'elle vous nourrisse voire vous guérisse. Le temps de
+                  massage dure environs 2h précédées d'un temps de brief et douche et suivies d'un
+                  temps d'intégration et de débrief. à l'issue de ce rendez-vous, je vous invite à
+                  prévoir un sas de "rien" avant de replonger dans votre activité. Je masse les
+                  personnes quelques soit leur genre, leur âge ou leur physique pour peu qu'elles
+                  soient majeures, en capacité de mobilité et de décision. Je ne propose pas de
+                  prestation sexuelle (ni génitale, ni bucco-génitale).
                 </Description>
               </div>
             </SemiTransparentTile>
@@ -216,8 +215,8 @@ export const RituelTantrique: FC = () => {
                         Si des mouvements ou sons vous viennent, laissez les circuler ;
                         j'accompagnerai le flow. En revanche, si vos mouvements deviennent trop
                         compliqués à suivre, je vous inviterai à vous déposer sur la toile et à
-                        revenir au contact de mes mains. Pour les hommes : si vous n'avez pas
-                        d'érection, ce n'est pas grave. Si vous n'avez pas d'érection, ce n'est pas
+                        revenir au contact de mes mains. Pour les hommes : si vous avez une
+                        érection, ce n'est pas grave. Si vous n'avez pas d'érection, ce n'est pas
                         grave. Concernant l'éjaculation : mon invitation est de garder votre énergie
                         vitale en l'invitant à remonter le long du canal énergétique et ainsi d'en
                         nourrir tout votre corps et donc d'éviter l'éjaculation. Si cela arrive, ce
@@ -228,8 +227,9 @@ export const RituelTantrique: FC = () => {
                         grave. Si vous n'avez pas d'orgasme, ce n'est pas grave. Concernant
                         l'éjaculation : Si cela arrive, c'est que votre corps est dans un
                         relâchement total. Il n'y a pas de masturbation pendant ce massage. Vous
-                        êtes non-binaire, trans ou en questionnement : j'accompagnerai au mieux et
-                        dans le respect de vos besoins.
+                        êtes non-binaire, trans ou en questionnement : au delà de tous les points
+                        évoqués ci-dessus, je vous accompagnerai au mieux dans le respect de vos
+                        besoins.
                       </Description>
                     </div>
                   </div>
