@@ -96,9 +96,7 @@ export const SonsMantrasTantra: FC = () => {
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
                         analyticsEvent="rdv-entretien-prealable"
                       >
-                        <div className="d-flex flex-column align-items-center">
-                          <span>Prendre rendez-vous pour l'entretien préalable</span>
-                        </div>
+                        Prendre rendez-vous pour l'entretien préalable
                       </OpenExternalLinkButton>
                     </div>
                   </div>
@@ -142,9 +140,7 @@ export const SonsMantrasTantra: FC = () => {
                   link="https://forms.gle/4U937a7KkQ5hGDZD9"
                   analyticsEvent="pre-inscription-sons-mantras-tantra"
                 >
-                  <div className="d-flex flex-column align-items-center">
-                    <span>Se pré-inscrire au stage</span>
-                  </div>
+                  Se pré-inscrire au stage
                 </OpenExternalLinkButton>
               </div>
             </SemiTransparentTile>
