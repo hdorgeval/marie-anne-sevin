@@ -251,12 +251,14 @@ export const TantraEtConstellations: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-0"
                         link="https://goo.gl/maps/jsFxkfk2EMvRNQsF6"
+                        analyticsEvent="open-google-maps"
                       >
                         Itinéraire via G. Maps
                       </OpenExternalLinkButton>
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-2"
                         link="https://ul.waze.com/ul?place=ChIJYYIhXYml5kcR0L9615bDcBw&ll=48.79570880%2C1.56493040&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                        analyticsEvent="open-waze"
                       >
                         Itinéraire via Waze
                       </OpenExternalLinkButton>
