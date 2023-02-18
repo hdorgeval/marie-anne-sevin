@@ -101,7 +101,7 @@ export const RituelTantrique: FC = () => {
                 <h5 className="card-title mb-0 fw-bolder mt-3">10 questions fréquentes</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">1. La nudité est-elle obligatoire ?</div>
                     <div className="card-body">
@@ -120,7 +120,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">2. Tout le corps est-il massé ?</div>
                     <div className="card-body">
@@ -138,7 +138,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       3. Je n'y connais rien en tantra, je n'ai jamais médité, puis-je recevoir ce
@@ -157,7 +157,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       4. J'ai des soucis de santé, puis-je bénéficier de ce massage ?
@@ -175,7 +175,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       5. Est-ce un massage thérapeutique, bien-être, énergétique, érotique ?
@@ -198,7 +198,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       6. Que se passe-t-il si je ne peux contrôler ce qui se passe dans mon corps ?
@@ -235,7 +235,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       7. Je suis allergique à l'huile de coco, que faire ?
@@ -249,7 +249,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       8. Se faire masser en massage tantrique, est-ce tromper son partenaire ?
@@ -269,7 +269,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       9. J'ai été abusé, le massage tantrique peut il m'aider à soigner ce trauma ?
@@ -286,7 +286,7 @@ export const RituelTantrique: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
                       10. Y a-t-il des risques de devenir accroc au massage tantrique ?
