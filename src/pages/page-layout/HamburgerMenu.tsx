@@ -67,7 +67,18 @@ export const HambugerMenu: FC = () => {
                   </span>
                 </div>
               </li>
-              <li className="nav-item w-100 text-start"></li>
+              <li className="nav-item w-100 text-start mt-4">
+                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
+                  Particuliers
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <Link to="/massage/rituel-tantrique">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Rituel tantrique
+                    </span>
+                  </Link>
+                </div>
+              </li>
               <li className="nav-item w-100 text-start mt-4">
                 <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
                   Stages
@@ -88,18 +99,6 @@ export const HambugerMenu: FC = () => {
                       Tantra et Constellations
                     </span>
                   </Link>
-                  {/* <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Soirée Tantra
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Matinée Tantra
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Tantra Homme
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    Codev
-                  </span> */}
                 </div>
               </li>
               {/* <li className="nav-item w-100 text-start mt-4">

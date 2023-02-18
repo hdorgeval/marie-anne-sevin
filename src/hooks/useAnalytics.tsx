@@ -4,7 +4,10 @@ export type MyAnalyticsEvent =
   | 'open-external-link'
   | 'pre-inscription-tantra-et-constellations'
   | 'pre-inscription-sons-mantras-tantra'
-  | 'pre-inscription-femme-sauvage';
+  | 'pre-inscription-femme-sauvage'
+  | 'rdv-rituel-tantrique'
+  | 'open-google-maps'
+  | 'open-waze';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {

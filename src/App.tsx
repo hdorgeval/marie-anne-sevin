@@ -4,6 +4,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { LandingPage } from './pages/LandingPage';
 import { QuiSuisJe } from './pages/QuiSuisJe';
+import { RituelTantrique } from './pages/RituelTantrique';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/tantra-et-constellations',
     element: <TantraEtConstellations />,
+  },
+  {
+    path: '/massage/rituel-tantrique',
+    element: <RituelTantrique />,
   },
 ]);
 
