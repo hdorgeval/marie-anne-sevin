@@ -208,7 +208,7 @@ export const RituelTantrique: FC = () => {
                         emphasizedWords={[
                           'Pour les hommes',
                           'Pour les femmes',
-                          'Vous êtes non-binaire',
+                          'Vous êtes non-binaire, trans ou en questionnement',
                         ]}
                         emphasizedWordsCssClassNames={['text-info-emphasis']}
                       >
