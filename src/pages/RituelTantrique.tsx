@@ -296,7 +296,7 @@ export const RituelTantrique: FC = () => {
                         Certaines personnes ont besoin de revenir régulièrement pour leur équilibre
                         et leur bien-être. Lorsque cela arrive, je prends le temps de questionner la
                         notion de dépendance au massage ou au masseur afin que la personne fasse le
-                        choix de revenir ou pas,
+                        choix de revenir ou pas.
                       </Description>
                     </div>
                   </div>
