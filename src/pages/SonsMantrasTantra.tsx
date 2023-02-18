@@ -94,6 +94,7 @@ export const SonsMantrasTantra: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
+                        analyticsEvent="rdv-entretien-prealable"
                       >
                         <div className="d-flex flex-column align-items-center">
                           <span>Prendre rendez-vous pour l'entretien préalable</span>

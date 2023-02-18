@@ -67,6 +67,7 @@ export const RituelTantrique: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
+                        analyticsEvent="rdv-entretien-prealable"
                       >
                         Prendre rendez-vous pour l'entretien préalable
                       </OpenExternalLinkButton>

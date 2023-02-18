@@ -5,6 +5,7 @@ export type MyAnalyticsEvent =
   | 'pre-inscription-tantra-et-constellations'
   | 'pre-inscription-sons-mantras-tantra'
   | 'pre-inscription-femme-sauvage'
+  | 'rdv-entretien-prealable'
   | 'rdv-rituel-tantrique'
   | 'open-google-maps'
   | 'open-waze';
