@@ -9,6 +9,7 @@ import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
+import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const FemmeSauvage: FC = () => {
   return (
     <>
@@ -30,26 +31,18 @@ export const FemmeSauvage: FC = () => {
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">Un weekend pour explorer votre nature</h5>
               </div>
+
               <ul className="list-group list-group-flush mt-0 pt-0">
-                <li
-                  className="list-group-item mt-0 pt-1 pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="pt-1 pb-0">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-house-heart fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="text-nowrap fs-7">Stage en résidentiel</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item mt-0 pt-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="mt-0 pt-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -57,7 +50,7 @@ export const FemmeSauvage: FC = () => {
                       <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
               </ul>
               <div className="card-body pt-2">
                 <Description>
@@ -77,38 +70,25 @@ export const FemmeSauvage: FC = () => {
                 <h5 className="card-title mb-0 fw-bolder">Détails</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <li
-                  className="list-group-item pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="pb-0">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-calendar-event fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Début du stage : le vendredi à 19h</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item pb-0"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-calendar-x fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Fin du stage : le dimanche à 17h</span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-exclamation-diamond fs-1 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
@@ -126,13 +106,9 @@ export const FemmeSauvage: FC = () => {
                       </OpenExternalLinkButton>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -143,13 +119,9 @@ export const FemmeSauvage: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
-                <li
-                  className="list-group-item py-3"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-info-circle fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -165,7 +137,7 @@ export const FemmeSauvage: FC = () => {
                       </span>
                     </div>
                   </div>
-                </li>
+                </TransparentListGroupItem>
               </ul>
               <div className="card-body pb-0">
                 <p>Un acompte de 70€ est demandé à l'inscription.</p>
@@ -194,12 +166,7 @@ export const FemmeSauvage: FC = () => {
                 <h5 className="card-title mb-0 fw-bolder">Animé par Marie-Anne Sévin</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <li
-                  className="list-group-item"
-                  style={{
-                    background: 'transparent',
-                  }}
-                >
+                <TransparentListGroupItem className="">
                   <AnimatedBy>
                     <AnimatedBy.Img src={portrait1} />
                     <AnimatedBy.FigCaption>
@@ -211,7 +178,7 @@ export const FemmeSauvage: FC = () => {
                       retraites et soirées tantra ainsi que des soins individuels ou couple.
                     </AnimatedBy.Description>
                   </AnimatedBy>
-                </li>
+                </TransparentListGroupItem>
               </ul>
             </SemiTransparentTile>
           </div>
