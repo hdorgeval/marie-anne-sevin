@@ -6,6 +6,7 @@ import {
   LoginAccountBadge,
   LogoutAccountBadge,
 } from '../../components/auth/MyAccount';
+import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
 
 export const HambugerMenu: FC = () => {
   const location = useLocation();
@@ -65,6 +66,15 @@ export const HambugerMenu: FC = () => {
                       Qui suis-je ?
                     </Link>
                   </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <OpenExternalLinkButton
+                      className="text-decoration-none text-light"
+                      link="https://amzn.eu/d/dd3iN4K"
+                      analyticsEvent="open-amazon-on-my-book"
+                    >
+                      Mon dernier livre
+                    </OpenExternalLinkButton>
+                  </span>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
@@ -101,19 +111,7 @@ export const HambugerMenu: FC = () => {
                   </Link>
                 </div>
               </li>
-              {/* <li className="nav-item w-100 text-start mt-4">
-                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
-                  Institutionnels
-                </div>
-                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    lorem ipsum
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    lorem ipsum
-                  </span>
-                </div>
-              </li> */}
+
               <li className="nav-item w-100 text-start mt-4">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Mon espace client</span>
