@@ -85,10 +85,10 @@ export const RituelTantrique: FC = () => {
                   de l'entretien téléphonique préalable. L'objectif de ce massage est d'accompagner
                   votre énergie vitale ou énergie sexuelle dans votre corps, de la relier au cœur et
                   à la conscience afin qu'elle vous nourrisse voire vous guérisse. Le temps de
-                  massage dure environs 2h précédées d'un temps de brief et douche et suivies d'un
-                  temps d'intégration et de débrief. à l'issue de ce rendez-vous, je vous invite à
+                  massage est d'environ 2h, précédé d'un temps de brief et douche et suivi d'un
+                  temps d'intégration et de débrief. À l'issue de ce rendez-vous, je vous invite à
                   prévoir un sas de "rien" avant de replonger dans votre activité. Je masse les
-                  personnes quelques soit leur genre, leur âge ou leur physique pour peu qu'elles
+                  personnes quelque soit leur genre, leur âge ou leur physique pour peu qu'elles
                   soient majeures, en capacité de mobilité et de décision. Je ne propose pas de
                   prestation sexuelle (ni génitale, ni bucco-génitale).
                 </Description>
