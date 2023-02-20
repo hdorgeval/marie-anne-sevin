@@ -56,16 +56,16 @@ export const HambugerMenu: FC = () => {
             <ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
               <li className="nav-item w-100 text-start">
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    <Link to="/" className="text-decoration-none text-light" aria-current="page">
+                  <Link to="/" className="text-decoration-none text-light" aria-current="page">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Accueil
-                    </Link>
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
-                    <Link to="/qui-suis-je" className="text-decoration-none text-light">
+                    </span>
+                  </Link>
+                  <Link to="/qui-suis-je" className="text-decoration-none text-light">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Qui suis-je ?
-                    </Link>
-                  </span>
+                    </span>
+                  </Link>
                   <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
@@ -75,6 +75,11 @@ export const HambugerMenu: FC = () => {
                       Mon dernier livre
                     </OpenExternalLinkButton>
                   </span>
+                  <Link to="/temoignages" className="text-decoration-none text-light">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Témoignages
+                    </span>
+                  </Link>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">

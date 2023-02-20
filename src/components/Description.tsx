@@ -1,7 +1,12 @@
 import { FC } from 'react';
 
 function toClosedSentence(sentence: string): string {
-  if (hasColonsAtTheEnd(sentence) || hasSemiColonsAtTheEnd(sentence)) {
+  if (
+    hasColonsAtTheEnd(sentence) ||
+    hasSemiColonsAtTheEnd(sentence) ||
+    hasExclamationPointAtTheEnd(sentence) ||
+    hasSmileyAtTheEnd(sentence)
+  ) {
     return decodeThreeDots(sentence);
   }
   if (hasThreeDotsAtTheEnd(sentence)) {
@@ -29,6 +34,14 @@ function hasColonsAtTheEnd(sentence: string): boolean {
 
 function hasSemiColonsAtTheEnd(sentence: string): boolean {
   return sentence.endsWith(';');
+}
+
+function hasExclamationPointAtTheEnd(sentence: string): boolean {
+  return sentence.endsWith('!');
+}
+
+function hasSmileyAtTheEnd(sentence: string): boolean {
+  return sentence.endsWith(';)') || sentence.endsWith(':)');
 }
 
 function toEmphasized(

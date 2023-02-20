@@ -7,6 +7,7 @@ import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
+import { Temoignages } from './pages/Temoignages';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: '/qui-suis-je',
     element: <QuiSuisJe />,
+  },
+  {
+    path: '/temoignages',
+    element: <Temoignages />,
   },
   {
     path: '/stage/sons-mantras-tantra',
