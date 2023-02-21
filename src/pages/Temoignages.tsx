@@ -94,6 +94,24 @@ export const Temoignages: FC = () => {
                 </div>
               </div>
             </div>
+
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+              <div className="card-body d-flex flex-row align-items-start">
+                <OneLetterPill>J</OneLetterPill>
+                <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
+                  <div className="card-title fs-5">Jean Viltart</div>
+                  <div>
+                    <FiveStarRating />
+                  </div>
+                  <Description>
+                    Très belle découverte du massage tantrique, tout en douceur, respect et accueil.
+                    Une expérience à vivre, qui m'a apaisé et éclairé. Je suis heureux d'avoir
+                    accordé ma confiance à Marie-Anne, qui est très professionnelle et exerce tout
+                    en conscience, ses soins gagnent à être connus et expérimentés!
+                  </Description>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </PublicPageLayoutWithFixedBackgroundImage>

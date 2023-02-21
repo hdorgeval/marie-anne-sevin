@@ -1,6 +1,6 @@
 import { FC, useMemo } from 'react';
 
-export type Letter = 'A' | 'B' | 'C' | 'D' | 'V';
+export type Letter = 'A' | 'B' | 'C' | 'D' | 'J' | 'V';
 export type BsFontSizeClassName = 'fs-3';
 
 export interface OneLetterPillOwnProps {
@@ -13,6 +13,7 @@ const bgColorMapping: Record<Letter, string> = {
   B: 'bg-danger',
   C: 'bg-info',
   D: 'bg-primary',
+  J: 'bg-success',
   V: 'bg-success',
 };
 
@@ -28,7 +29,7 @@ function computePaddingForLetterAndFontSize(letter: Letter, fontSize: BsFontSize
     case 'C':
       switch (fontSize) {
         case 'fs-3':
-          return 'p-2 px-3';
+          return 'p-2 px-3-h';
 
         default:
           throw new Error(`'${fontSize}' for letter '${letter}' is not yet implemented`);
@@ -37,7 +38,16 @@ function computePaddingForLetterAndFontSize(letter: Letter, fontSize: BsFontSize
     case 'D':
       switch (fontSize) {
         case 'fs-3':
-          return 'p-2 px-3';
+          return 'p-2 px-3-h';
+
+        default:
+          throw new Error(`'${fontSize}' for letter '${letter}' is not yet implemented`);
+      }
+
+    case 'J':
+      switch (fontSize) {
+        case 'fs-3':
+          return 'p-2 px-3-z';
 
         default:
           throw new Error(`'${fontSize}' for letter '${letter}' is not yet implemented`);
@@ -46,7 +56,7 @@ function computePaddingForLetterAndFontSize(letter: Letter, fontSize: BsFontSize
     case 'V':
       switch (fontSize) {
         case 'fs-3':
-          return 'p-2 pt-2-f px-3-h';
+          return 'p-2 pt-2-f px-3-q';
 
         default:
           throw new Error(`'${fontSize}' for letter '${letter}' is not yet implemented`);
@@ -66,7 +76,7 @@ function computedClassNames(letter: Letter, fontSize: BsFontSizeClassName): stri
 export const OneLetterPill: FC<OneLetterPillOwnProps> = ({ children, className }) => {
   const computedclassName = useMemo(() => {
     if (typeof children === 'string' && (className ?? 'fs-3').includes('fs-3')) {
-      return `${computedClassNames(children as Letter, 'fs-3')} ${className}`;
+      return `${computedClassNames(children as Letter, 'fs-3')} ${className ?? ''}`;
     }
 
     throw new Error(`Letter '${children}' is not yest implemented`);
