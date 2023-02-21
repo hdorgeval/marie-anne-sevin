@@ -36,7 +36,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>V</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
@@ -56,7 +56,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>D</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
@@ -77,7 +77,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>C</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
@@ -95,7 +95,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>J</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
@@ -113,7 +113,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>D</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
@@ -130,7 +130,7 @@ export const Temoignages: FC = () => {
               </div>
             </div>
 
-            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat mt-3">
               <div className="card-body d-flex flex-row align-items-start">
                 <OneLetterPill>S</OneLetterPill>
                 <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
