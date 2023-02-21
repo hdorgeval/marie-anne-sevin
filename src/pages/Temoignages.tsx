@@ -112,6 +112,39 @@ export const Temoignages: FC = () => {
                 </div>
               </div>
             </div>
+
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+              <div className="card-body d-flex flex-row align-items-start">
+                <OneLetterPill>D</OneLetterPill>
+                <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
+                  <div className="card-title fs-5">Declan Kehoe</div>
+                  <div>
+                    <FiveStarRating />
+                  </div>
+                  <Description>
+                    Un grand et beau moment de détente et de reconnexion avec le corps. Une
+                    expérience extraordinaire à vivre et à revivre. Un temps de présence bien à soi
+                    qui fait un bien fou. À refaire
+                  </Description>
+                </div>
+              </div>
+            </div>
+
+            <div className="card bg-color-dark-semi-transparent text-start text-light font-monserrat">
+              <div className="card-body d-flex flex-row align-items-start">
+                <OneLetterPill>S</OneLetterPill>
+                <div className="d-flex px-0 ms-3 flex-column justify-content-between ms">
+                  <div className="card-title fs-5">Steve LEBON</div>
+                  <div>
+                    <FiveStarRating />
+                  </div>
+                  <Description>
+                    Extraordinaire pour qui sais et veux recevoir ! Merci pour cette expérience
+                    extraordinaire hors des limites de l'esprit lâché prise total. Merci Marie Anne.
+                  </Description>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </PublicPageLayoutWithFixedBackgroundImage>
