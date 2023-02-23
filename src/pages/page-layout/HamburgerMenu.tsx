@@ -58,12 +58,23 @@ export const HambugerMenu: FC = () => {
             <ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
               <li className="nav-item w-100 text-start">
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <Link to="/" className="text-decoration-none text-light" aria-current="page">
+                  <Link
+                    to="/"
+                    className="text-decoration-none text-light"
+                    aria-current="page"
+                    title="Accueil"
+                    aria-label="Accueil"
+                  >
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Accueil
                     </span>
                   </Link>
-                  <Link to="/qui-suis-je" className="text-decoration-none text-light">
+                  <Link
+                    to="/qui-suis-je"
+                    className="text-decoration-none text-light"
+                    title="Qui suis-je ?"
+                    aria-label="Qui suis-je ?"
+                  >
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Qui suis-je ?
                     </span>
@@ -73,6 +84,8 @@ export const HambugerMenu: FC = () => {
                       className="text-decoration-none text-light"
                       link="https://amzn.eu/d/dd3iN4K"
                       analyticsEvent="open-amazon-on-my-book"
+                      title="Voir mon livre 'harmonie pédagogique' sur Amazon"
+                      aria-label="Voir mon livre 'harmonie pédagogique' sur Amazon"
                     >
                       Mon dernier livre
                     </OpenExternalLinkButton>

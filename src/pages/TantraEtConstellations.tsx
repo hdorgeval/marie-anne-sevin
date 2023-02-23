@@ -98,6 +98,7 @@ export const TantraEtConstellations: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
                         analyticsEvent="rdv-entretien-prealable"
+                        title="Prendre rendez-vous pour l'entretien préalable"
                       >
                         Prendre rendez-vous pour l'entretien préalable
                       </OpenExternalLinkButton>
@@ -188,6 +189,7 @@ export const TantraEtConstellations: FC = () => {
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/TFiyJeEoLSmG5QDCA"
                   analyticsEvent="pre-inscription-tantra-et-constellations"
+                  title="Se pré-inscrire au stage"
                 >
                   Se pré-inscrire au stage
                 </OpenExternalLinkButton>
@@ -249,6 +251,7 @@ export const TantraEtConstellations: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-0"
                         link="https://goo.gl/maps/jsFxkfk2EMvRNQsF6"
                         analyticsEvent="open-google-maps"
+                        title="Itinéraire via G. Maps"
                       >
                         Itinéraire via G. Maps
                       </OpenExternalLinkButton>
@@ -256,6 +259,7 @@ export const TantraEtConstellations: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-2"
                         link="https://ul.waze.com/ul?place=ChIJYYIhXYml5kcR0L9615bDcBw&ll=48.79570880%2C1.56493040&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
                         analyticsEvent="open-waze"
+                        title="Itinéraire via Waze"
                       >
                         Itinéraire via Waze
                       </OpenExternalLinkButton>
@@ -337,6 +341,7 @@ export const TantraEtConstellations: FC = () => {
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/TFiyJeEoLSmG5QDCA"
                   analyticsEvent="pre-inscription-tantra-et-constellations"
+                  title="Se pré-inscrire au stage"
                 >
                   Se pré-inscrire au stage
                 </OpenExternalLinkButton>

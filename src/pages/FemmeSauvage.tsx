@@ -99,6 +99,7 @@ export const FemmeSauvage: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
                         analyticsEvent="rdv-entretien-prealable"
+                        title="Prendre rendez-vous pour l'entretien préalable"
                       >
                         Prendre rendez-vous pour l'entretien préalable
                       </OpenExternalLinkButton>
@@ -147,6 +148,7 @@ export const FemmeSauvage: FC = () => {
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
                   link="https://forms.gle/fcZ58rbSjWJXmo9F7"
                   analyticsEvent="pre-inscription-femme-sauvage"
+                  title="Se pré-inscrire au stage"
                 >
                   Se pré-inscrire au stage
                 </OpenExternalLinkButton>

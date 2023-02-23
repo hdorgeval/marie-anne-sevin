@@ -25,6 +25,7 @@ export const RituelTantrique: FC = () => {
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
                 link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
                 analyticsEvent="rdv-rituel-tantrique"
+                title="Prendre rendez-vous"
               >
                 Prendre rendez-vous
               </OpenExternalLinkButton>
@@ -68,6 +69,7 @@ export const RituelTantrique: FC = () => {
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
                         analyticsEvent="rdv-entretien-prealable"
+                        title="Prendre rendez-vous pour l'entretien préalable"
                       >
                         Prendre rendez-vous pour l'entretien préalable
                       </OpenExternalLinkButton>
@@ -309,6 +311,7 @@ export const RituelTantrique: FC = () => {
                   className="btn btn-outline-light fw-bolder w-100 mt-1"
                   link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
                   analyticsEvent="rdv-rituel-tantrique"
+                  title="Prendre rendez-vous"
                 >
                   Prendre rendez-vous
                 </OpenExternalLinkButton>

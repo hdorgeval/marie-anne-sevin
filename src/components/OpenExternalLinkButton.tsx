@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 import { MyAnalyticsEvent, useAnalytics } from '../hooks/useAnalytics';
 
 export interface OpenExternalLinkButtonOwnProps {
@@ -6,16 +6,26 @@ export interface OpenExternalLinkButtonOwnProps {
   link: string;
   className?: string;
   children?: React.ReactNode;
+  title: string;
 }
 export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = ({
   link,
   className,
   children,
   analyticsEvent,
+  title,
+  ...rest
 }) => {
   const { trackOpenExternalLinkEvent, trackSimpleEvent } = useAnalytics();
   const linkClassNames = `${className}`;
 
+  const arialLabel = useMemo(() => {
+    const props = rest as Record<string, string>;
+    if (props && props['arial-label']) {
+      return props['arial-label'];
+    }
+    return 'Ouvrir le lien dans un autre onglet';
+  }, [rest]);
   const handleOnClick = useCallback(() => {
     trackOpenExternalLinkEvent(link);
     if (analyticsEvent) {
@@ -25,7 +35,14 @@ export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = 
 
   return (
     <>
-      <a className={linkClassNames} href={link} target="_blank" onClick={handleOnClick}>
+      <a
+        className={linkClassNames}
+        href={link}
+        target="_blank"
+        onClick={handleOnClick}
+        title={`${title ?? 'Ouvrir dans un autre onglet'}`}
+        aria-label={arialLabel}
+      >
         <div className="d-flex flex-row align-items-center justify-content-center">
           <div>{children}</div>
           <i className="bi bi-box-arrow-up-right ms-3"></i>
