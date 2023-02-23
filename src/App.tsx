@@ -8,6 +8,7 @@ import { RituelTantrique } from './pages/RituelTantrique';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
 import { Temoignages } from './pages/Temoignages';
+import { VoixEtBolsTibetains } from './pages/VoixEtBolsTibetains';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/tantra-et-constellations',
     element: <TantraEtConstellations />,
+  },
+  {
+    path: '/stage/voix-et-bols-tibetains',
+    element: <VoixEtBolsTibetains />,
   },
   {
     path: '/massage/rituel-tantrique',

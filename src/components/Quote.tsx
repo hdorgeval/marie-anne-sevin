@@ -30,7 +30,7 @@ export const Quote: FC<QuoteOwnProps> = ({ sentence, author }) => {
             <i className="bi bi-quote fs-5"></i>
           </sup>
           <span className="fs-5 fst-italic">{sentenceWithoutLastWord(words)}</span>
-          <span className="text-nowrap">
+          <span className="text-nowrap fs-5 fst-italic">
             {' '}
             {lastWord(words)}
             <sup className="ps-1">
@@ -45,3 +45,5 @@ export const Quote: FC<QuoteOwnProps> = ({ sentence, author }) => {
     </figure>
   );
 };
+
+Quote.displayName = 'Quote';

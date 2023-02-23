@@ -114,6 +114,11 @@ export const HambugerMenu: FC = () => {
                       Tantra et Constellations
                     </span>
                   </Link>
+                  <Link to="/stage/voix-et-bols-tibetains">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Bien être par la voix et bols tibétains
+                    </span>
+                  </Link>
                 </div>
               </li>
 
