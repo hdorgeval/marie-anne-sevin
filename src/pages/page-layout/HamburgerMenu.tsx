@@ -20,7 +20,7 @@ export const HambugerMenu: FC = () => {
         {isOnHomePage ? (
           <div className="flex-grow-1"></div>
         ) : (
-          <Link to="/" className="navbar-brand text-reset">
+          <Link to="/" className="navbar-brand text-reset" aria-label="Accueil" title="Accueil">
             <i className="bi bi-house-up fs-3"></i>
           </Link>
         )}
@@ -30,6 +30,8 @@ export const HambugerMenu: FC = () => {
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar"
+          title="Menu"
+          aria-label="Menu"
         >
           <span className="navbar-toggler-icon fs-8"></span>
         </button>

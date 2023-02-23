@@ -265,7 +265,7 @@ export const TantraEtConstellations: FC = () => {
 
                 <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
-                    <img src={salle1} className="card-img-top" alt="..."></img>
+                    <img src={salle1} className="card-img-top" alt="salle 1"></img>
                     <div className="card-body">
                       <Description>
                         La vallée rose est un merveilleux lieu de stage pouvant accueillir jusqu'à
@@ -276,7 +276,7 @@ export const TantraEtConstellations: FC = () => {
                 </TransparentListGroupItem>
                 <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
-                    <img src={exterieur1} className="card-img-top" alt="..."></img>
+                    <img src={exterieur1} className="card-img-top" alt="exterieur"></img>
                     <div className="card-body">
                       <Description>
                         Les couchages se font en chambres, chalets, caravanes aménagées pour 2 à 4
@@ -289,7 +289,7 @@ export const TantraEtConstellations: FC = () => {
                 </TransparentListGroupItem>
                 <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
-                    <img src={exterieur2} className="card-img-top" alt="..."></img>
+                    <img src={exterieur2} className="card-img-top" alt="exterieur"></img>
                     <div className="card-body">
                       <Description>
                         La nature est généreuse et nous offres sa beauté végétale, minérale et
@@ -318,7 +318,7 @@ export const TantraEtConstellations: FC = () => {
                 </TransparentListGroupItem>
                 <TransparentListGroupItem className="py-3">
                   <div className="card bg-color-dark-semi-transparent">
-                    <img src={chalet1} className="card-img-top" alt="..."></img>
+                    <img src={chalet1} className="card-img-top" alt="chalet"></img>
                     <div className="card-body">
                       <Description>
                         Afin de préserver l'harmonie, nous prendrons soin de ce magnifique lieu en

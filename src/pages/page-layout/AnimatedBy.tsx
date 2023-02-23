@@ -60,7 +60,7 @@ interface ImgOwnProps {
   src: string;
 }
 const Img: FC<ImgOwnProps> = ({ src }) => {
-  return <img src={src} className="card-img" />;
+  return <img src={src} className="card-img" alt="photo animateur" />;
 };
 Img.displayName = 'Img';
 AnimatedBy.Img = Img;
