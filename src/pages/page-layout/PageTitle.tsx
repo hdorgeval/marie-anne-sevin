@@ -6,9 +6,9 @@ export interface PageTitleProps {
 }
 export const PageTitle: FC<PageTitleProps> = ({ className, children }) => {
   return (
-    <span className={`text-uppercase text-light fs-1 fw-bolder font-raleway ${className}`}>
+    <h1 className={`text-uppercase text-light fs-1 fw-bolder font-raleway mt-1 ${className}`}>
       {children}
-    </span>
+    </h1>
   );
 };
 

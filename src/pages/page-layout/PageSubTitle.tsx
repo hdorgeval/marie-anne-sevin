@@ -5,9 +5,7 @@ export interface PageSubTitleProps {
   children: React.ReactNode;
 }
 export const PageSubTitle: FC<PageSubTitleProps> = ({ className, children }) => {
-  return (
-    <span className={`fs-2 fw-bolder text-light font-monserrat ${className}`}>{children}</span>
-  );
+  return <h2 className={`fs-2 fw-bolder text-light font-monserrat ${className}`}>{children}</h2>;
 };
 
 PageSubTitle.displayName = 'PageSubTitle';

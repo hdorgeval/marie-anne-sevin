@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: FC = () => {
   return (
@@ -84,8 +85,13 @@ export const Footer: FC = () => {
           </span>
         </div>
 
-        <span className="fs-7 fw-lighter mb-2">
+        <span className="fs-7 fw-lighter mb-1">
           <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin - 2023
+        </span>
+        <span className="fs-7 mb-2">
+          <Link to="/mentions-legales" className="nav-link">
+            <span className="">Mentions légales</span>
+          </Link>
         </span>
       </div>
     </footer>

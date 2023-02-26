@@ -3,6 +3,7 @@ import { UserContext, useUserContextInfo } from './contexts/userContext';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { LandingPage } from './pages/LandingPage';
+import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <LandingPage />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: '/mentions-legales',
+    element: <MentionsLegales />,
   },
   {
     path: '/qui-suis-je',
