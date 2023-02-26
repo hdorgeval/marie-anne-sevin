@@ -28,7 +28,7 @@ export const MentionsLegales: FC = () => {
             <p>
               Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin
               2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., il est porté à la
-              connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site
+              connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site
               https://marie-anne-sevin.com , ci-après le "Site", les présentes mentions légales.
             </p>
             <p>
@@ -36,7 +36,9 @@ export const MentionsLegales: FC = () => {
               intégrale et sans réserve des présentes mentions légales.
             </p>
             <p> Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».</p>
-            <h3 className="fs-5 text-emphasize pt-2">ARTICLE 1 - L'EDITEUR</h3>
+            <h3 className="fs-5 text-emphasize pt-2 fw-bolder border-bottom border-bottom-1 pb-1 text-uppercase">
+              ARTICLE 1 - l'éditeur
+            </h3>
             <p>
               L'édition du Site est assurée par A.R.T.S SARL unipersonnelle au capital de 3000
               euros, immatriculée au Registre du Commerce et des Sociétés de Trappes sous le numéro
@@ -46,19 +48,25 @@ export const MentionsLegales: FC = () => {
             <p>Adresse e-mail : arts78.mas@gmail.com.</p>
             <p>N° de TVA intracommunautaire : FR86899171433 </p>
             <p>Le Directeur de la publication est Marie-Anne Sévin ci-après l'"Editeur".</p>
-            <h3 className="fs-5 text-emphasize pt-2">ARTICLE 2 - L'HEBERGEUR</h3>
-            <p>
+            <h3 className="fs-5 text-emphasize pt-2 fw-bolder border-bottom border-bottom-1 pb-1 text-uppercase">
+              ARTICLE 2 - l'hébergeur
+            </h3>
+            <p className="mt-3">
               L'hébergeur du Site est la société Netlify Inc, dont le siège social est situé au 44
               Montgomery Street, Suite 300, San Francisco, California 94104
             </p>
             <p> Adresse mail de contact : support@netlify.com</p>
-            <h3 className="fs-5 text-emphasize pt-2">ARTICLE 3 - ACCES AU SITE</h3>
-            <p>
+            <h3 className="fs-5 text-emphasize pt-2 fw-bolder border-bottom border-bottom-1 pb-1 text-uppercase">
+              ARTICLE 3 - accès au site
+            </h3>
+            <p className="mt-3">
               Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure,
               interruption programmée ou non et pouvant découlant d'une nécessité de maintenance.
             </p>
-            <h3 className="fs-5 text-emphasize pt-2">ARTICLE 4 - COLLECTE DES DONNEES</h3>
-            <p>
+            <h3 className="fs-5 text-emphasize pt-2 fw-bolder border-bottom border-bottom-1 pb-1 text-uppercase">
+              ARTICLE 4 - collecte des données
+            </h3>
+            <p className="mt-3">
               Le Site assure à l'Utilisateur une collecte et un traitement d'informations
               personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6
               janvier 1978 relative à l'informatique, aux fichiers et aux libertés.
