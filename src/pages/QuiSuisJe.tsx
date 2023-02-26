@@ -34,7 +34,7 @@ export const QuiSuisJe: FC = () => {
               <PageSubTitle>Qui suis-je ?</PageSubTitle>
             </div>
             <div className="" style={{ minHeight: '15rem' }}></div>
-            <div className="fs-6 fw-bolder font-playfair mt-4 mx-4 text-start text-light">
+            <div className="fs-6 fw-bolder font-monserrat mt-4 mx-4 text-start text-light">
               <p className="">
                 Musicienne, masseuse, thérapeute, formatrice et auteure, je conçois et j'anime des
                 ateliers pédagogiques et thérapeutiques.
