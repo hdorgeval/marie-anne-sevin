@@ -6,6 +6,7 @@ import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { Quote } from '../components/Quote';
 import { AnimatedBy } from './page-layout/AnimatedBy';
+import { ENTRETIEN_PREALABLE_CALENDAR_LINK } from './page-layout/CalendarLinks';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
@@ -93,7 +94,7 @@ export const SonsMantrasTantra: FC = () => {
                       </span>
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
-                        link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
+                        link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
                         analyticsEvent="rdv-entretien-prealable"
                         title="Prendre rendez-vous pour l'entretien préalable"
                       >
