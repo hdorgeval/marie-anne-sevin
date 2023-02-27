@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
+import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { LandingPage } from './pages/LandingPage';
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: '/massage/rituel-tantrique',
     element: <RituelTantrique />,
+  },
+  {
+    path: '/constellations',
+    element: <Constellations />,
   },
 ]);
 

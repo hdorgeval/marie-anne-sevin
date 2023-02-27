@@ -107,6 +107,11 @@ export const HambugerMenu: FC = () => {
                       Rituel tantrique
                     </span>
                   </Link>
+                  <Link to="/constellations">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Constellations
+                    </span>
+                  </Link>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
