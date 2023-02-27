@@ -67,7 +67,7 @@ export const RituelTantrique: FC = () => {
                       <span className="">Rdv validé uniquement après entretien téléphonique</span>
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
-                        link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
+                        link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
                         analyticsEvent="rdv-entretien-prealable"
                         title="Prendre rendez-vous pour l'entretien préalable"
                       >
@@ -309,7 +309,7 @@ export const RituelTantrique: FC = () => {
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-1"
-                  link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2dAToavt_dxlH-49lREbDSPu5QvfXWkJt1Z4jsYVV0l1yIuYbwK1dLxVME5OKAWfNYjTRaEWxk"
+                  link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
                   analyticsEvent="rdv-rituel-tantrique"
                   title="Prendre rendez-vous"
                 >
