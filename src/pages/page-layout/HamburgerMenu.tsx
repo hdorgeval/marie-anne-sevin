@@ -25,7 +25,7 @@ export const HambugerMenu: FC = () => {
           </Link>
         )}
         <button
-          className="navbar-toggler"
+          className="navbar-toggler pt-1-half border border-secondary"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
