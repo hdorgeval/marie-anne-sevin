@@ -279,7 +279,7 @@ export const RituelTantrique: FC = () => {
                     </div>
                     <div className="card-body">
                       <Description>
-                        Pour moi, le massage tantrique est un allier thérapeutique qui vient en
+                        Pour moi, le massage tantrique est un allié thérapeutique qui vient en
                         complément d'une thérapie adaptée à votre situation. Pour ma part, je peux
                         vous accompagner avec les constellations en amont d'un massage tantrique si
                         vous sentez qu'il y a besoin de clarifier des pans de votre vie ou de
