@@ -13,7 +13,6 @@ export const HambugerMenu: FC = () => {
   const isOnHomePage = useMemo(() => {
     return location.pathname === '/';
   }, [location.pathname]);
-
   return (
     <nav className="navbar navbar-dark sticky-top position-absolute top-0 end-0 w-100">
       <div className="container-fluid pe-0 me-1 d-flex flex-row">
@@ -32,6 +31,7 @@ export const HambugerMenu: FC = () => {
           aria-controls="offcanvasDarkNavbar"
           title="Menu"
           aria-label="Menu"
+          data-tour-id="step-1"
         >
           <span className="navbar-toggler-icon fs-8"></span>
         </button>

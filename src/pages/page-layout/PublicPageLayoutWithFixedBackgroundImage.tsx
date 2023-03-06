@@ -1,5 +1,6 @@
 import { FC, useMemo } from 'react';
 import { usePublicPage } from '../../contexts/userContext';
+import { useGuidedTour } from '../../hooks/useGuidedTour';
 import { useTitle } from '../../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
@@ -25,6 +26,7 @@ export const PublicPageLayoutWithFixedBackgroundImage: FC<PageLyoutOwnProps> = (
   htmlTitle,
 }) => {
   usePublicPage();
+  useGuidedTour();
   useTitle(htmlTitle);
 
   const defaultBackgroundOverlay =

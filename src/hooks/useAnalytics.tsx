@@ -9,7 +9,8 @@ export type MyAnalyticsEvent =
   | 'rdv-rituel-tantrique'
   | 'open-amazon-on-my-book'
   | 'open-google-maps'
-  | 'open-waze';
+  | 'open-waze'
+  | 'has-completed-guided-tour';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {

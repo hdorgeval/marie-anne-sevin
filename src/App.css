@@ -13,3 +13,43 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
+.introjs-tooltip {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: var(--bs-gray) !important;
+  background-color: rgba(25, 25, 25, 0.8) !important;
+}
+
+.introjs-tooltiptext,
+.introjs-tooltipbuttons,
+.introjs-donebutton,
+.introjs-nextbutton {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.introjs-helperLayer {
+  box-shadow: none !important;
+  z-index: 98 !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-width: 0;
+  max-height: 0;
+}
+
+.introjs-overlay {
+  z-index: 98 !important;
+}
+
+.introjs-arrow.left,
+.introjs-arrow.right {
+  top: 10px !important;
+}
+
+.introjs-arrow {
+  border-color: transparent transparent transparent rgba(200, 200, 200, 0.5) !important;
+}
+
+.introjs-skipbutton:hover {
+  color: var(--bs-emphasis-color) !important;
+}

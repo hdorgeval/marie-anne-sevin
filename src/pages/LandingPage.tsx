@@ -1,12 +1,14 @@
 import { FC } from 'react';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { usePublicPage } from '../contexts/userContext';
+import { useGuidedTour } from '../hooks/useGuidedTour';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
+  useGuidedTour();
   return (
     <>
       <HambugerMenu />

@@ -11,5 +11,5 @@ export const useTitle = (htmlPageTitle: string) => {
         document.title = previousTitle;
       }
     };
-  });
+  }, [htmlPageTitle]);
 };
