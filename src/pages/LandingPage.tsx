@@ -40,6 +40,7 @@ export const LandingPage: FC = () => {
               className="btn btn-outline-light fw-bolder w-75 mt-4"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
               title="Me contacter ou prendre un rendez-vous"
+              analyticsEvent="rdv-ou-contact"
             >
               <div className="d-flex flex-column align-items-center">
                 <span>Me contacter</span>

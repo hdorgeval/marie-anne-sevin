@@ -8,9 +8,16 @@ export type MyAnalyticsEvent =
   | 'rdv-entretien-prealable'
   | 'rdv-rituel-tantrique'
   | 'rdv-constellation'
+  | 'rdv-ou-contact'
   | 'open-amazon-on-my-book'
   | 'open-google-maps'
   | 'open-waze'
+  | 'open-my-instagram'
+  | 'open-my-whatsapp'
+  | 'open-my-youtube'
+  | 'open-my-facebook'
+  | 'appel-telephone'
+  | 'envoie-mail'
   | 'has-completed-guided-tour';
 
 export type CommandType = 'js' | 'config' | 'event';
