@@ -24,7 +24,7 @@ export const Constellations: FC = () => {
             <PageSubTitle>
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
-                link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uQRFb4GoXmrgYiPIJt_DnOIacVlLKdYMLMa0DW3M2r7kEi01gTYdSfffFn1Dbxh5YyTEkMGTO"
+                link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
                 analyticsEvent="rdv-rituel-tantrique"
                 title="Prendre rendez-vous"
               >
@@ -74,7 +74,7 @@ export const Constellations: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
-                        link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uQRFb4GoXmrgYiPIJt_DnOIacVlLKdYMLMa0DW3M2r7kEi01gTYdSfffFn1Dbxh5YyTEkMGTO"
+                        link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
                         analyticsEvent="rdv-rituel-tantrique"
                         title="Prendre rendez-vous"
                       >

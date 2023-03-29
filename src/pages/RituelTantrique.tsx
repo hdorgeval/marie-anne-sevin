@@ -24,7 +24,7 @@ export const RituelTantrique: FC = () => {
             <PageSubTitle>
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
-                link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
+                link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
                 analyticsEvent="rdv-rituel-tantrique"
                 title="Prendre rendez-vous"
               >
@@ -310,7 +310,7 @@ export const RituelTantrique: FC = () => {
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-1"
-                  link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1JLbTxkUTmtV-c_3odM0JgIL8UbnGHxFwVcGfD2vHafAG_MJwTXO07QK12-3o35a9NPO5SfLMm"
+                  link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
                   analyticsEvent="rdv-rituel-tantrique"
                   title="Prendre rendez-vous"
                 >
