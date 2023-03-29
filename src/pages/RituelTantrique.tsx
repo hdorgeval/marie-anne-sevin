@@ -69,7 +69,7 @@ export const RituelTantrique: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                        analyticsEvent="rdv-entretien-prealable"
+                        analyticsEvent="rdv-rituel-tantrique"
                         title="Prendre rendez-vous pour l'entretien préalable"
                       >
                         Prendre rendez-vous pour l'entretien préalable

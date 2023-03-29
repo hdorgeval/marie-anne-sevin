@@ -7,6 +7,7 @@ export type MyAnalyticsEvent =
   | 'pre-inscription-femme-sauvage'
   | 'rdv-entretien-prealable'
   | 'rdv-rituel-tantrique'
+  | 'rdv-constellation'
   | 'open-amazon-on-my-book'
   | 'open-google-maps'
   | 'open-waze'

@@ -25,7 +25,7 @@ export const Constellations: FC = () => {
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
                 link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                analyticsEvent="rdv-rituel-tantrique"
+                analyticsEvent="rdv-constellation"
                 title="Prendre rendez-vous"
               >
                 Prendre rendez-vous
@@ -75,7 +75,7 @@ export const Constellations: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                        analyticsEvent="rdv-rituel-tantrique"
+                        analyticsEvent="rdv-constellation"
                         title="Prendre rendez-vous"
                       >
                         Prendre rendez-vous
@@ -121,7 +121,7 @@ export const Constellations: FC = () => {
                       <OpenExternalLinkButton
                         className="btn btn-outline-light fw-bolder w-100 mt-1"
                         link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                        analyticsEvent="rdv-entretien-prealable"
+                        analyticsEvent="rdv-constellation"
                         title="Prendre rendez-vous pour l'entretien préalable"
                       >
                         Prendre rendez-vous pour l'entretien préalable
