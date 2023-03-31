@@ -1,24 +1,25 @@
 import { useCallback } from 'react';
 
 export type MyAnalyticsEvent =
-  | 'open-external-link'
-  | 'pre-inscription-tantra-et-constellations'
-  | 'pre-inscription-sons-mantras-tantra'
-  | 'pre-inscription-femme-sauvage'
-  | 'rdv-entretien-prealable'
-  | 'rdv-rituel-tantrique'
-  | 'rdv-constellation'
-  | 'rdv-ou-contact'
+  | 'appel-telephone'
+  | 'envoie-mail'
+  | 'has-completed-guided-tour'
   | 'open-amazon-on-my-book'
+  | 'open-external-link'
   | 'open-google-maps'
-  | 'open-waze'
+  | 'open-my-facebook'
   | 'open-my-instagram'
   | 'open-my-whatsapp'
   | 'open-my-youtube'
-  | 'open-my-facebook'
-  | 'appel-telephone'
-  | 'envoie-mail'
-  | 'has-completed-guided-tour';
+  | 'open-waze'
+  | 'pre-inscription-femme-sauvage'
+  | 'pre-inscription-soiree-tantra'
+  | 'pre-inscription-sons-mantras-tantra'
+  | 'pre-inscription-tantra-et-constellations'
+  | 'rdv-constellation'
+  | 'rdv-entretien-prealable'
+  | 'rdv-ou-contact'
+  | 'rdv-rituel-tantrique';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {

@@ -112,6 +112,11 @@ export const HambugerMenu: FC = () => {
                       Constellations
                     </span>
                   </Link>
+                  <Link to="/soiree-tantra">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Soirée Tantra
+                    </span>
+                  </Link>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">

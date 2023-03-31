@@ -7,6 +7,7 @@ import { LandingPage } from './pages/LandingPage';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
+import { SoireeTantra } from './pages/SoireeTantra';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
 import { Temoignages } from './pages/Temoignages';
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: '/constellations',
     element: <Constellations />,
+  },
+  {
+    path: '/soiree-tantra',
+    element: <SoireeTantra />,
   },
 ]);
 
