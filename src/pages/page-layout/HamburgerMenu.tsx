@@ -95,6 +95,28 @@ export const HambugerMenu: FC = () => {
                       Témoignages
                     </span>
                   </Link>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <OpenExternalLinkButton
+                      className="text-decoration-none text-light"
+                      link="https://www.meditationfrance.com/journal/article04.htm"
+                      analyticsEvent="open-meditattion-france"
+                      title="Voir mon article sur Méditation France"
+                      aria-label="Voir mon article sur Méditation France"
+                    >
+                      Meditation France
+                    </OpenExternalLinkButton>
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <OpenExternalLinkButton
+                      className="text-decoration-none text-light"
+                      link="https://marmitefm.fr/podcasts/sacrement-feminin-180/la-sexualite-sacree-septembre-2022-784"
+                      analyticsEvent="open-podcast-sexualité-sacrée"
+                      title="Ecouter mon podcast sur la sexualité sacrée"
+                      aria-label="Ecouter mon podcast sur la sexualité sacrée"
+                    >
+                      Podcast: la sexualité sacrée
+                    </OpenExternalLinkButton>
+                  </span>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
