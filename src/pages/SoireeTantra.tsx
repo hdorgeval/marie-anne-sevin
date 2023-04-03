@@ -21,7 +21,7 @@ export const SoireeTantra: FC = () => {
             <PageTitle>Soirée Tantra</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Mardi 4 avril 2023</PageSubTitle>
+            <PageSubTitle>Mardi 16 mai 2023</PageSubTitle>
           </div>
           <div>
             <PageSubTitle>
@@ -98,7 +98,7 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-calendar-week fs-1 me-3"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaines dates :</span>
-                      <span className="ps-1 text-light">16 mai 2023</span>
+                      <span className="ps-1 text-light"></span>
                       <span className="ps-1 text-light">6 juin 2023</span>
                       <span className="ps-1 text-light">27 juin 2023</span>
                     </div>
