@@ -117,6 +117,14 @@ export const HambugerMenu: FC = () => {
                       Podcast: la sexualité sacrée
                     </OpenExternalLinkButton>
                   </span>
+                  <span className="badge rounded-pill text-bg-dark fs-6  m-0 p-0 pt-1">
+                    <audio controls={true} className="w-80 ps-4" style={{ height: '1.5rem' }}>
+                      <source
+                        src="https://hearthis.at/marmitefm884/sacrement-feminin-202209-5-la-sexualite-sacree-v2/stream.mp3?s=coF&t=1664204379"
+                        type="audio/mpeg"
+                      ></source>
+                    </audio>
+                  </span>
                 </div>
               </li>
               <li className="nav-item w-100 text-start mt-4">
@@ -124,6 +132,11 @@ export const HambugerMenu: FC = () => {
                   Particuliers
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <Link to="/massage/massage-meditatif">
+                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                      Massage méditatif
+                    </span>
+                  </Link>
                   <Link to="/massage/rituel-tantrique">
                     <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
                       Rituel tantrique

@@ -48,6 +48,12 @@
     <priority>0.7</priority>
   </url>
 
+    <url>
+    <loc>https://marie-anne-sevin.com/massage/massage-meditatif</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://marie-anne-sevin.com/stage/voix-et-bols-tibetains</loc>
     <changefreq>weekly</changefreq>

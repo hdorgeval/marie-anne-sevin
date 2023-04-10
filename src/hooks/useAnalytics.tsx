@@ -20,6 +20,7 @@ export type MyAnalyticsEvent =
   | 'pre-inscription-tantra-et-constellations'
   | 'rdv-constellation'
   | 'rdv-entretien-prealable'
+  | 'rdv-massage-meditatif'
   | 'rdv-ou-contact'
   | 'rdv-rituel-tantrique';
 

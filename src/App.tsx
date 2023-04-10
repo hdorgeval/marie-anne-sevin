@@ -4,6 +4,7 @@ import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { LandingPage } from './pages/LandingPage';
+import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: '/massage/rituel-tantrique',
     element: <RituelTantrique />,
+  },
+  {
+    path: '/massage/massage-meditatif',
+    element: <MassageMeditatif />,
   },
   {
     path: '/constellations',

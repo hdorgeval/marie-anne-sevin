@@ -7,25 +7,25 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
-export const RituelTantrique: FC = () => {
+export const MassageMeditatif: FC = () => {
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
-        backgroundImageUrl="/images/background-rituel-tantrique.webp"
+        backgroundImageUrl="/images/background-massage-meditatif.png"
         backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.0))"
-        backgroundPosition="33%"
-        htmlTitle="Rituel tantrique | Massage | Marie-Anne Sévin"
+        backgroundPosition="50%"
+        htmlTitle="Massage méditatif | Massage | Marie-Anne Sévin"
       >
         <div>
           <div className="mt-4 pt-4">
-            <PageTitle>Rituel tantrique</PageTitle>
+            <PageTitle>Massage méditatif</PageTitle>
           </div>
           <div>
             <PageSubTitle>
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
                 link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                analyticsEvent="rdv-rituel-tantrique"
+                analyticsEvent="rdv-massage-meditatif"
                 title="Prendre rendez-vous"
               >
                 Prendre rendez-vous
@@ -39,7 +39,7 @@ export const RituelTantrique: FC = () => {
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-clock-history fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle pt-1">
-                      <span className="text-nowrap fs-7">3 heures</span>
+                      <span className="text-nowrap fs-7">1h 30</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -59,7 +59,7 @@ export const RituelTantrique: FC = () => {
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
-                      <span className="">250€</span>
+                      <span className="">120€</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -82,26 +82,20 @@ export const RituelTantrique: FC = () => {
               </ul>
               <div className="card-body pt-2">
                 <Description>
-                  Bien plus qu'un massage tantrique, ce rituel est une invitation à célébrer la
-                  personne que vous êtes dans l'harmonisation corps, cœur, conscience. Ce massage se
-                  déroule au sol, sur une toile, à l'huile de coco désodorisée et chaude après un
-                  temps de méditation et de connexion masseur-massé. Tout le corps peut être massé
-                  et la nudité est possible dans le respect du cadre que nous co-construirons lors
-                  de l'entretien téléphonique préalable. L'objectif de ce massage est d'accompagner
-                  votre énergie vitale ou énergie sexuelle dans votre corps, de la relier au cœur et
-                  à la conscience afin qu'elle vous nourrisse voire vous guérisse. Le temps de
-                  massage est d'environ 2h, précédé d'un temps de brief et douche et suivi d'un
-                  temps d'intégration et de débrief. À l'issue de ce rendez-vous, je vous invite à
-                  prévoir un sas de "rien" avant de replonger dans votre activité. Je masse les
-                  personnes quelque soit leur genre, leur âge ou leur physique pour peu qu'elles
-                  soient majeures, en capacité de mobilité et de décision. Je ne propose pas de
-                  prestation sexuelle (ni génitale, ni bucco-génitale).
+                  Ce massage à l'huile de coco chaude désodorisée se pratique sur table et dure
+                  environ une heure. Après un temps de méditation invitant à la connexion au corps
+                  et à la respiration, le corps et l'être sont célébrés à travers un toucher
+                  méditatif et présent d'une extrême lenteur. Tout le corps est considéré dans sa
+                  globalité et l'énergie est accompagnée dans toutes les directions vous procurant
+                  une sensation de relaxation et de vitalité. Un temps de brief, de douche et de
+                  débrief entourent ce temps de massage. Je ne propose pas de prestation sexuelle
+                  (ni génitale, ni bucco-génitale).
                 </Description>
               </div>
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">Ce rituel tantrique est-il pour moi ?</h5>
+                <h5 className="card-title mb-0 fw-bolder">Ce massage est-il pour moi ?</h5>
                 <h5 className="card-title mb-0 fw-bolder mt-3">10 questions fréquentes</h5>
               </div>
               <ul className="list-group list-group-flush">
@@ -133,10 +127,8 @@ export const RituelTantrique: FC = () => {
                         construit ensemble. Si vous ne souhaitez pas que certaines parties de votre
                         corps soient touchées, je prendrai soin de m'éloigner de la zone. De mon
                         coté, je suis également libre de masser ou pas tout votre corps selon mes
-                        limites ou les lésions rencontrées. à tout moment, vous et moi pouvons
-                        demander ou refuser de masser une zone du corps. Dans le massage tantrique,
-                        tout le corps est considéré et la même présence et le même soin sont offerts
-                        à toutes les parties du corps.
+                        limites ou les lésions rencontrées. À tout moment, vous et moi pouvons
+                        demander ou refuser de masser une zone du corps.
                       </Description>
                     </div>
                   </div>
@@ -204,37 +196,14 @@ export const RituelTantrique: FC = () => {
 
                 <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
-                    <div className="card-header fs-5">
-                      6. Que se passe-t-il si je ne peux contrôler ce qui se passe dans mon corps ?
-                    </div>
+                    <div className="card-header fs-5">6. Le sexe est-il massé ?</div>
                     <div className="card-body">
-                      <Description
-                        emphasizedWords={[
-                          'Pour les hommes',
-                          'Pour les femmes',
-                          'Vous êtes non-binaire, trans ou en questionnement',
-                        ]}
-                        emphasizedWordsCssClassNames={['text-info-emphasis']}
-                      >
-                        Lors de ce rituel, vous êtes invité à laisser votre corps vivre le massage.
-                        Si des mouvements ou sons vous viennent, laissez les circuler ;
-                        j'accompagnerai le flow. En revanche, si vos mouvements deviennent trop
-                        compliqués à suivre, je vous inviterai à vous déposer sur la toile et à
-                        revenir au contact de mes mains. Pour les hommes : si vous avez une
-                        érection, ce n'est pas grave. Si vous n'avez pas d'érection, ce n'est pas
-                        grave. Concernant l'éjaculation : mon invitation est de garder votre énergie
-                        vitale en l'invitant à remonter le long du canal énergétique et ainsi d'en
-                        nourrir tout votre corps et donc d'éviter l'éjaculation. Si cela arrive, ce
-                        n'est pas grave. Je rappelle ici qu'il n'y a pas de prestation sexuelle et
-                        donc pas de masturbation dans ce massage. Pour les femmes : si vous avez vos
-                        règles, vous pouvez vous faire masser et nous définissons ce qui est
-                        confortable pour chacune. Si vous avez un ou des orgasmes, ce n'est pas
-                        grave. Si vous n'avez pas d'orgasme, ce n'est pas grave. Concernant
-                        l'éjaculation : Si cela arrive, c'est que votre corps est dans un
-                        relâchement total. Il n'y a pas de masturbation pendant ce massage. Vous
-                        êtes non-binaire, trans ou en questionnement : au delà de tous les points
-                        évoqués ci-dessus, je vous accompagnerai au mieux dans le respect de vos
-                        besoins.
+                      <Description>
+                        Lors de ce massage, il n'y a pas de massage spécifique du sexe, des mains ou
+                        des oreilles. Le corps est massé dans sa globalité dans un toucher très lent
+                        , presque immobile. Une écoute au niveau du périnée (en contact ou à
+                        distance) est possible tout comme le contact au niveau des genoux ou du cœur
+                        en fonction du cadre que nous avons posé ensemble.
                       </Description>
                     </div>
                   </div>
@@ -256,19 +225,41 @@ export const RituelTantrique: FC = () => {
 
                 <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
-                    <div className="card-header fs-5">
-                      8. Se faire masser en massage tantrique, est-ce tromper son partenaire ?
+                    <div className="card-header fs-5">8. J'ai peur des réactions de mon corps</div>
+                    <div className="card-body">
+                      <Description
+                        emphasizedWords={[
+                          'Pour les hommes',
+                          'Pour les femmes',
+                          'Vous êtes non-binaire, trans ou en questionnement',
+                        ]}
+                        emphasizedWordsCssClassNames={['text-info-emphasis']}
+                      >
+                        Lors de ce massage, vous êtes invité à laisser votre corps vivre le massage.
+                        Si des mouvements ou sons vous viennent, laissez les circuler ;
+                        j'accompagnerai le flow. S'ils dépassent le cadre de mon massage je vous
+                        inviterai à respirer dans l'expérience et à vous déposer sur la table. Pour
+                        les hommes : si vous avez une érection, ce n'est pas grave. Si vous n'avez
+                        pas d'érection, ce n'est pas grave. Je rappelle ici qu'il n'y a pas de
+                        prestation sexuelle et donc pas de masturbation dans ce massage. Pour les
+                        femmes : si vous avez vos règles, vous pouvez vous faire masser et nous
+                        définissons ce qui est confortable pour chacune. Il n'y a pas de
+                        masturbation pendant ce massage. Vous êtes non-binaire, trans ou en
+                        questionnement : au delà de tous les points évoqués ci-dessus, je vous
+                        accompagnerai au mieux dans le respect de vos besoins.
+                      </Description>
                     </div>
+                  </div>
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="pb-2">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <div className="card-header fs-5">9. Peut-il y avoir réciprocité ?</div>
                     <div className="card-body">
                       <Description>
-                        Le rituel tantrique est une expérience physique et spirituelle qui amène une
-                        certaine intimité entre masseur et massé. Le cocktail hormonal déclenché par
-                        ce massage peut procurer un sentiment d'attachement. C'est tout à fait
-                        normal. Cependant, il est important d'être conscient que cette expérience a
-                        un début et une fin et que ces phénomènes se dissiperont dans les heures qui
-                        suivent le massage. Ces sensations vous appartiennent et il est bon d'éviter
-                        de les projeter sur le masseur. Ce dernier ouvre des portes : si c'est en
-                        vous, c'est que vous pouvez retrouver le chemin, seul : vous avez la clef.
+                        Dans cette expérience, vous êtes invité à l'état de réceptivité du massage.
+                        Il n'y a pas de réciprocité car cette dernière vous ferait sortir de votre
+                        expérience en projetant votre attention vers l'extérieur.
                       </Description>
                     </div>
                   </div>
@@ -277,31 +268,13 @@ export const RituelTantrique: FC = () => {
                 <TransparentListGroupItem className="pb-2">
                   <div className="card bg-color-dark-semi-transparent">
                     <div className="card-header fs-5">
-                      9. J'ai été abusé, le massage tantrique peut il m'aider à soigner ce trauma ?
+                      10. Est-il possible de vivre ce massage avec un ou une partenaire ?
                     </div>
                     <div className="card-body">
                       <Description>
-                        Pour moi, le massage tantrique est un allié thérapeutique qui vient en
-                        complément d'une thérapie adaptée à votre situation. Pour ma part, je peux
-                        vous accompagner avec les constellations en amont d'un massage tantrique si
-                        vous sentez qu'il y a besoin de clarifier des pans de votre vie ou de
-                        l'héritage social et familial que vous portez.
-                      </Description>
-                    </div>
-                  </div>
-                </TransparentListGroupItem>
-
-                <TransparentListGroupItem className="pb-2">
-                  <div className="card bg-color-dark-semi-transparent">
-                    <div className="card-header fs-5">
-                      10. Y a-t-il des risques de devenir accroc au massage tantrique ?
-                    </div>
-                    <div className="card-body">
-                      <Description>
-                        Certaines personnes ont besoin de revenir régulièrement pour leur équilibre
-                        et leur bien-être. Lorsque cela arrive, je prends le temps de questionner la
-                        notion de dépendance au massage ou au masseur afin que la personne fasse le
-                        choix de revenir ou pas.
+                        Ce massage est une expérience personnelle entre le masseur et le massé. En
+                        revanche, si vous souhaitez apprendre ce toucher et le partager, je vous
+                        propose un cursus de 3 sessions de 3h de transmission du toucher méditatif.
                       </Description>
                     </div>
                   </div>
@@ -313,7 +286,7 @@ export const RituelTantrique: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-1"
                   link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                  analyticsEvent="rdv-rituel-tantrique"
+                  analyticsEvent="rdv-massage-meditatif"
                   title="Prendre rendez-vous"
                 >
                   Prendre rendez-vous
@@ -327,4 +300,4 @@ export const RituelTantrique: FC = () => {
   );
 };
 
-RituelTantrique.displayName = 'RituelTantrique';
+MassageMeditatif.displayName = 'MassageMeditatif';
