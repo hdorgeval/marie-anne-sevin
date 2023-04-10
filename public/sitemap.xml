@@ -48,8 +48,14 @@
     <priority>0.7</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://marie-anne-sevin.com/massage/massage-meditatif</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+    <url>
+    <loc>https://marie-anne-sevin.com/formation/massage-meditatif</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -65,7 +65,7 @@ export const HambugerMenu: FC = () => {
                     title="Accueil"
                     aria-label="Accueil"
                   >
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Accueil
                     </span>
                   </Link>
@@ -75,11 +75,11 @@ export const HambugerMenu: FC = () => {
                     title="Qui suis-je ?"
                     aria-label="Qui suis-je ?"
                   >
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Qui suis-je ?
                     </span>
                   </Link>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
                       link="https://amzn.eu/d/dd3iN4K"
@@ -91,11 +91,11 @@ export const HambugerMenu: FC = () => {
                     </OpenExternalLinkButton>
                   </span>
                   <Link to="/temoignages" className="text-decoration-none text-light">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Témoignages
                     </span>
                   </Link>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
                       link="https://www.meditationfrance.com/journal/article04.htm"
@@ -106,7 +106,7 @@ export const HambugerMenu: FC = () => {
                       Meditation France
                     </OpenExternalLinkButton>
                   </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
                       link="https://marmitefm.fr/podcasts/sacrement-feminin-180/la-sexualite-sacree-septembre-2022-784"
@@ -117,7 +117,7 @@ export const HambugerMenu: FC = () => {
                       Podcast: la sexualité sacrée
                     </OpenExternalLinkButton>
                   </span>
-                  <span className="badge rounded-pill text-bg-dark fs-6  m-0 p-0 pt-1">
+                  <span className="badge rounded-pill text-bg-dark fs-7  m-0 p-0 pt-1">
                     <audio controls={true} className="w-80 ps-4" style={{ height: '1.5rem' }}>
                       <source
                         src="https://hearthis.at/marmitefm884/sacrement-feminin-202209-5-la-sexualite-sacree-v2/stream.mp3?s=coF&t=1664204379"
@@ -127,62 +127,74 @@ export const HambugerMenu: FC = () => {
                   </span>
                 </div>
               </li>
-              <li className="nav-item w-100 text-start mt-4">
-                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
+              <li className="nav-item w-100 text-start mt-3">
+                <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
                   Particuliers
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <Link to="/massage/massage-meditatif">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Massage méditatif
                     </span>
                   </Link>
                   <Link to="/massage/rituel-tantrique">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Rituel tantrique
                     </span>
                   </Link>
                   <Link to="/constellations">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Constellations
                     </span>
                   </Link>
                   <Link to="/soiree-tantra">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Soirée Tantra
                     </span>
                   </Link>
                 </div>
               </li>
-              <li className="nav-item w-100 text-start mt-4">
-                <div className=" w-100 border-bottom border-secondary fs-3 text-secondary">
+              <li className="nav-item w-100 text-start mt-3">
+                <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
+                  Formations
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <Link to="/formation/massage-meditatif">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Massage méditatif
+                    </span>
+                  </Link>
+                </div>
+              </li>
+              <li className="nav-item w-100 text-start mt-3">
+                <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
                   Stages
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <Link to="/stage/sons-mantras-tantra">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Sons Mantras Tantra
                     </span>
                   </Link>
                   <Link to="/stage/femme-sauvage">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       À la rencontre de la femme sauvage
                     </span>
                   </Link>
                   <Link to="/stage/tantra-et-constellations">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Tantra et Constellations
                     </span>
                   </Link>
                   <Link to="/stage/voix-et-bols-tibetains">
-                    <span className="badge rounded-pill text-bg-dark fs-6 border border-secondary m-1">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Bien être par la voix et bols tibétains
                     </span>
                   </Link>
                 </div>
               </li>
 
-              <li className="nav-item w-100 text-start mt-4">
+              <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Mon espace client</span>
                 </div>
@@ -193,7 +205,7 @@ export const HambugerMenu: FC = () => {
                   <LogoutAccountBadge />
                 </div>
               </li>
-              <li className="nav-item w-100 text-start mt-4">
+              <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Crédits photos</span>
                 </div>
@@ -203,7 +215,7 @@ export const HambugerMenu: FC = () => {
                   </span>
                 </div>
               </li>
-              <li className="nav-item w-100 text-start mt-4">
+              <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Confiance numérique</span>
                 </div>

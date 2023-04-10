@@ -3,6 +3,7 @@ import { UserContext, useUserContextInfo } from './contexts/userContext';
 import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
+import { FormationMassageMeditatif } from './pages/FormationMassageMeditatif';
 import { LandingPage } from './pages/LandingPage';
 import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: '/massage/massage-meditatif',
     element: <MassageMeditatif />,
+  },
+  {
+    path: '/formation/massage-meditatif',
+    element: <FormationMassageMeditatif />,
   },
   {
     path: '/constellations',
