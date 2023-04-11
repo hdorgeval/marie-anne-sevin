@@ -2,6 +2,8 @@ import { FC } from 'react';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { usePublicPage } from '../contexts/userContext';
 import { useGuidedTour } from '../hooks/useGuidedTour';
+import { useMetaDescription } from '../hooks/useMetaDescription';
+import { useTitle } from '../hooks/useTitle';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -9,6 +11,12 @@ import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   useGuidedTour();
+  useTitle(
+    'Accompagnement Relationnel Thérapeutique et Systémique | Me contacter | Marie-Anne Sévin',
+  );
+  useMetaDescription(
+    'Accompagnement Relationnel Thérapeutique et Systémique | Me contacter | Marie-Anne Sévin',
+  );
   return (
     <>
       <HambugerMenu />

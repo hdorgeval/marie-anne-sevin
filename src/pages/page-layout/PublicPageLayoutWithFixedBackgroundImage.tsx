@@ -1,6 +1,7 @@
 import { FC, useMemo } from 'react';
 import { usePublicPage } from '../../contexts/userContext';
 import { useGuidedTour } from '../../hooks/useGuidedTour';
+import { useMetaDescription } from '../../hooks/useMetaDescription';
 import { useTitle } from '../../hooks/useTitle';
 import { Footer } from './Footer';
 import { HambugerMenu } from './HamburgerMenu';
@@ -28,6 +29,7 @@ export const PublicPageLayoutWithFixedBackgroundImage: FC<PageLyoutOwnProps> = (
   usePublicPage();
   useGuidedTour();
   useTitle(htmlTitle);
+  useMetaDescription(htmlTitle);
 
   const defaultBackgroundOverlay =
     'linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.40))';

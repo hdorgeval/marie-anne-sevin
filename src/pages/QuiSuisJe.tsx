@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import logo from '../assets/arts-logo-medium.png';
 import { usePublicPage } from '../contexts/userContext';
+import { useMetaDescription } from '../hooks/useMetaDescription';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
@@ -10,6 +11,7 @@ import { PageTitle } from './page-layout/PageTitle';
 export const QuiSuisJe: FC = () => {
   usePublicPage();
   useTitle('Qui-suis je? | Marie-Anne Sévin');
+  useMetaDescription('Qui-suis je? | Marie-Anne Sévin');
   return (
     <>
       <HambugerMenu />
