@@ -11,12 +11,8 @@ import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   useGuidedTour();
-  useTitle(
-    'Accompagnement Relationnel Thérapeutique et Systémique | Me contacter | Marie-Anne Sévin',
-  );
-  useMetaDescription(
-    'Accompagnement Relationnel Thérapeutique et Systémique | Me contacter | Marie-Anne Sévin',
-  );
+  useTitle('Accueil | Marie-Anne Sévin');
+  useMetaDescription('Accueil | Marie-Anne Sévin');
   return (
     <>
       <HambugerMenu />
