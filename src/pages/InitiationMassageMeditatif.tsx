@@ -7,25 +7,25 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
-export const FormationMassageMeditatif: FC = () => {
+export const InitiationMassageMeditatif: FC = () => {
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
-        backgroundImageUrl="/images/background-formation-massage-meditatif.png"
+        backgroundImageUrl="/images/background-initiation-massage-meditatif.png"
         backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.0))"
         backgroundPosition="80%"
-        htmlTitle="Massage méditatif | Formation | Marie-Anne Sévin"
+        htmlTitle="Massage méditatif | Initiation | Marie-Anne Sévin"
       >
         <div>
           <div className="mt-4 pt-4">
-            <PageTitle>Formation au Massage méditatif</PageTitle>
+            <PageTitle>Initiation au massage méditatif</PageTitle>
           </div>
           <div>
             <PageSubTitle>
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-75 mt-1"
                 link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                analyticsEvent="rdv-formation-massage-meditatif"
+                analyticsEvent="rdv-initiation-massage-meditatif"
                 title="Prendre rendez-vous"
               >
                 Prendre rendez-vous
@@ -39,7 +39,7 @@ export const FormationMassageMeditatif: FC = () => {
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-person-lines-fill fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
-                      <span className="">Pour vous et votre partenaire (formation duo)</span>
+                      <span className="">Pour vous et votre partenaire (initiation en duo)</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -105,7 +105,7 @@ export const FormationMassageMeditatif: FC = () => {
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-1"
                   link={ENTRETIEN_PREALABLE_CALENDAR_LINK}
-                  analyticsEvent="rdv-formation-massage-meditatif"
+                  analyticsEvent="rdv-initiation-massage-meditatif"
                   title="Prendre rendez-vous"
                 >
                   Prendre rendez-vous
@@ -119,4 +119,4 @@ export const FormationMassageMeditatif: FC = () => {
   );
 };
 
-FormationMassageMeditatif.displayName = 'FormationMassageMeditatif';
+InitiationMassageMeditatif.displayName = 'InitiationMassageMeditatif';

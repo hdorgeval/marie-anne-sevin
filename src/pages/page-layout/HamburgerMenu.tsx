@@ -156,10 +156,10 @@ export const HambugerMenu: FC = () => {
               </li>
               <li className="nav-item w-100 text-start mt-3">
                 <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
-                  Formations
+                  Initiation duo
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <Link to="/formation/massage-meditatif">
+                  <Link to="/initiation/massage-meditatif">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Massage méditatif
                     </span>

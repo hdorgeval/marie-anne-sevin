@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
 import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
-import { FormationMassageMeditatif } from './pages/FormationMassageMeditatif';
+import { InitiationMassageMeditatif } from './pages/InitiationMassageMeditatif';
 import { LandingPage } from './pages/LandingPage';
 import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
@@ -58,8 +58,12 @@ const router = createBrowserRouter([
     element: <MassageMeditatif />,
   },
   {
+    path: '/initiation/massage-meditatif',
+    element: <InitiationMassageMeditatif />,
+  },
+  {
     path: '/formation/massage-meditatif',
-    element: <FormationMassageMeditatif />,
+    element: <Navigate to="/initiation/massage-meditatif" />,
   },
   {
     path: '/constellations',
