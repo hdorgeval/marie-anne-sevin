@@ -23,7 +23,7 @@ const ReadMore: React.FC<ReadMoreProps> = ({ children, height, handleToggle, rea
   return (
     <div className="overflow-hidden position-relative" style={{ maxHeight: height }}>
       {children}
-      <div className="position-absolute bottom-0 start-0 w-100 mb-0 h-50"></div>
+
       <span
         aria-label={readMoreText}
         onClick={handleToggle}

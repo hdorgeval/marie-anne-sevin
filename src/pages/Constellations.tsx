@@ -103,7 +103,7 @@ export const Constellations: FC = () => {
               </div>
             </SemiTransparentTile>
 
-            <SemiTransparentTile className="card text-start text-light font-monserrat">
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">
                   Constellation individuelle en présentiel
