@@ -35,6 +35,27 @@ export const Constellations: FC = () => {
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">
+              <div className="card-body pt-2">
+                <ReadMoreReadLess height="100px" readMoreText="Lire plus" readLessText="Lire moins">
+                  <Description>
+                    Les constellations familiales et systémiques sont un outil de clarification et
+                    d'accompagnement de vos problématiques. Que vous ayez des difficultés au niveau
+                    relationnel, au niveau professionnel, des conditionnements ou schémas répétitifs
+                    qui vous encombrent, nous cherchons ensemble à remettre de l'ordre dans votre
+                    système et à faire circuler reconnaissance et amour. Comment cela se passe-t-il
+                    ? Lors d'un entretien de clarification de la problématique, nous identifions
+                    ensemble les personnes ou concepts à représenter dans votre système. Nous
+                    modélisons ce dernier en plaçant les différents éléments dans le champ de
+                    constellations (soit des représentants physiques, soit des objets ou encore des
+                    papiers) et nous ressentons les tensions ou les facilités, ce qui ce joue dans
+                    le système. Nous observons le système évoluer pas à pas, en orientant vers un
+                    apaisement de votre représentant.
+                  </Description>
+                </ReadMoreReadLess>
+              </div>
+            </SemiTransparentTile>
+
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">Constellation individuelle en visio</h5>
               </div>
@@ -83,24 +104,6 @@ export const Constellations: FC = () => {
                   </div>
                 </TransparentListGroupItem>
               </ul>
-              <div className="card-body pt-2">
-                <ReadMoreReadLess height="100px" readMoreText="Lire plus" readLessText="Lire moins">
-                  <Description>
-                    Les constellations familiales et systémiques sont un outil de clarification et
-                    d'accompagnement de vos problématiques. Que vous ayez des difficultés au niveau
-                    relationnel, au niveau professionnel, des conditionnements ou schémas répétitifs
-                    qui vous encombrent, nous cherchons ensemble à remettre de l'ordre dans votre
-                    système et à faire circuler reconnaissance et amour. Comment cela se passe-t-il
-                    ? Lors d'un entretien de clarification de la problématique, nous identifions
-                    ensemble les personnes ou concepts à représenter dans votre système. Nous
-                    modélisons ce dernier en plaçant les différents éléments dans le champ de
-                    constellations (soit des représentants physiques, soit des objets ou encore des
-                    papiers) et nous ressentons les tensions ou les facilités, ce qui ce joue dans
-                    le système. Nous observons le système évoluer pas à pas, en orientant vers un
-                    apaisement de votre représentant.
-                  </Description>
-                </ReadMoreReadLess>
-              </div>
             </SemiTransparentTile>
 
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
@@ -124,9 +127,10 @@ export const Constellations: FC = () => {
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="text-nowrap fs-7">
-                        17 rue Philippe de Dangeau, Versailles (78)
+                        Rue Philippe de Dangeau, Versailles (78)
                       </span>
-                      <span className="text-nowrap fs-7">5 rue Edmond Rostand, Plaisir (78)</span>
+                      <span className="text-nowrap fs-7">Rue Edmond Rostand, Plaisir (78)</span>
+                      <span className="text-nowrap fs-7">Trappes Village (78)</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -205,7 +209,7 @@ export const Constellations: FC = () => {
                   </div>
                 </TransparentListGroupItem>
               </ul>
-              <div className="card-body pt-2">
+              <div className="card-body pt-2 pb-0">
                 <Description>
                   Nous prenons le temps d'un entretien seul à seul et convenons d'une date pour la
                   constellation. Nous lançons un appel sur les différents réseaux pour trouver des
@@ -262,11 +266,11 @@ export const Constellations: FC = () => {
                   </div>
                 </TransparentListGroupItem>
               </ul>
-              <div className="card-body pt-2">
+              <div className="card-body pt-2 pb-0">
                 <Description>
                   Nous prenons une date pour le mois d'après et je cherche un local dans lequel
-                  pourra avoir lieu la constellation. Nous communiquons notre recherche de
-                  représentants sur les réseaux qui s'engagent à vous accompagner le jour J pour 2h.
+                  pourra avoir lieu la constellation. Nous communiquons sur les réseaux notre
+                  recherche de représentants qui s'engagent à vous accompagner le jour J pour 2h.
                   Ils profitent également des prises de conscience et ce travail agit sur l'ensemble
                   des participants de part les effets miroirs.
                 </Description>
