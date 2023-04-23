@@ -28,7 +28,7 @@ export interface DateInfos {
 
 function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
   const year = new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(new Date(isoDate));
-  const day = new Intl.DateTimeFormat('fr', { day: '2-digit' }).format(new Date(isoDate));
+  const day = new Intl.DateTimeFormat('fr', { day: 'numeric' }).format(new Date(isoDate));
   const weekday = new Intl.DateTimeFormat('fr', { weekday: 'long' }).format(new Date(isoDate));
   const month = new Intl.DateTimeFormat('fr', { month: 'long' }).format(new Date(isoDate));
   const isPassed = new Date() >= new Date(isoDate);

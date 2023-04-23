@@ -181,6 +181,11 @@ export const HambugerMenu: FC = () => {
                       À la rencontre de la femme sauvage
                     </span>
                   </Link>
+                  <Link to="/stage/tantra-femme">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Tantra femme
+                    </span>
+                  </Link>
                   <Link to="/stage/tantra-et-constellations">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Tantra et Constellations

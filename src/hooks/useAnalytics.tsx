@@ -18,6 +18,7 @@ export type MyAnalyticsEvent =
   | 'pre-inscription-soiree-tantra'
   | 'pre-inscription-sons-mantras-tantra'
   | 'pre-inscription-tantra-et-constellations'
+  | 'pre-inscription-tantra-femme'
   | 'rdv-constellation'
   | 'rdv-entretien-prealable'
   | 'rdv-initiation-massage-meditatif'

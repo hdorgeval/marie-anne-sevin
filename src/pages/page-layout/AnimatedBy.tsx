@@ -58,9 +58,11 @@ AnimatedBy.displayName = 'AnimatedBy';
 AnimatedBy.FigCaption = FigCaption;
 interface ImgOwnProps {
   src: string;
+  className?: string;
 }
-const Img: FC<ImgOwnProps> = ({ src }) => {
-  return <img src={src} className="card-img" alt="photo animateur" />;
+
+const Img: FC<ImgOwnProps> = ({ src, className }) => {
+  return <img src={src} className={`card-img ${className}`} alt="photo animateur" />;
 };
 Img.displayName = 'Img';
 AnimatedBy.Img = Img;

@@ -12,6 +12,7 @@ import { RituelTantrique } from './pages/RituelTantrique';
 import { SoireeTantra } from './pages/SoireeTantra';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
+import { TantraFemme } from './pages/TantraFemme';
 import { Temoignages } from './pages/Temoignages';
 import { VoixEtBolsTibetains } from './pages/VoixEtBolsTibetains';
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/femme-sauvage',
     element: <FemmeSauvage />,
+  },
+  {
+    path: '/stage/tantra-femme',
+    element: <TantraFemme />,
   },
   {
     path: '/stage/tantra-et-constellations',

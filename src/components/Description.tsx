@@ -16,8 +16,20 @@ function toClosedSentence(sentence: string): string {
   return `${decodeThreeDots(sentence)}.`;
 }
 
+function toSentenceWithNotes(sentence: string): string {
+  if (hasNote(sentence)) {
+    return encodeNote(sentence);
+  }
+
+  return sentence;
+}
+
 function encodeThreeDots(sentence: string): string {
   return sentence.replaceAll('...', '|||');
+}
+
+function encodeNote(sentence: string): string {
+  return sentence.replaceAll('*', '<sup class="">*</sup>');
 }
 
 function decodeThreeDots(sentence: string): string {
@@ -28,6 +40,9 @@ function hasThreeDotsAtTheEnd(sentence: string): boolean {
   return sentence.endsWith('|||');
 }
 
+function hasNote(sentence: string): boolean {
+  return sentence.includes('*');
+}
 function hasColonsAtTheEnd(sentence: string): boolean {
   return sentence.endsWith(':');
 }
@@ -105,7 +120,7 @@ export const Description: FC<DescriptionOwnProps> = ({
             className="pt-2"
             dangerouslySetInnerHTML={{
               __html: toEmphasized(
-                toClosedSentence(sentence),
+                toSentenceWithNotes(toClosedSentence(sentence)),
                 emphasizedWords,
                 emphasizedWordsCssClassNames,
               ),
@@ -116,7 +131,7 @@ export const Description: FC<DescriptionOwnProps> = ({
             key={index}
             dangerouslySetInnerHTML={{
               __html: toEmphasized(
-                toClosedSentence(sentence),
+                toSentenceWithNotes(toClosedSentence(sentence)),
                 emphasizedWords,
                 emphasizedWordsCssClassNames,
               ),
