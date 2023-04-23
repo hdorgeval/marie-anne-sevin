@@ -5,6 +5,7 @@ import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { MultiLinesQuote } from '../components/MultiLinesQuote';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
+import { useCalendar } from '../hooks/useCalendar';
 import { AnimatedBy } from './page-layout/AnimatedBy';
 import { ENTRETIEN_PREALABLE_CALENDAR_LINK } from './page-layout/CalendarLinks';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -13,6 +14,10 @@ import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPa
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const VoixEtBolsTibetains: FC = () => {
+  const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
+    startDate: '2023/05/06',
+    endDate: '2023/05/08',
+  });
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
@@ -26,7 +31,11 @@ export const VoixEtBolsTibetains: FC = () => {
             <PageTitle>Bien être par la voix et bols tibétains</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Du 6 au 8 mai 2023</PageSubTitle>
+            {startDateInfos.isPassed ? (
+              <PageSubTitle>Dates à venir</PageSubTitle>
+            ) : (
+              <PageSubTitle>{fromStartDateToEndDateText}</PageSubTitle>
+            )}
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile

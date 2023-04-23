@@ -9,6 +9,7 @@ import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { Quote } from '../components/Quote';
+import { useCalendar } from '../hooks/useCalendar';
 import { AnimatedBy } from './page-layout/AnimatedBy';
 import { ENTRETIEN_PREALABLE_CALENDAR_LINK } from './page-layout/CalendarLinks';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -17,6 +18,10 @@ import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPa
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraEtConstellations: FC = () => {
+  const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
+    startDate: '2023/04/21',
+    endDate: '2023/04/23',
+  });
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
@@ -29,7 +34,11 @@ export const TantraEtConstellations: FC = () => {
             <PageTitle>Tantra et Constellations</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Du 21 au 23 avril 2023</PageSubTitle>
+            {startDateInfos.isPassed ? (
+              <PageSubTitle>Dates à venir</PageSubTitle>
+            ) : (
+              <PageSubTitle>{fromStartDateToEndDateText}</PageSubTitle>
+            )}
           </div>
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">

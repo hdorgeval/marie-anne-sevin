@@ -99,6 +99,7 @@ export const SoireeTantra: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaines dates :</span>
                       <span className="ps-1 text-light"></span>
+                      <span className="ps-1 text-light">16 mai 2023</span>
                       <span className="ps-1 text-light">6 juin 2023</span>
                       <span className="ps-1 text-light">27 juin 2023</span>
                     </div>
