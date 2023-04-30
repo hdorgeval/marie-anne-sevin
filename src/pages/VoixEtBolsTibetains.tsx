@@ -18,6 +18,7 @@ export const VoixEtBolsTibetains: FC = () => {
     startDate: '2023/05/06',
     endDate: '2023/05/08',
   });
+  const isCanceled = true;
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
@@ -31,7 +32,7 @@ export const VoixEtBolsTibetains: FC = () => {
             <PageTitle>Bien être par la voix et bols tibétains</PageTitle>
           </div>
           <div>
-            {startDateInfos.isPassed ? (
+            {startDateInfos.isPassed || isCanceled ? (
               <PageSubTitle>Dates à venir</PageSubTitle>
             ) : (
               <PageSubTitle>{fromStartDateToEndDateText}</PageSubTitle>
