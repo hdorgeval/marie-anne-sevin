@@ -21,7 +21,7 @@ export const SoireeTantra: FC = () => {
             <PageTitle>Soirée Tantra</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Mardi 16 mai 2023</PageSubTitle>
+            <PageSubTitle>Mardi 27 juin 2023</PageSubTitle>
           </div>
           <div>
             <PageSubTitle>
@@ -78,7 +78,11 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-signpost fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">Conscience et Consentement</span>
+                      <span className="text-uppercase text-light">Méditation des 4 amants</span>
+                      <span className="text-light">
+                        Nous explorerons les 4 énergies sexuelles incarnées en lien avec les
+                        érotypes de Laura Pynson.
+                      </span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -99,8 +103,6 @@ export const SoireeTantra: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaines dates :</span>
                       <span className="ps-1 text-light"></span>
-                      <span className="ps-1 text-light">16 mai 2023</span>
-                      <span className="ps-1 text-light">6 juin 2023</span>
                       <span className="ps-1 text-light">27 juin 2023</span>
                     </div>
                   </div>
