@@ -164,7 +164,7 @@ export const TantraEtConstellations: FC = () => {
                             'T-shirts',
                             'tenue festive',
                             'sous-vêtements',
-                            'intrument',
+                            'instrument',
                             'masculins et féminins',
                           ]}
                           emphasizedWordsCssClassNames={['text-info-emphasis']}
@@ -177,7 +177,7 @@ export const TantraEtConstellations: FC = () => {
                           changes de plusieurs T-shirts ainsi qu'une tenue festive et des
                           sous-vêtements ne craignant pas d'être tachés ou huilés. Apportez aussi
                           des accessoires ou tenues dits masculins et féminins. Vous pouvez apporter
-                          votre tambour ou autre intrument d'harmonisation si le coeur vous en dit.
+                          votre tambour ou autre instrument d'harmonisation si le coeur vous en dit.
                         </Description>
                       </span>
                     </div>
