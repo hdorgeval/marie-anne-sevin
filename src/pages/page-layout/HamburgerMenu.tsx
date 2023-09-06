@@ -100,12 +100,12 @@ export const HambugerMenu: FC = () => {
                   <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
-                      link="https://www.meditationfrance.com/journal/article04.htm"
+                      link="https://www.meditationfrance.com/archive/2023/0304.htm"
                       analyticsEvent="open-meditattion-france"
                       title="Voir mon article sur Méditation France"
                       aria-label="Voir mon article sur Méditation France"
                     >
-                      Meditation France
+                      Meditationfrance
                     </OpenExternalLinkButton>
                   </span>
                   <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
