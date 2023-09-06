@@ -1,4 +1,9 @@
 import { FC } from 'react';
+import chalet1 from '../assets/la-vallee-rose/chalet1.jpg';
+import exterieur1 from '../assets/la-vallee-rose/exterieur1.jpg';
+import exterieur2 from '../assets/la-vallee-rose/exterieur2.jpg';
+import repas1 from '../assets/la-vallee-rose/repas1.jpg';
+import salle1 from '../assets/la-vallee-rose/salle1.jpg';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
@@ -12,18 +17,17 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
-export const TantraEtConstellations: FC = () => {
+export const TantraEtConstellationsLaValleeRose: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2023/11/03',
-    endDate: '2023/11/05',
+    startDate: '2023/04/21',
+    endDate: '2023/04/23',
   });
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
-        backgroundImageUrl="/images/background-tantra-et-constellations-2.png"
+        backgroundImageUrl="/images/background-tantra-et-constellations.png"
         backgroundPosition="24%"
         htmlTitle="Tantra et Constellations | Stage | Marie-Anne Sévin"
-        backgroundOverlay="linear-gradient(rgba(90, 0, 0, 0.7), rgba(90, 90, 0, 0.5))"
       >
         <div>
           <div className="mt-4 pt-4">
@@ -39,7 +43,7 @@ export const TantraEtConstellations: FC = () => {
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">Liberté, Polarité, Unité</h5>
+                <h5 className="card-title mb-0 fw-bolder">Le désir, la sexualité, le sacré</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
                 <TransparentListGroupItem className="mt-0 pt-1 pb-0">
@@ -54,8 +58,8 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
-                      <span className="text-nowrap fs-7">Yourte des Mousseaux</span>
-                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
+                      <span className="text-nowrap fs-7">La Vallée Rose</span>
+                      <span className="text-nowrap fs-7"> À proximité de Houdan (78)</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -63,10 +67,10 @@ export const TantraEtConstellations: FC = () => {
               <div className="card-body pt-2">
                 <Description>
                   Lors de ce stage, nous alternerons les structures de tantra (méditation actives,
-                  toucher méditatif, pratiques de groupe , vagues…) ainsi que des temps de
-                  constellations familiales ou systémiques. Exploration autour des polarités
-                  “masculines et féminines”, de l'homme, de la femme, de l'Être, de rien de tout ça
-                  et de tout autre chose...
+                  toucher méditatif, mouvement et sensorialité, pratiques de groupe , vagues…) ainsi
+                  que des temps de constellations familiales ou systémiques. La puissance et la
+                  profondeur se mêleront à la légèreté et à la joie, le jeu faisant partie
+                  intégrante de l'expérience.
                 </Description>
               </div>
             </SemiTransparentTile>
@@ -116,11 +120,10 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
-                      <span className="">Animation : 150€</span>
-                      <span className="">Hébergement : 55€</span>
+                      <span className="">Animation : 140€</span>
+                      <span className="">Hébergement : 60€</span>
                       <span className="">
-                        Repas : repas partagés avec possibilité de faire une commande groupée livrée
-                        sur place par Lexio (traiteur Antillais)
+                        Repas : repas partagés (possibilité de commander des repas)
                       </span>
                     </div>
                   </div>
@@ -144,7 +147,8 @@ export const TantraEtConstellations: FC = () => {
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">
                         Nous organiserons un <span className="text-light">co-voiturage</span>, ou
-                        venons vous chercher à la gare qui se situe à 7 minutes du lieu de stage.
+                        venon vous chercher à la gare de Houdan qui se situe à 5 minutes de la
+                        vallée rose.
                       </span>
                     </div>
                   </div>
@@ -165,7 +169,6 @@ export const TantraEtConstellations: FC = () => {
                             'tenue festive',
                             'sous-vêtements',
                             'intrument',
-                            'masculins et féminins',
                           ]}
                           emphasizedWordsCssClassNames={['text-info-emphasis']}
                         >
@@ -175,9 +178,9 @@ export const TantraEtConstellations: FC = () => {
                           dérangeaient. Apportez votre zafu ou coussin de méditation, votre
                           nécessaire de massage (grand drap, serviette épaisse, huile neutre), des
                           changes de plusieurs T-shirts ainsi qu'une tenue festive et des
-                          sous-vêtements ne craignant pas d'être tachés ou huilés. Apportez aussi
-                          des accessoires ou tenues dits masculins et féminins. Vous pouvez apporter
-                          votre tambour ou autre intrument d'harmonisation si le coeur vous en dit.
+                          sous-vêtements ne craignant pas d'être tachés ou huilés. Vous pouvez
+                          apporter votre tambour ou autre intrument d'harmonisation si le coeur vous
+                          en dit.
                         </Description>
                       </span>
                     </div>
@@ -194,7 +197,7 @@ export const TantraEtConstellations: FC = () => {
               <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
-                  link="https://forms.gle/jfrTH7JvBtdv1bhv8"
+                  link="https://forms.gle/TFiyJeEoLSmG5QDCA"
                   analyticsEvent="pre-inscription-tantra-et-constellations"
                   title="Se pré-inscrire au stage"
                 >
@@ -205,8 +208,8 @@ export const TantraEtConstellations: FC = () => {
             <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
                 <Quote
-                  sentence="Je suis fils de l'homme et de la femme, d'après ce qu'on m'a dit. Ça m'étonne... Je croyais être d'avantage."
-                  author="Les chants de Maldoror (1869), Ducasse, dit comte de Lautréamont"
+                  sentence="C'est sûr, l'amour est la réponse. Mais pendant que vous êtes en train d'attendre la réponse, le sexe pose des questions très pertinentes"
+                  author="Woody Allen"
                 />
               </div>
             </SemiTransparentTile>
@@ -237,9 +240,116 @@ export const TantraEtConstellations: FC = () => {
 
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
+                <h5 className="card-title mb-0 fw-bolder">La Vallée Rose ...</h5>
+              </div>
+              <ul className="list-group list-group-flush mt-0 pt-0">
+                <TransparentListGroupItem className="mt-0 pt-3">
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-geo-alt fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <span className="text-nowrap fs-7">
+                        Une oasis de vie à proximité de Paris
+                      </span>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="mt-0 pt-3">
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-sign-turn-right fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <OpenExternalLinkButton
+                        className="btn btn-outline-light fw-bolder w-100 mt-0"
+                        link="https://goo.gl/maps/jsFxkfk2EMvRNQsF6"
+                        analyticsEvent="open-google-maps"
+                        title="Itinéraire via G. Maps"
+                      >
+                        Itinéraire via G. Maps
+                      </OpenExternalLinkButton>
+                      <OpenExternalLinkButton
+                        className="btn btn-outline-light fw-bolder w-100 mt-2"
+                        link="https://ul.waze.com/ul?place=ChIJYYIhXYml5kcR0L9615bDcBw&ll=48.79570880%2C1.56493040&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                        analyticsEvent="open-waze"
+                        title="Itinéraire via Waze"
+                      >
+                        Itinéraire via Waze
+                      </OpenExternalLinkButton>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={salle1} className="card-img-top" alt="salle 1"></img>
+                    <div className="card-body">
+                      <Description>
+                        La vallée rose est un merveilleux lieu de stage pouvant accueillir jusqu'à
+                        28 stagiaires.
+                      </Description>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={exterieur1} className="card-img-top" alt="exterieur"></img>
+                    <div className="card-body">
+                      <Description>
+                        Les couchages se font en chambres, chalets, caravanes aménagées pour 2 à 4
+                        personnes. De nombreux sanitaires sont à disposition et les espaces
+                        permettent de partager avec le groupe ou de prendre des moments d'intimité
+                        ou d'introspection.
+                      </Description>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={exterieur2} className="card-img-top" alt="exterieur"></img>
+                    <div className="card-body">
+                      <Description>
+                        La nature est généreuse et nous offres sa beauté végétale, minérale et
+                        animale invitant à la méditation. Alexandre, notre hôte, est un véritable
+                        artiste et les œuvres d'arts sont partout apportant leurs énergies.
+                      </Description>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={repas1} className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                      <Description>
+                        Nous organiserons des tours de préparation des repas qui feront partie
+                        intégrante du stage qui comprendront :
+                      </Description>
+                      <Description>rangement vaisselle et dressage de table</Description>
+                      <Description>
+                        préparation du repas (choix des plats, épluchage, coupage, réchauffage ou
+                        cuisson)
+                      </Description>
+                      <Description>débarrassage, rangement et nettoyage cuisine</Description>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="py-3">
+                  <div className="card bg-color-dark-semi-transparent">
+                    <img src={chalet1} className="card-img-top" alt="chalet"></img>
+                    <div className="card-body">
+                      <Description>
+                        Afin de préserver l'harmonie, nous prendrons soin de ce magnifique lieu en
+                        remettant en ordre notre espace de travail. Merci à tous pour votre
+                        participation, essentielle à la réussite de ce stage.
+                      </Description>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+              </ul>
+            </SemiTransparentTile>
+
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
                 <OpenExternalLinkButton
                   className="btn btn-outline-light fw-bolder w-100 mt-0"
-                  link="https://forms.gle/jfrTH7JvBtdv1bhv8"
+                  link="https://forms.gle/TFiyJeEoLSmG5QDCA"
                   analyticsEvent="pre-inscription-tantra-et-constellations"
                   title="Se pré-inscrire au stage"
                 >
@@ -254,4 +364,4 @@ export const TantraEtConstellations: FC = () => {
   );
 };
 
-TantraEtConstellations.displayName = 'TantraEtConstellations';
+TantraEtConstellationsLaValleeRose.displayName = 'TantraEtConstellationsLaValleeRose';

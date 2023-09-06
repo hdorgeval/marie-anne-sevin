@@ -1,12 +1,12 @@
 import { FC, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
 import {
   AccountFullNameBadge,
   CreateAccountBadge,
   LoginAccountBadge,
   LogoutAccountBadge,
 } from '../../components/auth/MyAccount';
-import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
 
 export const HambugerMenu: FC = () => {
   const location = useLocation();
@@ -20,7 +20,7 @@ export const HambugerMenu: FC = () => {
           <div className="flex-grow-1"></div>
         ) : (
           <Link to="/" className="navbar-brand text-reset" aria-label="Accueil" title="Accueil">
-            <i className="bi bi-house-up fs-3"></i>
+            <i className="bi bi-house-up fs-3 text-light"></i>
           </Link>
         )}
         <button
@@ -33,7 +33,9 @@ export const HambugerMenu: FC = () => {
           aria-label="Menu"
           data-tour-id="step-1"
         >
-          <span className="navbar-toggler-icon fs-8"></span>
+          <span className="toggler-horizontal-bar"></span>
+          <span className="toggler-horizontal-bar"></span>
+          <span className="toggler-horizontal-bar"></span>
         </button>
 
         <div

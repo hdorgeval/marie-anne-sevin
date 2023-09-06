@@ -64,6 +64,20 @@
   background-color: rgba(25, 25, 25, 0.8) !important;
 }
 
+.navbar-toggler .toggler-horizontal-bar {
+  width: 33px;
+  height: 3px;
+  background-color: #fcf8f8;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
 .px-3-a {
   padding-right: 1.01rem !important;
   padding-left: 1.01rem !important;
