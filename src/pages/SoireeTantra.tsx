@@ -78,8 +78,8 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-signpost fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">à venir</span>
-                      <span className="text-light">...</span>
+                      <span className="text-uppercase text-light">respiration du feu</span>
+                      {/* <span className="text-light">...</span> */}
                     </div>
                   </div>
                 </TransparentListGroupItem>
