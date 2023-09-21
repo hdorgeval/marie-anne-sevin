@@ -57,6 +57,71 @@ export const Constellations: FC = () => {
 
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
+                <h5 className="card-title mb-0 fw-bolder">Après-midi constellations</h5>
+              </div>
+              <ul className="list-group list-group-flush mt-0 pt-0">
+                <TransparentListGroupItem className="pt-2 pb-1">
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-clock-history fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle pt-1">
+                      <span className="text-nowrap fs-7">3h</span>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="mt-0 pt-3">
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-geo-alt fs-3 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <span className="text-nowrap fs-7">Rue Edmond Rostand, Plaisir (78)</span>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="pt-1 pb-0">
+                  <div className="d-flex flex-row card-subtitle align-items-center">
+                    <i className="bi bi-currency-euro fs-3 me-4"></i>
+                    <div className="d-flex flex-column justify-content-between ">
+                      <span className="">Représentant : 20€</span>
+                      <span className="">Constellé(e) : 60€</span>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+
+                <TransparentListGroupItem className="py-3">
+                  <div className="d-flex flex-row align-items-center card-subtitle">
+                    <i className="bi bi-calendar-event fs-2 me-4"></i>
+                    <div className="d-flex flex-column card-subtitle">
+                      <div className="d-flex flex-column card-subtitle">
+                        <span className="">Prochaine date :</span>
+                        <span className="ps-1 text-light">Samedi 14 octobre 2023</span>
+                        {/* <span className="ps-1 text-light">Mardi 28 novembre 2023</span> */}
+                      </div>
+                      <OpenExternalLinkButton
+                        className="btn btn-outline-light fw-bolder w-100 mt-2"
+                        link="https://forms.gle/Cy8BDHxgFM7zNN3a6"
+                        analyticsEvent="rdv-constellation"
+                        title="Prendre rendez-vous"
+                      >
+                        Prendre rendez-vous
+                      </OpenExternalLinkButton>
+                    </div>
+                  </div>
+                </TransparentListGroupItem>
+                <TransparentListGroupItem className="pt-3">
+                  <div className="card-body py-0 mb-0 text-light">
+                    <Description>
+                      3h de Constellations familiales et systémiques démarrage à 15h par un temps de
+                      centrage puis temps de constellations (familiales si une personne demande une
+                      constellation en amont - systémiques si nous explorons une problématique
+                      générale)
+                    </Description>
+                  </div>
+                </TransparentListGroupItem>
+              </ul>
+            </SemiTransparentTile>
+
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">Constellation individuelle en visio</h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
