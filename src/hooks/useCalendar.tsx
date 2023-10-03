@@ -26,7 +26,7 @@ export interface DateInfos {
   isPassed: boolean;
 }
 
-function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
+export function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
   const year = new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(new Date(isoDate));
   const day = new Intl.DateTimeFormat('fr', { day: 'numeric' }).format(new Date(isoDate));
   const weekday = new Intl.DateTimeFormat('fr', { weekday: 'long' }).format(new Date(isoDate));
