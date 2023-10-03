@@ -79,16 +79,19 @@ export const SoireeTantra: FC = () => {
                     </div>
                   </div>
                 </TransparentListGroupItem>
-                <TransparentListGroupItem className="pt-3">
-                  <div className="d-flex flex-row card-subtitle align-items-center">
-                    <i className="bi bi-signpost fs-3 me-4"></i>
-                    <div className="d-flex flex-column justify-content-between ">
-                      <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">La Kundalini</span>
-                      {/* <span className="text-light">...</span> */}
+                {dueDate && (
+                  <TransparentListGroupItem className="pt-3">
+                    <div className="d-flex flex-row card-subtitle align-items-center">
+                      <i className="bi bi-signpost fs-3 me-4"></i>
+                      <div className="d-flex flex-column justify-content-between ">
+                        <span className="">Thème :</span>
+                        <span className="text-uppercase text-light">La Kundalini</span>
+                        {/* <span className="text-light">...</span> */}
+                      </div>
                     </div>
-                  </div>
-                </TransparentListGroupItem>
+                  </TransparentListGroupItem>
+                )}
+
                 <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-info-circle fs-1 me-4"></i>
