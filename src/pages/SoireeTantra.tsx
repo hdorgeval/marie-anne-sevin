@@ -2,12 +2,18 @@ import { FC } from 'react';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
+import { useMultipleDatesCalendar } from '../hooks/useMultipleDatesCalendar';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const SoireeTantra: FC = () => {
+  const { allDatesArePassed, hasNextDates, dueDate, nextDates } = useMultipleDatesCalendar([
+    '2023/09/26',
+    '2023/10/24',
+    '2023/11/28',
+  ]);
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
@@ -21,7 +27,7 @@ export const SoireeTantra: FC = () => {
             <PageTitle>Soirée Tantra</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Mardi 24 octobre 2023</PageSubTitle>
+            <PageSubTitle>{allDatesArePassed ? 'Dates à venir' : dueDate}</PageSubTitle>
           </div>
           <div>
             <PageSubTitle>
@@ -94,15 +100,21 @@ export const SoireeTantra: FC = () => {
                     </div>
                   </div>
                 </TransparentListGroupItem>
-                <TransparentListGroupItem className="pb-0">
-                  <div className="d-flex flex-row align-items-center card-subtitle">
-                    <i className="bi bi-calendar-week fs-1 me-3"></i>
-                    <div className="d-flex flex-column card-subtitle">
-                      <span className="">Prochaines dates :</span>
-                      <span className="ps-1 text-light">Mardi 28 novembre 2023</span>
+                {hasNextDates && (
+                  <TransparentListGroupItem className="pb-0">
+                    <div className="d-flex flex-row align-items-center card-subtitle">
+                      <i className="bi bi-calendar-week fs-1 me-3"></i>
+                      <div className="d-flex flex-column card-subtitle">
+                        <span className="">Prochaines dates :</span>
+                        {nextDates.map((d) => (
+                          <span key={d} className="ps-1 text-light">
+                            {d}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                </TransparentListGroupItem>
+                  </TransparentListGroupItem>
+                )}
               </ul>
               <div className="card-body pt-2">
                 <Description>
