@@ -21,7 +21,7 @@ export const SoireeTantra: FC = () => {
             <PageTitle>Soirée Tantra</PageTitle>
           </div>
           <div>
-            <PageSubTitle>Mardi 26 septembre 2023</PageSubTitle>
+            <PageSubTitle>Mardi 24 octobre 2023</PageSubTitle>
           </div>
           <div>
             <PageSubTitle>
@@ -78,7 +78,7 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-signpost fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">respiration du feu</span>
+                      <span className="text-uppercase text-light">La Kundalini</span>
                       {/* <span className="text-light">...</span> */}
                     </div>
                   </div>
@@ -99,7 +99,6 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-calendar-week fs-1 me-3"></i>
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaines dates :</span>
-                      <span className="ps-1 text-light">Mardi 24 octobre 2023</span>
                       <span className="ps-1 text-light">Mardi 28 novembre 2023</span>
                     </div>
                   </div>
