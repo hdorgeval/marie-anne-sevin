@@ -198,6 +198,11 @@ export const HambugerMenu: FC = () => {
                       Bien être par la voix et bols tibétains
                     </span>
                   </Link>
+                  <Link to="/stage/la-voix-du-corps">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      La Voix du Corps
+                    </span>
+                  </Link>
                 </div>
               </li>
 

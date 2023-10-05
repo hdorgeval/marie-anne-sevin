@@ -5,6 +5,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { InitiationMassageMeditatif } from './pages/InitiationMassageMeditatif';
 import { LandingPage } from './pages/LandingPage';
+import { LaVoixDuCorps } from './pages/LaVoixDuCorps';
 import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/voix-et-bols-tibetains',
     element: <VoixEtBolsTibetains />,
+  },
+  {
+    path: '/stage/la-voix-du-corps',
+    element: <LaVoixDuCorps />,
   },
   {
     path: '/massage/rituel-tantrique',

@@ -8,7 +8,7 @@ export const TransparentListGroupItem: FC<TransparentListGroupItemOwnProps> = ({
   className,
 }) => {
   const computedClassName = useMemo(() => {
-    return `list-group-item ${className}`;
+    return `list-group-item border-0 border-top border-light border-opacity-25 text-light ${className}`;
   }, [className]);
 
   return (
