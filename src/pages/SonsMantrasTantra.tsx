@@ -15,8 +15,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const SonsMantrasTantra: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2023/03/10',
-    endDate: '2023/03/12',
+    startDate: '2024/03/01',
+    endDate: '2024/03/03',
   });
 
   return (
