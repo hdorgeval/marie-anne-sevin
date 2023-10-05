@@ -24,7 +24,8 @@ export const LaVoixDuCorps: FC = () => {
       <PublicPageLayoutWithFixedBackgroundImage
         backgroundImageUrl="/images/background-la-voix-du-corps.webp"
         backgroundOverlay="linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(79, 79, 93, 0.1), rgba(79, 79, 93, 0.7) 90% 100%)"
-        backgroundPosition="33%"
+        backgroundPositionX="44%"
+        backgroundPositionY="33%"
         htmlTitle="La Voix du Corps | Stage | Marie-Anne Sévin"
       >
         <div>
