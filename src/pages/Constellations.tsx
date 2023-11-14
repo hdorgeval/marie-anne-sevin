@@ -93,7 +93,7 @@ export const Constellations: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       <div className="d-flex flex-column card-subtitle">
                         <span className="">Prochaine date :</span>
-                        <span className="ps-1 text-light">Samedi 14 octobre 2023</span>
+                        <span className="ps-1 text-light">Samedi 25 novembre 2023</span>
                         {/* <span className="ps-1 text-light">Mardi 28 novembre 2023</span> */}
                       </div>
                       <OpenExternalLinkButton
