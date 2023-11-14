@@ -100,17 +100,6 @@ export const HambugerMenu: FC = () => {
                   <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                     <OpenExternalLinkButton
                       className="text-decoration-none text-light"
-                      link="https://www.meditationfrance.com/archive/2023/0304.htm"
-                      analyticsEvent="open-meditattion-france"
-                      title="Voir mon article sur Méditation France"
-                      aria-label="Voir mon article sur Méditation France"
-                    >
-                      Meditationfrance
-                    </OpenExternalLinkButton>
-                  </span>
-                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
-                    <OpenExternalLinkButton
-                      className="text-decoration-none text-light"
                       link="https://marmitefm.fr/podcasts/sacrement-feminin-180/la-sexualite-sacree-septembre-2022-784"
                       analyticsEvent="open-podcast-sexualité-sacrée"
                       title="Ecouter mon podcast sur la sexualité sacrée"
@@ -119,6 +108,29 @@ export const HambugerMenu: FC = () => {
                       Podcast: la sexualité sacrée
                     </OpenExternalLinkButton>
                   </span>
+                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                    <OpenExternalLinkButton
+                      className="text-decoration-none text-light"
+                      link="https://www.meditationfrance.com/archive/2023/0304.htm"
+                      analyticsEvent="open-meditattion-france"
+                      title="Voir mon article sur Méditation France : De l'harmonie dans l'air"
+                      aria-label="Voir mon article sur Méditation France: De l'harmonie dans l'air"
+                    >
+                      Meditationfrance (De l'harmonie dans l'air)
+                    </OpenExternalLinkButton>
+                  </span>
+                  <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                    <OpenExternalLinkButton
+                      className="text-decoration-none text-light"
+                      link="https://www.meditationfrance.com/journal/article02.htm"
+                      analyticsEvent="open-meditattion-france"
+                      title="Voir mon article sur Méditation France : Tantra et Constellations"
+                      aria-label="Voir mon article sur Méditation France: Tantra et Constellations"
+                    >
+                      Meditationfrance (Tantra et Constellations)
+                    </OpenExternalLinkButton>
+                  </span>
+
                   <span className="badge rounded-pill text-bg-dark fs-7  m-0 p-0 pt-1">
                     <audio controls={true} className="w-80 ps-4" style={{ height: '1.5rem' }}>
                       <source
