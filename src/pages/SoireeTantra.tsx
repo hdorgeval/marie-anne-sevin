@@ -85,7 +85,7 @@ export const SoireeTantra: FC = () => {
                       <i className="bi bi-signpost fs-3 me-4"></i>
                       <div className="d-flex flex-column justify-content-between ">
                         <span className="">Thème :</span>
-                        <span className="text-uppercase text-light">La Kundalini</span>
+                        <span className="text-uppercase text-light">Méditation caresse</span>
                         {/* <span className="text-light">...</span> */}
                       </div>
                     </div>
