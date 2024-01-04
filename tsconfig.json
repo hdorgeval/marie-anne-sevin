@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "ts-node": {
+    "compilerOptions": {
+      "target": "ES2015",
+      "module": "commonjs"
+    }
+  },
   "include": ["src", "netlify"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
