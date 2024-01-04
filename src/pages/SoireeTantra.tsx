@@ -14,6 +14,7 @@ export const SoireeTantra: FC = () => {
     '2023/10/24',
     '2023/11/28',
     '2023/12/20',
+    '2024/01/30',
   ]);
   return (
     <PublicPageLayoutWithFixedBackgroundImage
@@ -87,7 +88,7 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-signpost fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">Nadabrahma</span>
+                      <span className="text-uppercase text-light">Méditation des 4 amants</span>
                       {/* <span className="text-light">...</span> */}
                     </div>
                   </div>
