@@ -55,8 +55,11 @@ export const SonsMantrasTantra: FC = () => {
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
-                      <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
-                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
+                      {/* <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
+                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
+                      <span className="text-nowrap fs-7">
+                        Yvelines ou Normandie (lieux à préciser)
+                      </span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
