@@ -25,7 +25,8 @@ export type MyAnalyticsEvent =
   | 'rdv-initiation-massage-meditatif'
   | 'rdv-massage-meditatif'
   | 'rdv-ou-contact'
-  | 'rdv-rituel-tantrique';
+  | 'rdv-rituel-tantrique'
+  | 'start-video-xyz';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {
