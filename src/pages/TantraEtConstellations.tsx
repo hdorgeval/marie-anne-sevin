@@ -14,8 +14,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraEtConstellations: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2023/11/03',
-    endDate: '2023/11/05',
+    startDate: '2024/02/17',
+    endDate: '2024/02/18',
   });
   return (
     <>
@@ -54,8 +54,9 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
-                      <span className="text-nowrap fs-7">Yourte des Mousseaux</span>
-                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
+                      {/* <span className="text-nowrap fs-7">Yourte des Mousseaux</span>
+                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
+                      <span className="text-nowrap fs-7"> Bourneville (27)</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -64,9 +65,10 @@ export const TantraEtConstellations: FC = () => {
                 <Description>
                   Lors de ce stage, nous alternerons les structures de tantra (méditation actives,
                   toucher méditatif, pratiques de groupe , vagues…) ainsi que des temps de
-                  constellations familiales ou systémiques. Exploration autour des polarités
-                  “masculines et féminines”, de l'homme, de la femme, de l'Être, de rien de tout ça
-                  et de tout autre chose...
+                  constellations familiales ou systémiques. La puissance et la profondeur se
+                  mêleront à la légèreté et à la joie, le jeu faisant partie intégrante de
+                  l'expérience. Exploration autour des polarités “masculines et féminines”, de
+                  l'homme, de la femme, de l'Être, de rien de tout ça et de tout autre chose...
                 </Description>
               </div>
             </SemiTransparentTile>
@@ -116,11 +118,10 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
-                      <span className="">Animation : 150€</span>
-                      <span className="">Hébergement : 55€</span>
+                      <span className="">Animation : 170€</span>
+                      <span className="">Hébergement : 50€</span>
                       <span className="">
-                        Repas : repas partagés avec possibilité de faire une commande groupée livrée
-                        sur place par Lexio (traiteur Antillais)
+                        Repas : repas partagés et constitués des bonnes choses que vous amènerez.
                       </span>
                     </div>
                   </div>
@@ -138,7 +139,7 @@ export const TantraEtConstellations: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                <TransparentListGroupItem className="py-3">
+                {/* <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-car-front-fill fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -148,7 +149,7 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </TransparentListGroupItem>
+                </TransparentListGroupItem> */}
 
                 <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
