@@ -9,6 +9,7 @@
     "esbenp.prettier-vscode",
     "jumpinjackie.vscode-map-preview",
     "oderwat.indent-rainbow",
-    "wmaurer.change-case"
+    "wmaurer.change-case",
+    "valentjn.vscode-ltex"
   ]
 }
