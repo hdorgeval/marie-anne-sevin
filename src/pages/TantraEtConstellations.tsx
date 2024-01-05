@@ -63,12 +63,16 @@ export const TantraEtConstellations: FC = () => {
               </ul>
               <div className="card-body pt-2">
                 <Description>
-                  Lors de ce stage, nous alternerons les structures de tantra (méditation actives,
+                  Lors de ce stage, nous alternerons des structures de tantra (méditation actives,
                   toucher méditatif, pratiques de groupe , vagues…) ainsi que des temps de
-                  constellations familiales ou systémiques. La puissance et la profondeur se
-                  mêleront à la légèreté et à la joie, le jeu faisant partie intégrante de
-                  l'expérience. Exploration autour des polarités “masculines et féminines”, de
-                  l'homme, de la femme, de l'Être, de rien de tout ça et de tout autre chose...
+                  constellations familiales ou systémiques. Un thème plus précis sera déterminé en
+                  amont, permettant d'explorer un sujet d'approfondissement : Polarités, Œdipe,
+                  sexualité, ouverture du cœur, consentement, chakras, ombres et lumières,
+                  corps-mental-Ego, les relations...
+                </Description>
+                <Description>
+                  Les possibilités sont nombreuses et toutes passionnantes. Le choix sera déterminé
+                  par une constellation lors de vos inscriptions.
                 </Description>
               </div>
             </SemiTransparentTile>
@@ -118,10 +122,11 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-currency-euro fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
-                      <span className="">Animation : 170€</span>
-                      <span className="">Hébergement : 50€</span>
-                      <span className="">
-                        Repas : repas partagés et constitués des bonnes choses que vous amènerez.
+                      <span className="">Animation : 160€</span>
+                      <span className="">Hébergement : 40€</span>
+                      <span className="mt-2">
+                        Repas : repas partagés avec possibilité de faire une commande groupée livrée
+                        sur place par Lexio (traiteur Antillais).
                       </span>
                     </div>
                   </div>
@@ -139,7 +144,7 @@ export const TantraEtConstellations: FC = () => {
                   </div>
                 </TransparentListGroupItem>
 
-                {/* <TransparentListGroupItem className="py-3">
+                <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
                     <i className="bi bi-car-front-fill fs-1 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
@@ -149,7 +154,7 @@ export const TantraEtConstellations: FC = () => {
                       </span>
                     </div>
                   </div>
-                </TransparentListGroupItem> */}
+                </TransparentListGroupItem>
 
                 <TransparentListGroupItem className="py-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
@@ -206,8 +211,8 @@ export const TantraEtConstellations: FC = () => {
             <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
                 <Quote
-                  sentence="Je suis fils de l'homme et de la femme, d'après ce qu'on m'a dit. Ça m'étonne... Je croyais être d'avantage."
-                  author="Les chants de Maldoror (1869), Ducasse, dit comte de Lautréamont"
+                  sentence="Que vos choix soient le reflet de vos espoirs et non de vos peurs."
+                  author="Nelson Mandela"
                 />
               </div>
             </SemiTransparentTile>
