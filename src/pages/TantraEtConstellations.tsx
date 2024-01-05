@@ -14,7 +14,7 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraEtConstellations: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2024/02/17',
+    startDate: '2024/02/16',
     endDate: '2024/02/18',
   });
   return (
@@ -39,7 +39,10 @@ export const TantraEtConstellations: FC = () => {
           <div className="d-flex px-0 pt-4 flex-column justify-content-between">
             <SemiTransparentTile className="card text-start text-light font-monserrat">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">Liberté, Polarité, Unité</h5>
+                <h5 className="card-title mb-0 fw-bolder">
+                  Liberté, Polarité, Unité : le thème sera défini par une constellation lors de vos
+                  inscriptions
+                </h5>
               </div>
               <ul className="list-group list-group-flush mt-0 pt-0">
                 <TransparentListGroupItem className="mt-0 pt-1 pb-0">
