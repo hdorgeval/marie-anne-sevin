@@ -6,7 +6,7 @@ export const useMultipleDatesCalendar = (dates: string[]) => {
   const dueDatesInfos = datesInfos.filter((d) => !d.isPassed);
 
   const dueDateInfos = dueDatesInfos.shift();
-  const hasNextDates = dueDatesInfos?.length > 0 ?? false;
+  const hasNextDates = Array.isArray(dueDatesInfos) && dueDatesInfos.length > 0;
 
   const dueDate = dueDateInfos
     ? `${dueDateInfos.day} ${dueDateInfos.month} ${dueDateInfos.year}`
