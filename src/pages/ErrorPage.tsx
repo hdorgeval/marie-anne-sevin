@@ -18,14 +18,14 @@ const ErrorResponseBoundary: FC<ErrorResponse> = (error: ErrorResponse) => {
       <h1>Oops!</h1>
       <p>Une erreur est survenue !!!</p>
       {error.status === 404 && <p>La page que vous avez demandée n'existe pas.</p>}
-      <p>
+      <div>
         <Link to="/">
           <div className="w-100 d-flex flex-row justify-content-center align-items-center">
             <span>Retourner à la page d'acceuil</span>
             <i className="bi bi-box-arrow-in-right fs-1 ms-2"></i>
           </div>
         </Link>
-      </p>
+      </div>
     </div>
   );
 };
@@ -50,7 +50,7 @@ const GenericErrorBoundary: FC = () => {
 };
 
 export const ErrorPage: FC = () => {
-  const error = useRouteError();
+  const error = useRouteError() as ErrorResponse;
   if (isRouteErrorResponse(error)) {
     return <ErrorResponseBoundary {...error} />;
   }
