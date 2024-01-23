@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
@@ -8,14 +8,61 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
+
+export interface Events {
+  date: string;
+  theme?: string;
+  location?: string[];
+}
+
+const events: Events[] = [
+  {
+    date: '2024/01/30',
+    theme: 'Méditation des 4 amants',
+    location: ['Ryse Yoga', 'Garancières (78)'],
+  },
+  {
+    date: '2024/02/14',
+    theme: 'Soirée spéciale couples / partenaires',
+    location: ['Ryse Yoga', 'Garancières (78)'],
+  },
+  {
+    date: '2024/03/19',
+    theme: '',
+    location: [],
+  },
+];
+
+function getEventThemeByDate(
+  events: Events[],
+  expectedDate: string | undefined,
+): string | undefined {
+  return events.findLast((e) => e.date === expectedDate)?.theme;
+}
+function getEventLocationByDate(
+  events: Events[],
+  expectedDate: string | undefined,
+): string[] | undefined {
+  return events.findLast((e) => e.date === expectedDate)?.location;
+}
+
 export const SoireeTantra: FC = () => {
-  const { allDatesArePassed, hasNextDates, dueDate, nextDates } = useMultipleDatesCalendar([
-    '2023/09/26',
-    '2023/10/24',
-    '2023/11/28',
-    '2023/12/20',
-    '2024/01/30',
-  ]);
+  const allDates = events.map((e) => e.date);
+  const { allDatesArePassed, hasNextDates, dueDate, dueDateInIsoFormat, nextDates } =
+    useMultipleDatesCalendar(allDates);
+
+  const theme = useMemo(() => {
+    return getEventThemeByDate(events, dueDateInIsoFormat);
+  }, [dueDateInIsoFormat]);
+
+  const location = useMemo(() => {
+    return getEventLocationByDate(events, dueDateInIsoFormat);
+  }, [dueDateInIsoFormat]);
+
+  const hasLocation = useMemo(() => {
+    return Array.isArray(location) && location.length > 0;
+  }, [location]);
+
   return (
     <PublicPageLayoutWithFixedBackgroundImage
       backgroundImageUrl="/images/background-soiree-tantra.jpeg"
@@ -61,8 +108,18 @@ export const SoireeTantra: FC = () => {
                   <div className="d-flex flex-column card-subtitle">
                     {/* <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
                     <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
-                    <span className="text-nowrap fs-7">Ryse Yoga</span>
-                    <span className="text-nowrap fs-7"> Garancières (78)</span>
+
+                    {hasLocation ? (
+                      location?.map((l) => (
+                        <span className="text-nowrap fs-7" key={l}>
+                          {l}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="text-nowrap fs-7">
+                        Le lieu sera communiqué ultérieurement (78)
+                      </span>
+                    )}
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -88,7 +145,12 @@ export const SoireeTantra: FC = () => {
                     <i className="bi bi-signpost fs-3 me-4"></i>
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
-                      <span className="text-uppercase text-light">Méditation des 4 amants</span>
+                      {theme ? (
+                        <span className="text-uppercase text-light">{theme}</span>
+                      ) : (
+                        <span className="text-light">Le thème sera communiqué ultérieurement</span>
+                      )}
+
                       {/* <span className="text-light">...</span> */}
                     </div>
                   </div>
@@ -97,7 +159,7 @@ export const SoireeTantra: FC = () => {
 
               <TransparentListGroupItem className="py-3">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-info-circle fs-1 me-4"></i>
+                  <i className="bi bi-info-circle fs-1 me-3"></i>
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Pour toute question ou renseignement :</span>
                     <span className="">
@@ -107,22 +169,31 @@ export const SoireeTantra: FC = () => {
                 </div>
               </TransparentListGroupItem>
               {hasNextDates && (
-                <TransparentListGroupItem className="pb-0">
+                <TransparentListGroupItem className="pt-3 pb-2">
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-calendar-week fs-1 me-3"></i>
                     <div className="d-flex flex-column card-subtitle">
-                      <span className="">Prochaines dates :</span>
+                      <span className="mb-1">Prochaines dates :</span>
                       {nextDates.map((d) => (
-                        <span key={d} className="ps-1 text-light">
-                          {d}
-                        </span>
+                        <div key={d.date} className="ps-1 text-light">
+                          <span className="ps-1 text-light">{d.date}</span>
+                          {getEventThemeByDate(events, d.dateInIsoFormat) && (
+                            <>
+                              <span className="ps-2">(</span>
+                              <span className="ps-1">
+                                {getEventThemeByDate(events, d.dateInIsoFormat)}
+                              </span>
+                              <span className="ps-1">)</span>
+                            </>
+                          )}
+                        </div>
                       ))}
                     </div>
                   </div>
                 </TransparentListGroupItem>
               )}
             </ul>
-            <div className="card-body pt-2">
+            <div className="card-body pt-2 pb-1">
               <Description>
                 Atelier ouvert à toute personne souhaitant découvrir et partager l'univers du
                 tantra.

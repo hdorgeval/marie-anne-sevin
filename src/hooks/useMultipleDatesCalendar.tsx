@@ -12,7 +12,11 @@ export const useMultipleDatesCalendar = (dates: string[]) => {
     ? `${dueDateInfos.day} ${dueDateInfos.month} ${dueDateInfos.year}`
     : undefined;
 
-  const nextDates = dueDatesInfos.map((d) => `${d.day} ${d.month} ${d.year}`);
+  const dueDateInIsoFormat = dueDateInfos?.date;
 
-  return { allDatesArePassed, hasNextDates, dueDate, nextDates };
+  const nextDates = dueDatesInfos.map((d) => ({
+    date: `${d.day} ${d.month} ${d.year}`,
+    dateInIsoFormat: d.date,
+  }));
+  return { allDatesArePassed, hasNextDates, dueDate, dueDateInIsoFormat, nextDates };
 };
