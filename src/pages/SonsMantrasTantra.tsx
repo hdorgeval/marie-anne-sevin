@@ -55,11 +55,11 @@ export const SonsMantrasTantra: FC = () => {
                   <div className="d-flex flex-row align-items-center card-subtitle">
                     <i className="bi bi-geo-alt fs-3 me-4"></i>
                     <div className="d-flex flex-column card-subtitle">
-                      {/* <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
-                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
-                      <span className="text-nowrap fs-7">
+                      <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
+                      <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
+                      {/* <span className="text-nowrap fs-7">
                         Yvelines ou Normandie (lieux à préciser)
-                      </span>
+                      </span> */}
                     </div>
                   </div>
                 </TransparentListGroupItem>
@@ -71,10 +71,20 @@ export const SonsMantrasTantra: FC = () => {
                   la gorge, Vishuddha. Les méditations actives, l'utilisation des instruments
                   thérapeutiques comme les bols tibétains, les carillons, les tambours ainsi que le
                   travail corporel aideront à libérer la parole, la voix et à découvrir le pouvoir
-                  du son sur le corps et l'esprit. Vous pouvez venir avec un instrument si le cœur
-                  vous en dit. Nous viendrons également avec les bols tibétains et tambours de
-                  coffret d'alumine que nous vous mettrons à disposition en prêt ou à la vente.
+                  du son sur le corps et l'esprit. Avec le tambour unité* de Floriane, nous
+                  transformerons ce qui a besoin de l'être par sa puissance vibratoire. Vous pouvez
+                  venir avec un instrument si le cœur vous en dit. Nous viendrons également avec les
+                  bols tibétains et tambours de coffret d'alumine que nous vous mettrons à
+                  disposition en prêt ou à la vente.
                 </Description>
+              </div>
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
+                <h5 className="card-title mb-0 fw-bolder">
+                  * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
+                  exceptionnelle
+                </h5>
               </div>
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
@@ -123,7 +133,8 @@ export const SonsMantrasTantra: FC = () => {
                       <span className="">Animation : 220€</span>
                       <span className="">Hébergement : 35€ par nuitée</span>
                       <span className="">
-                        Repas : repas partagés (possibilité de commander des repas)
+                        Repas : repas partagés (possibilité de commander les repas auprès de Lexio,
+                        10€ par repas)
                       </span>
                     </div>
                   </div>
@@ -145,7 +156,7 @@ export const SonsMantrasTantra: FC = () => {
                 </TransparentListGroupItem>
               </ul>
               <div className="card-body pb-0">
-                <p>Un acompte de 70€ est demandé à l'inscription.</p>
+                <p>Un acompte de 100€ est demandé à l'inscription.</p>
               </div>
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
@@ -162,9 +173,10 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
               <div className="card-body">
-                <Quote sentence="Sois une voix, pas un écho" author="Albert Einstein" />
+                <Quote sentence="La voix est la musique de l'âme" author="Barbara" />
               </div>
             </SemiTransparentTile>
+
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
                 <h5 className="card-title mb-0 fw-bolder">
@@ -178,24 +190,38 @@ export const SonsMantrasTantra: FC = () => {
                     <AnimatedBy.FigCaption>
                       Marie-Anne, musicienne, masseuse et thérapeute.
                     </AnimatedBy.FigCaption>
+                    <AnimatedBy.Description>
+                      Mon accompagnement se nourrit des nombreuses approches que j'ai rencontrées
+                      dans ma vie. Animatrice de tantra et de stages psycho-corporels, j'accompagne
+                      depuis 25 ans en bien-être par la voix les publics de la périnatalité à la fin
+                      de vie.
+                    </AnimatedBy.Description>
                   </AnimatedBy>
                 </TransparentListGroupItem>
                 <TransparentListGroupItem className="">
                   <AnimatedBy>
                     <AnimatedBy.Img src={portrait2} />
                     <AnimatedBy.FigCaption>
-                      Floriane, artiste peintre et graveuse, fondatrice de Coffret d'Alumine,
-                      boutique Bien-être & Ésotérisme.
+                      Floriane, artiste et porteuse du tambour unité*, fondatrice de Coffret
+                      d'Alumine dédié au bien-être.
                     </AnimatedBy.FigCaption>
                     <AnimatedBy.Description>
-                      Ma sensibilité à l'harmonie des formes, des matières, des couleurs, m'a amenée
-                      à m'intéresser à la résonance des sons et créer le pôle sonothérapie de la
-                      boutique. Soucieuse de l'harmonie sonore, je cherche et propose des
-                      instruments artisanaux de qualité : bols, carillons koshi, ...
+                      Je vous accompagne sur ce stage pour la 3eme année à la découverte des
+                      instruments vibratoires. Avec mon tambour unité*, nous vous connecterons à la
+                      force de vie et à votre nature profonde en vous reliant directement à la terre
+                      et au ciel.
                     </AnimatedBy.Description>
                   </AnimatedBy>
                 </TransparentListGroupItem>
               </ul>
+            </SemiTransparentTile>
+            <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
+              <div className="card-body">
+                <h5 className="card-title mb-0 fw-bolder">
+                  * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
+                  exceptionnelle
+                </h5>
+              </div>
             </SemiTransparentTile>
           </div>
         </div>
