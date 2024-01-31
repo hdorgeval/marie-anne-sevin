@@ -81,10 +81,10 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">
+                <h6 className="card-title mb-0 fw-bolder">
                   * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
                   exceptionnelle
-                </h5>
+                </h6>
               </div>
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
@@ -217,10 +217,10 @@ export const SonsMantrasTantra: FC = () => {
             </SemiTransparentTile>
             <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
               <div className="card-body">
-                <h5 className="card-title mb-0 fw-bolder">
+                <h6 className="card-title mb-0 fw-bolder">
                   * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
                   exceptionnelle
-                </h5>
+                </h6>
               </div>
             </SemiTransparentTile>
           </div>
