@@ -48,7 +48,7 @@
   height: 87px;
   border-radius: 50% / 50%;
   overflow: hidden;
-  transform: rotate(-40deg);
+  transform: rotate(-40deg) translateZ(0);
 }
 
 .photo-crop-elipse-portrait img {
