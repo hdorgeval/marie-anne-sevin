@@ -185,6 +185,11 @@ export const HambugerMenu: FC = () => {
                   Stages
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <Link to="/stage/toucher-present-toucher-conscient">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Toucher Présent - Toucher Conscient
+                    </span>
+                  </Link>
                   <Link to="/stage/la-voix-du-corps">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       La Voix du Corps

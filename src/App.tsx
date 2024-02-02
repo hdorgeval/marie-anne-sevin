@@ -15,6 +15,7 @@ import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
 import { TantraEtConstellations } from './pages/TantraEtConstellations';
 import { TantraFemme } from './pages/TantraFemme';
 import { Temoignages } from './pages/Temoignages';
+import { ToucherPresentToucherConscient } from './pages/ToucherPresentToucherConscient';
 import { VoixEtBolsTibetains } from './pages/VoixEtBolsTibetains';
 
 const router = createBrowserRouter([
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: '/stage/la-voix-du-corps',
     element: <LaVoixDuCorps />,
+  },
+  {
+    path: '/stage/toucher-present-toucher-conscient',
+    element: <ToucherPresentToucherConscient />,
   },
   {
     path: '/massage/rituel-tantrique',
