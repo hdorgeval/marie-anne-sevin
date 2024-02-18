@@ -1,12 +1,8 @@
 import { FC, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import thumbnail from '../../assets/video-thumbnail.png';
 import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
-import {
-  AccountFullNameBadge,
-  CreateAccountBadge,
-  LoginAccountBadge,
-  LogoutAccountBadge,
-} from '../../components/auth/MyAccount';
+import { VideoPlayer } from '../../components/video-player';
 
 export const HambugerMenu: FC = () => {
   const location = useLocation();
@@ -223,7 +219,7 @@ export const HambugerMenu: FC = () => {
                 </div>
               </li>
 
-              <li className="nav-item w-100 text-start mt-3">
+              {/* <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Mon espace client</span>
                 </div>
@@ -233,7 +229,22 @@ export const HambugerMenu: FC = () => {
                   <LoginAccountBadge />
                   <LogoutAccountBadge />
                 </div>
+              </li> */}
+
+              <li className="nav-item w-100 text-start mt-3">
+                <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
+                  <span>Rétrospective 2023</span>
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <div className="container-fluid mt-4 w-100 m-auto">
+                    <VideoPlayer
+                      thumbnailUrl={thumbnail}
+                      videoUrl="/videos/VIDEO-2024-01-04-10-42-01.mp4"
+                    />
+                  </div>
+                </div>
               </li>
+
               <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
                   <span>Crédits photos</span>

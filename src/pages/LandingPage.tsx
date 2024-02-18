@@ -1,7 +1,5 @@
 import { FC } from 'react';
-import thumbnail from '../assets/video-thumbnail.png';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
-import { VideoPlayer } from '../components/video-player';
 import { usePublicPage } from '../contexts/userContext';
 import { useGuidedTour } from '../hooks/useGuidedTour';
 import { useMetaDescription } from '../hooks/useMetaDescription';
@@ -42,12 +40,7 @@ export const LandingPage: FC = () => {
                 Accompagnement Relationnel, Thérapeutique et Systémique
               </PageSubTitle>
             </div>
-            <div className="container-fluid mt-4 w-100 m-auto">
-              <VideoPlayer
-                thumbnailUrl={thumbnail}
-                videoUrl="/videos/VIDEO-2024-01-04-10-42-01.mp4"
-              />
-            </div>
+
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
