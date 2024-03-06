@@ -53,3 +53,17 @@
 .introjs-skipbutton:hover {
   color: var(--bs-emphasis-color) !important;
 }
+
+.text-bg-next-to-come-badge {
+  color: #fff !important;
+  background-color: rgba(65, 38, 183, 0.66) !important;
+}
+
+#next-to-come-carousel .carousel-item {
+  transition: transform 2s ease-in-out !important;
+}
+
+#next-to-come-carousel .carousel-control-next-icon,
+#next-to-come-carousel .carousel-control-prev-icon {
+  filter: invert(0) grayscale(100);
+}

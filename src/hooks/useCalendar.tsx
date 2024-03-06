@@ -43,6 +43,24 @@ export function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
   };
 }
 
+export function buildDateRangeLabel(startDate: string, endDate: string): string {
+  const startDateInfos = extractDateInfosFromIsoDate(startDate);
+  const endDateInfos = extractDateInfosFromIsoDate(endDate);
+
+  if (startDate === endDate) {
+    return `${startDateInfos.day} ${startDateInfos.month} ${startDateInfos.year}`;
+  }
+
+  if (startDateInfos.year === endDateInfos.year && startDateInfos.month === endDateInfos.month) {
+    return `Du ${startDateInfos.day} au ${endDateInfos.day} ${startDateInfos.month} ${startDateInfos.year}`;
+  }
+
+  if (startDateInfos.year === endDateInfos.year && startDateInfos.month !== endDateInfos.month) {
+    return `Du ${startDateInfos.day} ${startDateInfos.month} au ${endDateInfos.day} ${endDateInfos.month} ${startDateInfos.year}`;
+  }
+  return `Du ${startDateInfos.day} ${startDateInfos.month} ${startDateInfos.year} au ${endDateInfos.day} ${endDateInfos.month} ${endDateInfos.year}`;
+}
+
 export const useCalendar = (options: CalendarOptions) => {
   const startDateInfos = extractDateInfosFromIsoDate(options.startDate);
   const endDateInfos = extractDateInfosFromIsoDate(options.endDate);

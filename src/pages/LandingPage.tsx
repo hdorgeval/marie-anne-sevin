@@ -41,6 +41,10 @@ export const LandingPage: FC = () => {
               </PageSubTitle>
             </div>
 
+            {/* <div className="mt-4">
+              <NextToCome />
+            </div> */}
+
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
