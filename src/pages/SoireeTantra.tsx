@@ -28,8 +28,23 @@ const events: Events[] = [
   },
   {
     date: '2024/03/19',
+    theme: 'Toucher méditatif',
+    location: ['Ryse Yoga', 'Garancières (78)'],
+  },
+  {
+    date: '2024/04/23',
     theme: '',
-    location: [],
+    location: ['Ryse Yoga', 'Garancières (78)'],
+  },
+  {
+    date: '2024/05/21',
+    theme: '',
+    location: ['Ryse Yoga', 'Garancières (78)'],
+  },
+  {
+    date: '2024/06/18',
+    theme: '',
+    location: ['Ryse Yoga', 'Garancières (78)'],
   },
 ];
 
