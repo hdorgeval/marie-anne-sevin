@@ -37,6 +37,11 @@ const events: Events[] = [
     location: ['Ryse Yoga', 'Garancières (78)'],
   },
   {
+    date: '2024/05/15',
+    theme: '',
+    location: ['Versailles (78)'],
+  },
+  {
     date: '2024/05/21',
     theme: '',
     location: ['Ryse Yoga', 'Garancières (78)'],
@@ -59,6 +64,14 @@ function getEventLocationByDate(
   expectedDate: string | undefined,
 ): string[] | undefined {
   return events.findLast((e) => e.date === expectedDate)?.location;
+}
+function getEventLastDetailLocationByDate(
+  events: Events[],
+  expectedDate: string | undefined,
+): string | undefined {
+  const locationDetails = events.findLast((e) => e.date === expectedDate)?.location ?? [];
+  const result = [...locationDetails].pop();
+  return result;
 }
 
 export const SoireeTantra: FC = () => {
@@ -192,6 +205,17 @@ export const SoireeTantra: FC = () => {
                       {nextDates.map((d) => (
                         <div key={d.date} className="ps-1 text-light">
                           <span className="ps-1 text-light">{d.date}</span>
+
+                          {getEventLastDetailLocationByDate(events, d.dateInIsoFormat) && (
+                            <>
+                              <span className="ps-2 text-light">(</span>
+                              <span className="ps-1 text-light">
+                                {getEventLastDetailLocationByDate(events, d.dateInIsoFormat)}
+                              </span>
+                              <span className="ps-1 text-light">)</span>
+                            </>
+                          )}
+
                           {getEventThemeByDate(events, d.dateInIsoFormat) && (
                             <>
                               <span className="ps-2">(</span>
