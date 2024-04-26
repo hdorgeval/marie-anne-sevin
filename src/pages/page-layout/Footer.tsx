@@ -94,7 +94,7 @@ export const Footer: FC = () => {
         </div>
 
         <span className="fs-7 fw-lighter mb-1">
-          <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin - 2023
+          <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin - 2024
         </span>
         <span className="fs-7 mb-2">
           <Link to="/mentions-legales" className="nav-link">
