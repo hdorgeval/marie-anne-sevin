@@ -12,6 +12,7 @@ import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem
 export interface Events {
   date: string;
   theme?: string;
+  trailer?: string;
   location?: string[];
 }
 
@@ -49,6 +50,7 @@ const events: Events[] = [
   {
     date: '2024/06/18',
     theme: 'Voix Tantrique',
+    trailer: "Un pont entre le corps et l'esprit",
     location: ['Ryse Yoga', 'Garancières (78)'],
   },
 ];
@@ -59,6 +61,14 @@ function getEventThemeByDate(
 ): string | undefined {
   return events.findLast((e) => e.date === expectedDate)?.theme;
 }
+
+function getEventTrailerByDate(
+  events: Events[],
+  expectedDate: string | undefined,
+): string | undefined {
+  return events.findLast((e) => e.date === expectedDate)?.trailer;
+}
+
 function getEventLocationByDate(
   events: Events[],
   expectedDate: string | undefined,
@@ -81,6 +91,10 @@ export const SoireeTantra: FC = () => {
 
   const theme = useMemo(() => {
     return getEventThemeByDate(events, dueDateInIsoFormat);
+  }, [dueDateInIsoFormat]);
+
+  const trailer = useMemo(() => {
+    return getEventTrailerByDate(events, dueDateInIsoFormat);
   }, [dueDateInIsoFormat]);
 
   const location = useMemo(() => {
@@ -174,7 +188,10 @@ export const SoireeTantra: FC = () => {
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
                       {theme ? (
-                        <span className="text-uppercase text-light">{theme}</span>
+                        <>
+                          <span className="text-uppercase text-light">{theme}</span>
+                          {trailer && <span className="text-light fst-italic">{trailer}</span>}
+                        </>
                       ) : (
                         <span className="text-light">Le thème sera communiqué ultérieurement</span>
                       )}
