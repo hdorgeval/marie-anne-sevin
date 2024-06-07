@@ -48,7 +48,7 @@ const events: Events[] = [
   },
   {
     date: '2024/06/18',
-    theme: '',
+    theme: 'Voix Tantrique',
     location: ['Ryse Yoga', 'Garancières (78)'],
   },
 ];
