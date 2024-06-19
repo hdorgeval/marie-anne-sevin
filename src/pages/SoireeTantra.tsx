@@ -53,6 +53,12 @@ const events: Events[] = [
     trailer: "Un pont entre le corps et l'esprit",
     location: ['Ryse Yoga', 'Garancières (78)'],
   },
+  {
+    date: '2024/07/03',
+    theme: 'Ombre et Lumière',
+    trailer: 'Jeu de transformation',
+    location: ['Versailles (78)'],
+  },
 ];
 
 function getEventThemeByDate(
