@@ -14,8 +14,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraEtConstellations: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2024/02/16',
-    endDate: '2024/02/18',
+    startDate: '2024/10/04',
+    endDate: '2024/10/06',
   });
   return (
     <PublicPageLayoutWithFixedBackgroundImage
@@ -38,9 +38,7 @@ export const TantraEtConstellations: FC = () => {
         <div className="d-flex px-0 pt-4 flex-column justify-content-between">
           <SemiTransparentTile className="card text-start text-light font-monserrat">
             <div className="card-body">
-              <h5 className="card-title mb-0 fw-bolder">
-                Thème : le thème sera défini par une constellation lors de vos inscriptions
-              </h5>
+              <h5 className="card-title mb-0 fw-bolder">Thème : le mythe de Tirésias</h5>
             </div>
             <ul className="list-group list-group-flush mt-0 pt-0">
               <TransparentListGroupItem className="mt-0 pt-1 pb-0">
@@ -57,7 +55,7 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-column card-subtitle">
                     {/* <span className="text-nowrap fs-7">Yourte des Mousseaux</span>
                       <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
-                    <span className="text-nowrap fs-7"> Bourneville (27)</span>
+                    <span className="text-nowrap fs-7"> Pont d'Ostara (77)</span>
                   </div>
                 </div>
               </TransparentListGroupItem>

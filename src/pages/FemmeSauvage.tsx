@@ -14,8 +14,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const FemmeSauvage: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2024/03/15',
-    endDate: '2024/03/17',
+    startDate: '2024/09/20',
+    endDate: '2024/09/22',
   });
 
   return (
@@ -59,9 +59,11 @@ export const FemmeSauvage: FC = () => {
                     <div className="d-flex flex-column card-subtitle">
                       {/* <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
                       <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
-                      <span className="text-nowrap fs-7">
+                      {/* <span className="text-nowrap fs-7">
                         Yvelines ou Normandie (lieux à préciser)
-                      </span>
+                      </span> */}
+                      <span className="text-nowrap fs-7">Vivandi</span>
+                      <span className="text-nowrap fs-7"> Bournéville (27)</span>
                     </div>
                   </div>
                 </TransparentListGroupItem>
