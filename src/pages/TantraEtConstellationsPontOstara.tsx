@@ -13,7 +13,7 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
-export const TantraEtConstellations: FC = () => {
+export const TantraEtConstellationsPontOstara: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
     startDate: '2024/10/04',
     endDate: '2024/10/06',
@@ -56,7 +56,15 @@ export const TantraEtConstellations: FC = () => {
                   <div className="d-flex flex-column card-subtitle">
                     {/* <span className="text-nowrap fs-7">Yourte des Mousseaux</span>
                       <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
-                    <span className="text-nowrap fs-7"> Pont d'Ostara (77)</span>
+                    {/* <span className="text-nowrap fs-7"> Pont d'Ostara (77)</span> */}
+                    <OpenExternalLinkButton
+                      className="btn btn-outline-light fw-bolder w-100 mt-0"
+                      link="https://pontdostara.fr/"
+                      analyticsEvent="open-pont-d-ostara"
+                      title="Pont d'Ostara (77)"
+                    >
+                      Pont d'Ostara (77)
+                    </OpenExternalLinkButton>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -260,7 +268,7 @@ export const TantraEtConstellations: FC = () => {
             <div className="card-body">
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-100 mt-0"
-                link="https://forms.gle/jfrTH7JvBtdv1bhv8"
+                link="https://forms.gle/MXcFpicoSy6bk3iG9"
                 analyticsEvent="pre-inscription-tantra-et-constellations"
                 title="Se pré-inscrire au stage"
               >
@@ -274,4 +282,4 @@ export const TantraEtConstellations: FC = () => {
   );
 };
 
-TantraEtConstellations.displayName = 'TantraEtConstellations';
+TantraEtConstellationsPontOstara.displayName = 'TantraEtConstellationsPontOstara';

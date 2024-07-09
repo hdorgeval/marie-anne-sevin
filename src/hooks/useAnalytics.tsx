@@ -12,6 +12,7 @@ export type MyAnalyticsEvent =
   | 'open-my-instagram'
   | 'open-my-whatsapp'
   | 'open-my-youtube'
+  | 'open-pont-d-ostara'
   | 'open-podcast-sexualité-sacrée'
   | 'open-waze'
   | 'pre-inscription-femme-sauvage'

@@ -12,7 +12,7 @@ import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
 import { SoireeTantra } from './pages/SoireeTantra';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
-import { TantraEtConstellations } from './pages/TantraEtConstellations';
+import { TantraEtConstellationsPontOstara } from './pages/TantraEtConstellationsPontOstara';
 import { TantraFemme } from './pages/TantraFemme';
 import { Temoignages } from './pages/Temoignages';
 import { ToucherPresentToucherConscient } from './pages/ToucherPresentToucherConscient';
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/stage/tantra-et-constellations',
-    element: <TantraEtConstellations />,
+    element: <TantraEtConstellationsPontOstara />,
   },
   {
     path: '/stage/voix-et-bols-tibetains',
