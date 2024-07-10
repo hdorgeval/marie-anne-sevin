@@ -148,7 +148,7 @@ export const FemmeSauvage: FC = () => {
                       Pour toute question ou renseignement pour l'hébergement:
                     </span>
                     <span className="">
-                      Jean-Claude et Annie <CallablePhoneNumber phoneNumber="06 13 05 01 76" />
+                      Jean-Claude et Annie <CallablePhoneNumber phoneNumber="02 32 56 57 76" />
                     </span>
                   </div>
                 </div>
