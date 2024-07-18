@@ -59,6 +59,12 @@ const events: Events[] = [
     trailer: 'Jeu de transformation',
     location: ['Versailles (78)'],
   },
+  {
+    date: '2024/08/06',
+    theme: 'Relation consciente',
+    trailer: 'Méditation et exploration',
+    location: ['Trappes (78)'],
+  },
 ];
 
 function getEventThemeByDate(
