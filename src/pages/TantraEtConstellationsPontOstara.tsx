@@ -72,15 +72,12 @@ export const TantraEtConstellationsPontOstara: FC = () => {
             <div className="card-body pt-2">
               <Description>
                 Lors de ce stage, nous alternerons des structures de tantra (méditation actives,
-                toucher méditatif, pratiques de groupe , vagues…) ainsi que des temps de
-                constellations familiales ou systémiques. Un thème plus précis sera déterminé en
-                amont, permettant d'explorer un sujet d'approfondissement : Polarités, Œdipe,
-                sexualité, ouverture du cœur, consentement, chakras, ombres et lumières,
-                corps-mental-Ego, les relations...
+                toucher méditatif, pratiques de groupe , vagues…), de 7-energy-dance, ainsi que des
+                temps de constellations familiales ou systémiques.
               </Description>
               <Description>
-                Les possibilités sont nombreuses et toutes passionnantes. Le choix sera déterminé
-                par une constellation lors de vos inscriptions.
+                Notre souhait pour ce stage : à travers le mythe de Tirésias, explorer les genres en
+                action dans le plaisir et la vitalité. Qu'est-ce qui m'empêche de jouir de la vie ?
               </Description>
             </div>
           </SemiTransparentTile>
@@ -132,10 +129,10 @@ export const TantraEtConstellationsPontOstara: FC = () => {
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 200€</span>
                     <span className="">Hébergement : 90€ pour la durée du stage</span>
-                    <span className="mt-2">
+                    {/* <span className="mt-2">
                       Repas : repas partagés avec possibilité de faire une commande groupée livrée
                       sur place par Lexio (traiteur Antillais).
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -148,6 +145,9 @@ export const TantraEtConstellationsPontOstara: FC = () => {
                     <span className="">
                       Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                     </span>
+                    <span className="">
+                      Séverine Lecacheur <CallablePhoneNumber phoneNumber="06 18 63 32 22" />
+                    </span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -157,8 +157,7 @@ export const TantraEtConstellationsPontOstara: FC = () => {
                   <i className="bi bi-car-front-fill fs-1 me-4"></i>
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">
-                      Nous organiserons un <span className="text-light">co-voiturage</span>, ou
-                      venons vous chercher à la gare qui se situe à 7 minutes du lieu de stage.
+                      Nous organiserons un <span className="text-light">co-voiturage</span>
                     </span>
                   </div>
                 </div>
@@ -183,15 +182,12 @@ export const TantraEtConstellationsPontOstara: FC = () => {
                         ]}
                         emphasizedWordsCssClassNames={['text-info-emphasis']}
                       >
-                        Concernant l'hébergement, prévoir une parure de lit 1 personne, votre
-                        nécessaire de toilette avec votre serviette et des bouchons d'oreilles si
-                        toutefois les bruits des grenouilles ou autre créature humaine vous
-                        dérangeaient. Apportez votre zafu ou coussin de méditation, votre nécessaire
-                        de massage (grand drap, serviette épaisse, huile neutre), des changes de
-                        plusieurs T-shirts ainsi qu'une tenue festive et des sous-vêtements ne
-                        craignant pas d'être tachés ou huilés. Apportez aussi des accessoires ou
-                        tenues dits masculins et féminins. Vous pouvez apporter votre tambour ou
-                        autre instrument d'harmonisation si le coeur vous en dit.
+                        Apportez votre zafu ou coussin de méditation, votre nécessaire de massage
+                        (grand drap, serviette épaisse, huile neutre), des changes de plusieurs
+                        T-shirts ainsi qu'une tenue festive et des sous-vêtements ne craignant pas
+                        d'être tachés ou huilés. Apportez aussi des accessoires ou tenues dits
+                        masculins et féminins. Vous pouvez apporter votre tambour ou autre
+                        instrument d'harmonisation si le coeur vous en dit.
                       </Description>
                     </span>
                   </div>
@@ -219,8 +215,8 @@ export const TantraEtConstellationsPontOstara: FC = () => {
           <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
             <div className="card-body">
               <Quote
-                sentence="Que vos choix soient le reflet de vos espoirs et non de vos peurs."
-                author="Nelson Mandela"
+                sentence="il est grand temps de rallumer les étoiles."
+                author="Les mamelles de Tirésias, Guillaume Apollinaire"
               />
             </div>
           </SemiTransparentTile>

@@ -1,19 +1,21 @@
 import { FC } from 'react';
 
 function toClosedSentence(sentence: string): string {
+  const decodedSentence = decodeThreeDots(
+    decodeDotCom(decodeExclamationPoint(decodeQuestionMark(sentence))),
+  );
   if (
-    hasColonsAtTheEnd(sentence) ||
-    hasSemiColonsAtTheEnd(sentence) ||
-    hasExclamationPointAtTheEnd(sentence) ||
-    hasSmileyAtTheEnd(sentence)
+    hasExclamationPointAtTheEnd(decodedSentence) ||
+    hasThreeDotsAtTheEnd(decodedSentence) ||
+    hasColonsAtTheEnd(decodedSentence) ||
+    hasSemiColonsAtTheEnd(decodedSentence) ||
+    hasSmileyAtTheEnd(decodedSentence) ||
+    hasQuestionMarkAtTheEnd(decodedSentence)
   ) {
-    return decodeThreeDots(sentence);
-  }
-  if (hasThreeDotsAtTheEnd(sentence)) {
-    return decodeThreeDots(sentence);
+    return decodedSentence;
   }
 
-  return `${decodeThreeDots(sentence)}.`;
+  return `${decodedSentence}.`;
 }
 
 function toSentenceWithNotes(sentence: string): string {
@@ -28,6 +30,18 @@ function encodeThreeDots(sentence: string): string {
   return sentence.replaceAll('...', '|||');
 }
 
+function encodeExclamationPoint(sentence: string): string {
+  return sentence.replaceAll(/![\s\n]/g, 'III.');
+}
+
+function encodeQuestionMark(sentence: string): string {
+  return sentence.replaceAll('?', 'qqq.');
+}
+
+function encodeDotCom(sentence: string): string {
+  return sentence.replaceAll('.com', '|com');
+}
+
 function encodeNote(sentence: string): string {
   return sentence.replaceAll('*', '<sup class="">*</sup>');
 }
@@ -35,7 +49,15 @@ function encodeNote(sentence: string): string {
 function decodeThreeDots(sentence: string): string {
   return sentence.replaceAll('|||', '...');
 }
-
+function decodeDotCom(sentence: string): string {
+  return sentence.replaceAll('|com', '.com');
+}
+function decodeExclamationPoint(sentence: string): string {
+  return sentence.replaceAll('III', '!');
+}
+function decodeQuestionMark(sentence: string): string {
+  return sentence.replaceAll('qqq', '?');
+}
 function hasThreeDotsAtTheEnd(sentence: string): boolean {
   return sentence.endsWith('|||');
 }
@@ -59,6 +81,10 @@ function hasSmileyAtTheEnd(sentence: string): boolean {
   return sentence.endsWith(';)') || sentence.endsWith(':)');
 }
 
+function hasQuestionMarkAtTheEnd(sentence: string): boolean {
+  return sentence.endsWith('?');
+}
+
 function toEmphasized(
   sentence: string,
   words: string[] | undefined,
@@ -79,8 +105,7 @@ function toEmphasized(
   }
 
   let result = sentence;
-  for (let index = 0; index < words.length; index++) {
-    const word = words[index];
+  for (const word of words) {
     if (result.includes(word)) {
       result = result.replaceAll(
         word,
@@ -105,8 +130,8 @@ export const Description: FC<DescriptionOwnProps> = ({
   if (typeof children !== 'string') {
     return <>{children}</>;
   }
-  const text = children as string;
-  const sentences = encodeThreeDots(text)
+  const text = children;
+  const sentences = encodeThreeDots(encodeDotCom(encodeExclamationPoint(encodeQuestionMark(text))))
     .split('.')
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
@@ -128,7 +153,7 @@ export const Description: FC<DescriptionOwnProps> = ({
           ></p>
         ) : (
           <p
-            key={index}
+            key={sentence}
             dangerouslySetInnerHTML={{
               __html: toEmphasized(
                 toSentenceWithNotes(toClosedSentence(sentence)),
