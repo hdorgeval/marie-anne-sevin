@@ -92,12 +92,12 @@ export const Constellations: FC = () => {
                   <div className="d-flex flex-column card-subtitle">
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaine date :</span>
-                      <span className="ps-1 text-light">Samedi 25 novembre 2023</span>
+                      <span className="ps-1 text-light">Vendredi 9 aout 2024</span>
                       {/* <span className="ps-1 text-light">Mardi 28 novembre 2023</span> */}
                     </div>
                     <OpenExternalLinkButton
                       className="btn btn-outline-light fw-bolder w-100 mt-2"
-                      link="https://forms.gle/Cy8BDHxgFM7zNN3a6"
+                      link="https://forms.gle/xmLTfhiaM4ZRceXK6"
                       analyticsEvent="rdv-constellation"
                       title="Prendre rendez-vous"
                     >
