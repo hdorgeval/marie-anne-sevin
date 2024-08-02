@@ -92,7 +92,7 @@ export const Constellations: FC = () => {
                   <div className="d-flex flex-column card-subtitle">
                     <div className="d-flex flex-column card-subtitle">
                       <span className="">Prochaine date :</span>
-                      <span className="ps-1 text-light">Vendredi 9 aout 2024</span>
+                      <span className="ps-1 text-light">Vendredi 9 aout 2024 de 14h30 à 18h30</span>
                       {/* <span className="ps-1 text-light">Mardi 28 novembre 2023</span> */}
                     </div>
                     <OpenExternalLinkButton
@@ -109,7 +109,7 @@ export const Constellations: FC = () => {
               <TransparentListGroupItem className="pt-3">
                 <div className="card-body py-0 mb-0 text-light">
                   <Description>
-                    3h de Constellations familiales et systémiques démarrage à 15h par un temps de
+                    3h de Constellations familiales et systémiques démarrage à 14h30 par un temps de
                     centrage puis temps de constellations (familiales si une personne demande une
                     constellation en amont - systémiques si nous explorons une problématique
                     générale)
