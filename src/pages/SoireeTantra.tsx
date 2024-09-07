@@ -65,6 +65,24 @@ const events: Events[] = [
     trailer: 'Méditation et exploration',
     location: ['Trappes (78)'],
   },
+  {
+    date: '2024/09/17',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
+  {
+    date: '2024/10/08',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
+  {
+    date: '2024/11/19',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
 ];
 
 function getEventThemeByDate(
