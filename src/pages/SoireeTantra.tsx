@@ -72,7 +72,7 @@ const events: Events[] = [
     location: ['Versailles (78)'],
   },
   {
-    date: '2024/10/08',
+    date: '2024/10/07',
     theme: '',
     trailer: '',
     location: ['Versailles (78)'],
