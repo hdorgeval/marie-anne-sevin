@@ -93,7 +93,7 @@ export const ToucherPresentToucherConscient: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-calendar-event fs-1 me-4"></i>
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="">Début du stage : le samedi à 9h</span>
+                    <span className="">Début du stage : le samedi à 11h30</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -101,7 +101,7 @@ export const ToucherPresentToucherConscient: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-calendar-x fs-1 me-4"></i>
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="mt-2">Fin du stage : le dimanche à 17h</span>
+                    <span className="mt-2">Fin du stage : le lundi à 14h30</span>
                     <span className="py-2">
                       Vous avez la possibilité d'arriver la veille et de repartir le lendemain sans
                       surcoût.
