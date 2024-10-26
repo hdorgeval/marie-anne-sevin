@@ -83,6 +83,12 @@ const events: Events[] = [
     trailer: '',
     location: ['Versailles (78)'],
   },
+  {
+    date: '2024/12/17',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
 ];
 
 function getEventThemeByDate(

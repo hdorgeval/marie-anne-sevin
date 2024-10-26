@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { usePublicPage } from '../contexts/userContext';
 import { useGuidedTour } from '../hooks/useGuidedTour';
@@ -57,6 +58,16 @@ export const LandingPage: FC = () => {
                 <span>Prendre un rendez-vous</span>
               </div>
             </OpenExternalLinkButton>
+            <Link
+              to="/calendrier"
+              className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
+              title="Calendrier 2024/2025"
+              aria-label="Calendrier 2024/2025"
+            >
+              <div className="d-flex flex-column align-items-center">
+                <span>Calendrier 2024/2025</span>
+              </div>
+            </Link>
 
             <Footer />
           </div>
