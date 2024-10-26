@@ -42,9 +42,16 @@ export const LandingPage: FC = () => {
               </PageSubTitle>
             </div>
 
-            {/* <div className="mt-4">
-              <NextToCome />
-            </div> */}
+            <Link
+              to="/calendrier"
+              className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
+              title="Calendrier 2024/2025"
+              aria-label="Calendrier 2024/2025"
+            >
+              <div className="d-flex flex-column align-items-center">
+                <span>Calendrier 2024/2025</span>
+              </div>
+            </Link>
 
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"
@@ -58,16 +65,6 @@ export const LandingPage: FC = () => {
                 <span>Prendre un rendez-vous</span>
               </div>
             </OpenExternalLinkButton>
-            <Link
-              to="/calendrier"
-              className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
-              title="Calendrier 2024/2025"
-              aria-label="Calendrier 2024/2025"
-            >
-              <div className="d-flex flex-column align-items-center">
-                <span>Calendrier 2024/2025</span>
-              </div>
-            </Link>
 
             <Footer />
           </div>
