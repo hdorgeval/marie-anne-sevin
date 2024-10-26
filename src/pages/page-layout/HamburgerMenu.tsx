@@ -57,6 +57,16 @@ export const HambugerMenu: FC = () => {
               <li className="nav-item w-100 text-start">
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <Link
+                    to="/calendrier"
+                    className="text-decoration-none text-light"
+                    title="Calendrier 2024/2025"
+                    aria-label="Calendrier 2024/2025"
+                  >
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Calendrier 2024/2025
+                    </span>
+                  </Link>
+                  <Link
                     to="/"
                     className="text-decoration-none text-light"
                     aria-current="page"

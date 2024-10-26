@@ -19,6 +19,12 @@
   </url>
 
   <url>
+    <loc>https://marie-anne-sevin.com/calendrier</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://marie-anne-sevin.com/temoignages</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

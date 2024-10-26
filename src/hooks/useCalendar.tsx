@@ -17,6 +17,8 @@ export interface CalendarOptions {
   endDate: string;
 }
 
+type Language = 'fr';
+
 export interface DateInfos {
   date: string;
   day: string;
@@ -24,13 +26,18 @@ export interface DateInfos {
   month: string;
   year: string;
   isPassed: boolean;
+  lang: Language;
+  localizedDateFull: string;
 }
 
-export function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
-  const year = new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(new Date(isoDate));
-  const day = new Intl.DateTimeFormat('fr', { day: 'numeric' }).format(new Date(isoDate));
-  const weekday = new Intl.DateTimeFormat('fr', { weekday: 'long' }).format(new Date(isoDate));
-  const month = new Intl.DateTimeFormat('fr', { month: 'long' }).format(new Date(isoDate));
+export function extractDateInfosFromIsoDate(isoDate: string, lang: Language): DateInfos {
+  const year = new Intl.DateTimeFormat(lang, { year: 'numeric' }).format(new Date(isoDate));
+  const day = new Intl.DateTimeFormat(lang, { day: 'numeric' }).format(new Date(isoDate));
+  const weekday = new Intl.DateTimeFormat(lang, { weekday: 'long' }).format(new Date(isoDate));
+  const month = new Intl.DateTimeFormat(lang, { month: 'long' }).format(new Date(isoDate));
+  const localizedDateFull = new Intl.DateTimeFormat(lang, { dateStyle: 'full' }).format(
+    new Date(isoDate),
+  );
   const isPassed = new Date() >= new Date(isoDate);
 
   return {
@@ -40,12 +47,14 @@ export function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
     year,
     date: isoDate,
     isPassed,
+    lang,
+    localizedDateFull,
   };
 }
 
 export function buildDateRangeLabel(startDate: string, endDate: string): string {
-  const startDateInfos = extractDateInfosFromIsoDate(startDate);
-  const endDateInfos = extractDateInfosFromIsoDate(endDate);
+  const startDateInfos = extractDateInfosFromIsoDate(startDate, 'fr');
+  const endDateInfos = extractDateInfosFromIsoDate(endDate, 'fr');
 
   if (startDate === endDate) {
     return `${startDateInfos.day} ${startDateInfos.month} ${startDateInfos.year}`;
@@ -62,8 +71,8 @@ export function buildDateRangeLabel(startDate: string, endDate: string): string 
 }
 
 export const useCalendar = (options: CalendarOptions) => {
-  const startDateInfos = extractDateInfosFromIsoDate(options.startDate);
-  const endDateInfos = extractDateInfosFromIsoDate(options.endDate);
+  const startDateInfos = extractDateInfosFromIsoDate(options.startDate, 'fr');
+  const endDateInfos = extractDateInfosFromIsoDate(options.endDate, 'fr');
 
   const fromStartDateToEndDateText = useMemo(() => {
     if (startDateInfos.year === endDateInfos.year && startDateInfos.month === endDateInfos.month) {

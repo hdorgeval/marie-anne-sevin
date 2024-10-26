@@ -1,7 +1,7 @@
 import { extractDateInfosFromIsoDate } from './useCalendar';
 
 export const useMultipleDatesCalendar = (dates: string[]) => {
-  const datesInfos = dates.map((d) => extractDateInfosFromIsoDate(d));
+  const datesInfos = dates.map((d) => extractDateInfosFromIsoDate(d, 'fr'));
   const allDatesArePassed = datesInfos.every((d) => d.isPassed);
   const dueDatesInfos = datesInfos.filter((d) => !d.isPassed);
 

@@ -15,6 +15,7 @@ export type MyAnalyticsEvent =
   | 'open-pont-d-ostara'
   | 'open-podcast-sexualité-sacrée'
   | 'open-waze'
+  | 'pre-inscription'
   | 'pre-inscription-femme-sauvage'
   | 'pre-inscription-soiree-tantra'
   | 'pre-inscription-sons-mantras-tantra'
@@ -28,7 +29,8 @@ export type MyAnalyticsEvent =
   | 'rdv-massage-meditatif'
   | 'rdv-ou-contact'
   | 'rdv-rituel-tantrique'
-  | 'start-video-xyz';
+  | 'start-video-xyz'
+  | 'voir-details-du-stage';
 
 export type CommandType = 'js' | 'config' | 'event';
 declare global {

@@ -1,5 +1,6 @@
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
+import { Calendrier } from './pages/Calendrier';
 import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: '/temoignages',
     element: <Temoignages />,
+  },
+  {
+    path: '/calendrier',
+    element: <Calendrier />,
   },
   {
     path: '/stage/sons-mantras-tantra',
