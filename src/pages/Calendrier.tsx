@@ -100,7 +100,7 @@ const upcomingEvents: UpcomingEvent[] = [
   {
     startDate: '2025/01/17',
     endDate: '2025/01/19',
-    title: 'Voix Tantrique',
+    title: 'Stage sons, mantras, tantra',
     theme: 'En chemin sur la voix tantrique',
     locationInfos: ['Bournéville (27)'],
     locationType: 'Stage en résidentiel',

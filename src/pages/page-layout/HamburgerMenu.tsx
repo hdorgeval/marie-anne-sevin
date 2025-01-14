@@ -191,19 +191,24 @@ export const HambugerMenu: FC = () => {
                   Stages
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
-                  <Link to="/stage/toucher-present-toucher-conscient">
+                  {/* <Link to="/stage/toucher-present-toucher-conscient">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Toucher Présent - Toucher Conscient
                     </span>
-                  </Link>
-                  <Link to="/stage/la-voix-du-corps">
+                  </Link> */}
+                  {/* <Link to="/stage/la-voix-du-corps">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       La Voix du Corps
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link to="/stage/sons-mantras-tantra">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Sons Mantras Tantra
+                    </span>
+                  </Link>
+                  <Link to="/stage/tantra-et-constellations">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Tantra et Constellations
                     </span>
                   </Link>
                   <Link to="/stage/femme-sauvage">
@@ -216,11 +221,7 @@ export const HambugerMenu: FC = () => {
                       Tantra femme
                     </span>
                   </Link>
-                  <Link to="/stage/tantra-et-constellations">
-                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
-                      Tantra et Constellations
-                    </span>
-                  </Link>
+
                   {/* <Link to="/stage/voix-et-bols-tibetains">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Bien être par la voix et bols tibétains

@@ -27,7 +27,7 @@ export const SonsMantrasTantra: FC = () => {
     >
       <div>
         <div className="mt-4 pt-4">
-          <PageTitle>Sons Mantras Tantra</PageTitle>
+          <PageTitle>Stage sons Mantras Tantra</PageTitle>
         </div>
         <div>
           {startDateInfos.isPassed ? (
@@ -99,7 +99,7 @@ export const SonsMantrasTantra: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-calendar-x fs-1 me-4"></i>
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="">Fin du stage : le dimanche à 17h</span>
+                    <span className="">Fin du stage : le dimanche à 16h30</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -126,11 +126,8 @@ export const SonsMantrasTantra: FC = () => {
                   <i className="bi bi-currency-euro fs-1 me-4"></i>
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 220€</span>
-                    <span className="">Hébergement : 35€ par nuitée</span>
-                    <span className="">
-                      Repas : repas partagés (possibilité de commander les repas auprès de Lexio,
-                      10€ par repas)
-                    </span>
+                    <span className="">Hébergement : 50€ pour la durée du stage</span>
+                    <span className="">Repas : repas partagés</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
