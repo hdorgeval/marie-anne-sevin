@@ -1,6 +1,6 @@
 import { FC, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import thumbnail from '../../assets/video-thumbnail.png';
+import thumbnail from '../../assets/video-thumbnail-2025.webp';
 import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
 import { VideoPlayer } from '../../components/video-player';
 
@@ -59,11 +59,11 @@ export const HambugerMenu: FC = () => {
                   <Link
                     to="/calendrier"
                     className="text-decoration-none text-light"
-                    title="Calendrier 2024/2025"
-                    aria-label="Calendrier 2024/2025"
+                    title="Calendrier 2025"
+                    aria-label="Calendrier 2025"
                   >
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
-                      Calendrier 2024/2025
+                      Calendrier 2025
                     </span>
                   </Link>
                   <Link
@@ -243,14 +243,11 @@ export const HambugerMenu: FC = () => {
 
               <li className="nav-item w-100 text-start mt-3">
                 <div className="w-100 border-bottom border-secondary fs-6 text-secondary d-flex p-1 flex-row flex-wrap align-items-center">
-                  <span>Rétrospective 2023</span>
+                  <span>Rétrospective 2024</span>
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <div className="container-fluid mt-4 w-100 m-auto">
-                    <VideoPlayer
-                      thumbnailUrl={thumbnail}
-                      videoUrl="/videos/VIDEO-2024-01-04-10-42-01.mp4"
-                    />
+                    <VideoPlayer thumbnailUrl={thumbnail} videoUrl="/videos/VIDEO-2025.mp4" />
                   </div>
                 </div>
               </li>

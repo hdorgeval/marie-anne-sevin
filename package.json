@@ -13,7 +13,8 @@
     "lint": "eslint . --ext .js,.ts,.tsx, --format visualstudio --no-color --max-warnings 10 --report-unused-disable-directives",
     "tsc-init": "tsc --init",
     "tsc": "tsc --listEmittedFiles",
-    "test-sendgrid": "ts-node netlify/sendgrid/hello-world.ts"
+    "test-sendgrid": "ts-node netlify/sendgrid/hello-world.ts",
+    "compress-image": "cwebp -q 15 src/assets/video-thumbnail-2025.png -o src/assets/video-thumbnail-2025.webp"
   },
   "dependencies": {
     "@netlify/functions": "2.5.1",

@@ -196,11 +196,11 @@ export const Calendrier: FC = () => {
       backgroundImageUrl="/images/background-temoignages.webp"
       backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(79, 79, 93, 0.1), rgba(79, 79, 93, 0.7) 90% 100%)"
       backgroundPosition="33%"
-      htmlTitle="Calendrier 2024/2025 | Marie-Anne Sévin"
+      htmlTitle="Calendrier 2025 | Marie-Anne Sévin"
     >
       <div>
         <div className="mt-4 pt-4">
-          <PageTitle>Calendrier 2024/2025</PageTitle>
+          <PageTitle>Calendrier 2025</PageTitle>
           {hasNoEvent && (
             <div>
               <PageSubTitle>Dates à venir</PageSubTitle>

@@ -45,11 +45,11 @@ export const LandingPage: FC = () => {
             <Link
               to="/calendrier"
               className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
-              title="Calendrier 2024/2025"
-              aria-label="Calendrier 2024/2025"
+              title="Calendrier 2025"
+              aria-label="Calendrier 2025"
             >
               <div className="d-flex flex-column align-items-center">
-                <span>Calendrier 2024/2025</span>
+                <span>Calendrier 2025</span>
               </div>
             </Link>
 
