@@ -110,6 +110,18 @@ const upcomingEvents: UpcomingEvent[] = [
     },
   },
   {
+    startDate: '2025/01/21',
+    startTime: '19h30',
+    endDate: '2025/01/21',
+    title: 'Soirée tantra',
+    theme: '',
+    locationInfos: ['Versailles (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
+    },
+  },
+  {
     startDate: '2025/03/21',
     endDate: '2025/03/23',
     title: 'Tantra Femme niveau 2',
