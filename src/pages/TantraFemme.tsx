@@ -15,8 +15,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const TantraFemme: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2023/06/16',
-    endDate: '2023/06/18',
+    startDate: '2025/03/21',
+    endDate: '2025/03/23',
   });
 
   return (
@@ -54,8 +54,7 @@ export const TantraFemme: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-geo-alt fs-3 me-4"></i>
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
-                    <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span>
+                    <span className="text-nowrap fs-7"> Bournéville (27)</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -89,7 +88,7 @@ export const TantraFemme: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-calendar-x fs-1 me-4"></i>
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="">Fin du stage : le dimanche à 17h</span>
+                    <span className="">Fin du stage : le dimanche à 16h30</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -116,10 +115,8 @@ export const TantraFemme: FC = () => {
                   <i className="bi bi-currency-euro fs-1 me-4"></i>
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 220€</span>
-                    <span className="">Hébergement : 35€ par nuitée</span>
-                    <span className="">
-                      Repas : repas partagés (possibilité de commander des repas)
-                    </span>
+                    <span className="">Hébergement : 50€ pour la durée du stage</span>
+                    <span className="">Repas : repas partagés</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -140,7 +137,7 @@ export const TantraFemme: FC = () => {
               </TransparentListGroupItem>
             </ul>
             <div className="card-body pb-0">
-              <p>Un acompte de 70€ est demandé à l'inscription.</p>
+              <p>Un acompte de 100€ est demandé à l'inscription.</p>
             </div>
           </SemiTransparentTile>
           <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
