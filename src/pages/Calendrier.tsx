@@ -114,7 +114,7 @@ const upcomingEvents: UpcomingEvent[] = [
     startTime: '19h30',
     endDate: '2025/01/21',
     title: 'Soirée tantra',
-    theme: '',
+    theme: 'Méditation de la caresse',
     locationInfos: ['Versailles (78)'],
     preSubscribtionLink: {
       url: 'https://forms.gle/4aY62NqVqtd6ghKH7',

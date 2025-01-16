@@ -91,7 +91,7 @@ const events: Events[] = [
   },
   {
     date: '2025/01/21',
-    theme: '',
+    theme: 'Méditation de la caresse',
     trailer: '',
     location: ['Versailles (78)'],
   },
