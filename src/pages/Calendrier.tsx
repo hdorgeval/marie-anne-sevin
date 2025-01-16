@@ -145,6 +145,30 @@ const upcomingEvents: UpcomingEvent[] = [
       title: 'Se pré-inscrire au stage',
     },
   },
+  {
+    startDate: '2025/02/04',
+    startTime: '19h30',
+    endDate: '2025/02/04',
+    title: 'Soirée tantra',
+    theme: '',
+    locationInfos: ['Versailles (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
+    },
+  },
+  {
+    startDate: '2025/03/11',
+    startTime: '19h30',
+    endDate: '2025/03/11',
+    title: 'Soirée tantra',
+    theme: '',
+    locationInfos: ['Versailles (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
+    },
+  },
 ];
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {

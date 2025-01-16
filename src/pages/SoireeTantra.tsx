@@ -95,6 +95,18 @@ const events: Events[] = [
     trailer: '',
     location: ['Versailles (78)'],
   },
+  {
+    date: '2025/02/04',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
+  {
+    date: '2025/03/11',
+    theme: '',
+    trailer: '',
+    location: ['Versailles (78)'],
+  },
 ];
 
 function getEventThemeByDate(
