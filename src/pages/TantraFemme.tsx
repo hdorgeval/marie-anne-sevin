@@ -27,7 +27,7 @@ export const TantraFemme: FC = () => {
     >
       <div>
         <div className="mt-4 pt-4">
-          <PageTitle>L'intime au cœur du sacré</PageTitle>
+          <PageTitle>Tantra Femme</PageTitle>
         </div>
         <div>
           {startDateInfos.isPassed ? (
@@ -39,7 +39,7 @@ export const TantraFemme: FC = () => {
         <div className="d-flex px-0 pt-4 flex-column justify-content-between">
           <SemiTransparentTile className="card text-start text-light font-monserrat">
             <div className="card-body">
-              <h5 className="card-title mb-0 fw-bolder">Tantra Femme Corps-Coeur-Conscience</h5>
+              <h5 className="card-title mb-0 fw-bolder">L'intime au cœur du sacré</h5>
             </div>
             <ul className="list-group list-group-flush mt-0 pt-0">
               <TransparentListGroupItem className="mt-0 pt-1 pb-0">
@@ -129,9 +129,9 @@ export const TantraFemme: FC = () => {
                     <span className="">
                       Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                     </span>
-                    <span className="">
+                    {/* <span className="">
                       Charlotte Seban <CallablePhoneNumber phoneNumber="06 14 22 01 81" />
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </TransparentListGroupItem>
