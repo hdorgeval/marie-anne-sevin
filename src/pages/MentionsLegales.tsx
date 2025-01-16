@@ -42,7 +42,7 @@ export const MentionsLegales: FC = () => {
             <p className="mt-3">
               L'édition du Site est assurée par A.R.T.S SARL unipersonnelle au capital de 3000
               euros, immatriculée au Registre du Commerce et des Sociétés de Trappes sous le numéro
-              899171433 dont le siège social est situé au 46 AV DES FRERES LUMIERE 78190 TRAPPES.
+              899171433 dont le siège social est situé au 31 RUE RIEUSSEC 78220 VIROFLAY.
             </p>
             <p>Numéro de téléphone : 0683479774</p>
             <p>Adresse e-mail : arts78.mas@gmail.com.</p>
