@@ -36,6 +36,10 @@ const upcomingEvents: UpcomingEvent[] = [
       url: 'https://forms.gle/JikSKyQaBHo45dCF8',
       title: 'Se pré-inscrire au stage',
     },
+    detailsLink: {
+      url: 'https://marie-anne-sevin.com/stage/tantra-homme',
+      title: 'Voir les détails du stage',
+    },
   },
   {
     startDate: '2024/11/19',
@@ -132,6 +136,10 @@ const upcomingEvents: UpcomingEvent[] = [
       url: 'https://forms.gle/2z5655UUdW5J7DAN9',
       title: 'Se pré-inscrire au stage',
     },
+    detailsLink: {
+      url: 'https://marie-anne-sevin.com/stage/tantra-femme',
+      title: 'Voir les détails du stage',
+    },
   },
   {
     startDate: '2025/04/11',
@@ -143,6 +151,10 @@ const upcomingEvents: UpcomingEvent[] = [
     preSubscribtionLink: {
       url: 'https://forms.gle/AuDRHGGGtGJQ6ekq5',
       title: 'Se pré-inscrire au stage',
+    },
+    detailsLink: {
+      url: 'https://marie-anne-sevin.com/stage/tantra-et-constellations',
+      title: 'Voir les détails du stage',
     },
   },
   {
