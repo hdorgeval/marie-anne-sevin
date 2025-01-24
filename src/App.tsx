@@ -1,20 +1,21 @@
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
 import { Calendrier } from './pages/Calendrier';
 import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { InitiationMassageMeditatif } from './pages/InitiationMassageMeditatif';
-import { LandingPage } from './pages/LandingPage';
 import { LaVoixDuCorps } from './pages/LaVoixDuCorps';
+import { LandingPage } from './pages/LandingPage';
 import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
 import { RituelTantrique } from './pages/RituelTantrique';
 import { SoireeTantra } from './pages/SoireeTantra';
 import { SonsMantrasTantra } from './pages/SonsMantrasTantra';
-import { TantraEtConstellationsPontOstara } from './pages/TantraEtConstellationsPontOstara';
+import { TantraEtConstellationsBourneville } from './pages/TantraEtConstellationsBourneville';
 import { TantraFemme } from './pages/TantraFemme';
+import { TantraHomme } from './pages/TantraHomme';
 import { Temoignages } from './pages/Temoignages';
 import { ToucherPresentToucherConscient } from './pages/ToucherPresentToucherConscient';
 import { VoixEtBolsTibetains } from './pages/VoixEtBolsTibetains';
@@ -54,8 +55,12 @@ const router = createBrowserRouter([
     element: <TantraFemme />,
   },
   {
+    path: '/stage/tantra-homme',
+    element: <TantraHomme />,
+  },
+  {
     path: '/stage/tantra-et-constellations',
-    element: <TantraEtConstellationsPontOstara />,
+    element: <TantraEtConstellationsBourneville />,
   },
   {
     path: '/stage/voix-et-bols-tibetains',

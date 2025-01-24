@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import portrait2 from '../assets/portrait-ff-1.png';
 import portrait1 from '../assets/portrait-mas-1.png';
+import portrait2 from '../assets/portrait-oliveros.webp';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
@@ -13,21 +13,21 @@ import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
-export const SonsMantrasTantra: FC = () => {
+export const TantraHomme: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2025/01/17',
-    endDate: '2025/01/19',
+    startDate: '2025/02/28',
+    endDate: '2025/03/02',
   });
 
   return (
     <PublicPageLayoutWithFixedBackgroundImage
-      backgroundImageUrl="/images/background-sons-mantras-tantra.jpg"
+      backgroundImageUrl="/images/background-tantra-homme.webp"
       backgroundPosition="33%"
-      htmlTitle="Sons Mantras Tantra | Stage | Marie-Anne Sévin"
+      htmlTitle="Tantra homme | Stage | Marie-Anne Sévin"
     >
       <div>
         <div className="mt-4 pt-4">
-          <PageTitle>Stage sons Mantras Tantra</PageTitle>
+          <PageTitle>Tantra Homme</PageTitle>
         </div>
         <div>
           {startDateInfos.isPassed ? (
@@ -39,7 +39,8 @@ export const SonsMantrasTantra: FC = () => {
         <div className="d-flex px-0 pt-4 flex-column justify-content-between">
           <SemiTransparentTile className="card text-start text-light font-monserrat">
             <div className="card-body">
-              <h5 className="card-title mb-0 fw-bolder">En chemin sur la voix tantrique</h5>
+              <h5 className="card-title mb-0 fw-bolder">Les 4 éléments</h5>
+              <h6 className="card-title mb-0 fw-bolder">Tantra homme animé par une femme</h6>
             </div>
             <ul className="list-group list-group-flush mt-0 pt-0">
               <TransparentListGroupItem className="mt-0 pt-1 pb-0">
@@ -61,25 +62,12 @@ export const SonsMantrasTantra: FC = () => {
             </ul>
             <div className="card-body pt-2">
               <Description>
-                Lors de ce stage, nous utiliserons les mantras afin d'harmoniser l'axe énergétique
-                allant du périnée au sommet du crâne en prenant particulièrement soin du chakra de
-                la gorge, Vishuddha. Les méditations actives, l'utilisation des instruments
-                thérapeutiques comme les bols tibétains, les carillons, les tambours ainsi que le
-                travail corporel aideront à libérer la parole, la voix et à découvrir le pouvoir du
-                son sur le corps et l'esprit. Avec le tambour unité* de Floriane, nous
-                transformerons ce qui a besoin de l'être par sa puissance vibratoire. Vous pouvez
-                venir avec un instrument si le cœur vous en dit. Nous viendrons également avec les
-                bols tibétains et tambours de coffret d'alumine que nous vous mettrons à disposition
-                en prêt ou à la vente.
+                Ce stage est né d'un élan fort dans la résonnances des accompagnements que je
+                propose depuis 15 ans notamment auprès des hommes. Le thème des 4 éléments est une
+                bonne entrée en "matière" pour explorer l'unité et la liberté d'être de chacun et
+                prendre conscience des différents conditionnements et héritages pour mieux s'en
+                détacher. méditation, structures et constellations seront au programme de ce stage.
               </Description>
-            </div>
-          </SemiTransparentTile>
-          <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
-            <div className="card-body">
-              <h6 className="card-title mb-0 fw-bolder">
-                * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
-                exceptionnelle
-              </h6>
             </div>
           </SemiTransparentTile>
           <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
@@ -126,7 +114,10 @@ export const SonsMantrasTantra: FC = () => {
                   <i className="bi bi-currency-euro fs-1 me-4" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 220€</span>
-                    <span className="">Hébergement : 50€ pour la durée du stage</span>
+                    <span className="">
+                      Hébergement : 50€ pour la durée du stage, avec possibilité d'arriver la veille
+                      et de repartir le lendemain
+                    </span>
                     <span className="">Repas : repas partagés</span>
                   </div>
                 </div>
@@ -140,9 +131,6 @@ export const SonsMantrasTantra: FC = () => {
                     <span className="">
                       Marie-Anne Sévin <CallablePhoneNumber phoneNumber="06 83 47 97 74" />
                     </span>
-                    <span className="">
-                      Floriane Fagot <CallablePhoneNumber phoneNumber="07 71 57 87 00" />
-                    </span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -155,8 +143,8 @@ export const SonsMantrasTantra: FC = () => {
             <div className="card-body">
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-100 mt-0"
-                link="https://forms.gle/4U937a7KkQ5hGDZD9"
-                analyticsEvent="pre-inscription-sons-mantras-tantra"
+                link="https://forms.gle/JikSKyQaBHo45dCF8"
+                analyticsEvent="pre-inscription-tantra-homme"
                 title="Se pré-inscrire au stage"
               >
                 Se pré-inscrire au stage
@@ -165,14 +153,16 @@ export const SonsMantrasTantra: FC = () => {
           </SemiTransparentTile>
           <SemiTransparentTile className="card text-start text-light font-playfair mt-4">
             <div className="card-body">
-              <Quote sentence="La voix est la musique de l'âme" author="Barbara" />
+              <Quote
+                sentence="On ne vit une intimité complète que dans le cercle restreint d'un lieu aimé."
+                author="François Hertel"
+              />
             </div>
           </SemiTransparentTile>
-
           <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
             <div className="card-body">
               <h5 className="card-title mb-0 fw-bolder">
-                Animé par Marie-Anne Sévin assistée de Floriane Fagot
+                Animé par Marie-Anne Sévin assistée de Oliv'Eros
               </h5>
             </div>
             <ul className="list-group list-group-flush">
@@ -182,36 +172,26 @@ export const SonsMantrasTantra: FC = () => {
                   <AnimatedBy.FigCaption>
                     Marie-Anne, musicienne, masseuse et thérapeute.
                   </AnimatedBy.FigCaption>
-                  <AnimatedBy.Description>
-                    Mon accompagnement se nourrit des nombreuses approches que j'ai rencontrées dans
-                    ma vie. Animatrice de tantra et de stages psycho-corporels, j'accompagne depuis
-                    25 ans en bien-être par la voix les publics de la périnatalité à la fin de vie.
-                  </AnimatedBy.Description>
                 </AnimatedBy>
               </TransparentListGroupItem>
               <TransparentListGroupItem className="">
                 <AnimatedBy>
-                  <AnimatedBy.Img src={portrait2} />
-                  <AnimatedBy.FigCaption>
-                    Floriane, artiste et porteuse du tambour unité*, fondatrice de Coffret d'Alumine
-                    dédié au bien-être.
-                  </AnimatedBy.FigCaption>
-                  <AnimatedBy.Description>
-                    Je vous accompagne sur ce stage pour la 3eme année à la découverte des
-                    instruments vibratoires. Avec mon tambour unité*, nous vous connecterons à la
-                    force de vie et à votre nature profonde en vous reliant directement à la terre
-                    et au ciel.
-                  </AnimatedBy.Description>
+                  <AnimatedBy.Img className="img-thumbnail" src={portrait2} />
+                  <AnimatedBy.FigCaption>Oliv'Eros</AnimatedBy.FigCaption>
                 </AnimatedBy>
               </TransparentListGroupItem>
             </ul>
           </SemiTransparentTile>
           <SemiTransparentTile className="card text-start text-light font-monserrat mt-4">
             <div className="card-body">
-              <h6 className="card-title mb-0 fw-bolder">
-                * Le tambour unité mesure 1m80 ce qui lui confère une puissance vibratoire
-                exceptionnelle
-              </h6>
+              <OpenExternalLinkButton
+                className="btn btn-outline-light fw-bolder w-100 mt-0"
+                link="https://forms.gle/JikSKyQaBHo45dCF8"
+                analyticsEvent="pre-inscription-tantra-homme"
+                title="Se pré-inscrire au stage"
+              >
+                Se pré-inscrire au stage
+              </OpenExternalLinkButton>
             </div>
           </SemiTransparentTile>
         </div>
@@ -220,4 +200,4 @@ export const SonsMantrasTantra: FC = () => {
   );
 };
 
-SonsMantrasTantra.displayName = 'SonsMantrasTantra';
+TantraHomme.displayName = 'TantraHomme';

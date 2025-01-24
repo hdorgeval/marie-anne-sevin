@@ -1,4 +1,4 @@
-import { FC, useMemo } from 'react';
+import { type FC, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import thumbnail from '../../assets/video-thumbnail-2025.webp';
 import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
@@ -13,10 +13,10 @@ export const HambugerMenu: FC = () => {
     <nav className="navbar navbar-dark sticky-top position-absolute top-0 end-0 w-100">
       <div className="container-fluid pe-0 me-1 d-flex flex-row">
         {isOnHomePage ? (
-          <div className="flex-grow-1"></div>
+          <div className="flex-grow-1" />
         ) : (
           <Link to="/" className="navbar-brand text-reset" aria-label="Accueil" title="Accueil">
-            <i className="bi bi-house-up fs-3 text-light"></i>
+            <i className="bi bi-house-up fs-3 text-light" />
           </Link>
         )}
         <button
@@ -29,9 +29,9 @@ export const HambugerMenu: FC = () => {
           aria-label="Menu"
           data-tour-id="step-1"
         >
-          <span className="toggler-horizontal-bar"></span>
-          <span className="toggler-horizontal-bar"></span>
-          <span className="toggler-horizontal-bar"></span>
+          <span className="toggler-horizontal-bar" />
+          <span className="toggler-horizontal-bar" />
+          <span className="toggler-horizontal-bar" />
         </button>
 
         <div
@@ -50,7 +50,7 @@ export const HambugerMenu: FC = () => {
               className="btn-close btn-close-white"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+            />
           </div>
           <div className="offcanvas-body fs-6 pt-0">
             <ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
@@ -142,7 +142,8 @@ export const HambugerMenu: FC = () => {
                       <source
                         src="https://hearthis.at/marmitefm884/sacrement-feminin-202209-5-la-sexualite-sacree-v2/stream.mp3?s=coF&t=1664204379"
                         type="audio/mpeg"
-                      ></source>
+                      />
+                      <track kind="captions" srcLang="fr" label="Sous-titres français" />
                     </audio>
                   </span>
                 </div>
@@ -219,6 +220,11 @@ export const HambugerMenu: FC = () => {
                   <Link to="/stage/tantra-femme">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
                       Tantra femme
+                    </span>
+                  </Link>
+                  <Link to="/stage/tantra-homme">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Tantra homme
                     </span>
                   </Link>
 

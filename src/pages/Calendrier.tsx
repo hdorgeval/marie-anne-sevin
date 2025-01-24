@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { extractDateInfosFromIsoDate } from '../hooks/useCalendar';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -267,7 +267,7 @@ export const Calendrier: FC = () => {
                     <div className="card-body">
                       {event.locationInfos && (
                         <div className="d-flex flex-row align-items-center">
-                          <i className="bi bi-geo-alt fs-3 me-4"></i>
+                          <i className="bi bi-geo-alt fs-3 me-4" />
                           <div className="d-flex flex-column card-subtitle">
                             {event.locationInfos.map((location) => (
                               <span className="text-nowrap" key={location}>
@@ -279,7 +279,7 @@ export const Calendrier: FC = () => {
                       )}
                       {event.locationType && (
                         <div className="d-flex flex-row align-items-center">
-                          <i className="bi bi-house-heart fs-3 me-4"></i>
+                          <i className="bi bi-house-heart fs-3 me-4" />
                           <div className="d-flex flex-column card-subtitle">
                             <span className="text-nowrap">{event.locationType}</span>
                           </div>

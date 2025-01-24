@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import portrait2 from '../assets/portrait-cs-1.webp';
 import portrait1 from '../assets/portrait-mas-1.png';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
@@ -44,7 +44,7 @@ export const TantraFemme: FC = () => {
             <ul className="list-group list-group-flush mt-0 pt-0">
               <TransparentListGroupItem className="mt-0 pt-1 pb-0">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-house-heart fs-3 me-4"></i>
+                  <i className="bi bi-house-heart fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     <span className="text-nowrap fs-7">Stage en résidentiel</span>
                   </div>
@@ -52,7 +52,7 @@ export const TantraFemme: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="mt-0 pt-3">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-geo-alt fs-3 me-4"></i>
+                  <i className="bi bi-geo-alt fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     <span className="text-nowrap fs-7"> Bournéville (27)</span>
                   </div>
@@ -78,7 +78,7 @@ export const TantraFemme: FC = () => {
             <ul className="list-group list-group-flush">
               <TransparentListGroupItem className="pb-0">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-calendar-event fs-1 me-4"></i>
+                  <i className="bi bi-calendar-event fs-1 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     <span className="">Début du stage : le vendredi à 19h</span>
                   </div>
@@ -86,7 +86,7 @@ export const TantraFemme: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="pb-0">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-calendar-x fs-1 me-4"></i>
+                  <i className="bi bi-calendar-x fs-1 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     <span className="">Fin du stage : le dimanche à 16h30</span>
                   </div>
@@ -94,7 +94,7 @@ export const TantraFemme: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="py-3">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-exclamation-diamond fs-1 me-4"></i>
+                  <i className="bi bi-exclamation-diamond fs-1 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     <span className="">
                       Inscription validée uniquement après entretien téléphonique
@@ -112,7 +112,7 @@ export const TantraFemme: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="py-3">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-currency-euro fs-1 me-4"></i>
+                  <i className="bi bi-currency-euro fs-1 me-4" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 220€</span>
                     <span className="">Hébergement : 50€ pour la durée du stage</span>
@@ -123,7 +123,7 @@ export const TantraFemme: FC = () => {
 
               <TransparentListGroupItem className="py-3">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-info-circle fs-1 me-4"></i>
+                  <i className="bi bi-info-circle fs-1 me-4" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Pour toute question ou renseignement :</span>
                     <span className="">
