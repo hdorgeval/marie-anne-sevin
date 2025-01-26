@@ -1,4 +1,4 @@
-import { FC, useMemo } from 'react';
+import { type FC, useMemo } from 'react';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
@@ -97,7 +97,7 @@ const events: Events[] = [
   },
   {
     date: '2025/02/04',
-    theme: '',
+    theme: 'La méditation des 4 amants',
     trailer: '',
     location: ['Versailles (78)'],
   },
@@ -190,7 +190,7 @@ export const SoireeTantra: FC = () => {
             <ul className="list-group list-group-flush mt-0 pt-0">
               <TransparentListGroupItem className="pt-3">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-clock-history fs-3 me-4"></i>
+                  <i className="bi bi-clock-history fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle pt-1">
                     <span className="text-nowrap fs-7">3 heures, de 19h30 à 22h30</span>
                     <span className="text-nowrap fs-7">Merci d'arriver à 19h15</span>
@@ -200,7 +200,7 @@ export const SoireeTantra: FC = () => {
 
               <TransparentListGroupItem className="mt-0 pt-3">
                 <div className="d-flex flex-row align-items-center card-subtitle">
-                  <i className="bi bi-geo-alt fs-3 me-4"></i>
+                  <i className="bi bi-geo-alt fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle">
                     {/* <span className="text-nowrap fs-7">Yourte des Mousseaux.</span>
                     <span className="text-nowrap fs-7"> Jouars Ponchartrain (78)</span> */}
@@ -221,7 +221,7 @@ export const SoireeTantra: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="pt-1 pb-0">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-currency-euro fs-3 me-4"></i>
+                  <i className="bi bi-currency-euro fs-3 me-4" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">30€</span>
                   </div>
@@ -229,7 +229,7 @@ export const SoireeTantra: FC = () => {
               </TransparentListGroupItem>
               <TransparentListGroupItem className="pt-3">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-people fs-3 me-4"></i>
+                  <i className="bi bi-people fs-3 me-4" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Soirée animée par Marie-Anne Sévin</span>
                   </div>
@@ -238,7 +238,7 @@ export const SoireeTantra: FC = () => {
               {dueDate && (
                 <TransparentListGroupItem className="pt-3">
                   <div className="d-flex flex-row card-subtitle align-items-center">
-                    <i className="bi bi-signpost fs-3 me-4"></i>
+                    <i className="bi bi-signpost fs-3 me-4" />
                     <div className="d-flex flex-column justify-content-between ">
                       <span className="">Thème :</span>
                       {theme ? (
@@ -258,7 +258,7 @@ export const SoireeTantra: FC = () => {
 
               <TransparentListGroupItem className="py-3">
                 <div className="d-flex flex-row card-subtitle align-items-center">
-                  <i className="bi bi-info-circle fs-1 me-3"></i>
+                  <i className="bi bi-info-circle fs-1 me-3" />
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Pour toute question ou renseignement :</span>
                     <span className="">
@@ -270,7 +270,7 @@ export const SoireeTantra: FC = () => {
               {hasNextDates && (
                 <TransparentListGroupItem className="pt-3 pb-2">
                   <div className="d-flex flex-row align-items-center card-subtitle">
-                    <i className="bi bi-calendar-week fs-1 me-3"></i>
+                    <i className="bi bi-calendar-week fs-1 me-3" />
                     <div className="d-flex flex-column card-subtitle">
                       <span className="mb-1">Prochaines dates :</span>
                       {nextDates.map((d) => (
