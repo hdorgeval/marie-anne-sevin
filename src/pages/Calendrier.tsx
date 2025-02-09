@@ -5,7 +5,7 @@ import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 
-type LocationType = 'Stage en résidentiel' | 'Stage en ligne';
+type LocationType = 'Stage en résidentiel' | 'Stage en ligne' | 'Hébergement et repas sur place';
 interface LinkDetails {
   url: string;
   title: string;
@@ -179,6 +179,22 @@ const upcomingEvents: UpcomingEvent[] = [
     preSubscribtionLink: {
       url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
       title: "S'inscrire à la soirée",
+    },
+  },
+  {
+    startDate: '2025/06/27',
+    endDate: '2025/06/29',
+    title: 'Tantra Joy festival (5ème édition)',
+    theme: 'Live Love Celebrate',
+    locationInfos: ["Hameau de l'Etoile", '40 min de Montpellier'],
+    locationType: 'Hébergement et repas sur place',
+    preSubscribtionLink: {
+      url: 'https://tantrajoyfestival.com/reservations/',
+      title: "S'inscrire au festival",
+    },
+    detailsLink: {
+      url: 'https://tantrajoyfestival.com/programme/',
+      title: 'Voir les détails du festival',
     },
   },
 ];
