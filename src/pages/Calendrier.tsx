@@ -174,7 +174,7 @@ const upcomingEvents: UpcomingEvent[] = [
     startTime: '19h30',
     endDate: '2025/03/11',
     title: 'Soirée tantra',
-    theme: '',
+    theme: "Les 5 langages de l'Amour",
     locationInfos: ['Versailles (78)'],
     preSubscribtionLink: {
       url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
@@ -195,6 +195,18 @@ const upcomingEvents: UpcomingEvent[] = [
     detailsLink: {
       url: 'https://tantrajoyfestival.com/programme/',
       title: 'Voir les détails du festival',
+    },
+  },
+  {
+    startDate: '2025/04/08',
+    startTime: '19h30',
+    endDate: '2025/04/08',
+    title: 'Soirée tantra',
+    theme: 'Grande vague tantrique',
+    locationInfos: ['Vallée Rose (près de Houdan)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
     },
   },
 ];

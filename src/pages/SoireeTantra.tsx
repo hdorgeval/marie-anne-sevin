@@ -103,9 +103,15 @@ const events: Events[] = [
   },
   {
     date: '2025/03/11',
-    theme: '',
+    theme: "Les 5 langages de l'Amour",
     trailer: '',
     location: ['Versailles (78)'],
+  },
+  {
+    date: '2025/04/08',
+    theme: 'Grande vague tantrique',
+    trailer: '',
+    location: ['Vallée Rose (près de Houdan)'],
   },
 ];
 
