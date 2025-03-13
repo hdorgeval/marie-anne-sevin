@@ -15,8 +15,8 @@ import { SemiTransparentTile } from './page-layout/SemiTransparentTile';
 import { TransparentListGroupItem } from './page-layout/TransparentListGroupItem';
 export const SonsMantrasTantra: FC = () => {
   const { fromStartDateToEndDateText, startDateInfos } = useCalendar({
-    startDate: '2025/01/17',
-    endDate: '2025/01/19',
+    startDate: '2025/05/09',
+    endDate: '2025/05/11',
   });
 
   return (
@@ -54,7 +54,7 @@ export const SonsMantrasTantra: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-geo-alt fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="text-nowrap fs-7"> Bournéville (27)</span>
+                    <span className="text-nowrap fs-7"> Yvelines (78)</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
