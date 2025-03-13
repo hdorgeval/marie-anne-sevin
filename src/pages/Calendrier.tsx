@@ -324,7 +324,6 @@ const sortedUpcomingEvents = filterAndSortUpcomingEvents(upcomingEvents);
 export const Calendrier: FC = () => {
   const hasEvents = sortedUpcomingEvents.length > 0;
   const hasNoEvent = sortedUpcomingEvents.length === 0;
-  const hasManyEvents = sortedUpcomingEvents.length > 3;
   return (
     <PublicPageLayoutWithFixedBackgroundImage
       backgroundImageUrl="/images/background-temoignages.webp"
