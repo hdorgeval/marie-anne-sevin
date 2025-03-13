@@ -35,19 +35,34 @@ export const OpenExternalLinkButton: React.FC<OpenExternalLinkButtonOwnProps> = 
 
   return (
     <>
-      <a
-        className={linkClassNames}
-        href={link}
-        target="_blank"
-        onClick={handleOnClick}
-        title={`${title ?? 'Ouvrir dans un autre onglet'}`}
-        aria-label={ariaLabel}
-      >
-        <div className="d-flex flex-row align-items-center justify-content-center">
-          <div>{children}</div>
-          <i className="bi bi-box-arrow-up-right ms-3"></i>
-        </div>
-      </a>
+      {link && (
+        <a
+          className={linkClassNames}
+          href={link}
+          target="_blank"
+          onClick={handleOnClick}
+          title={`${title ?? 'Ouvrir dans un autre onglet'}`}
+          aria-label={ariaLabel}
+        >
+          <div className="d-flex flex-row align-items-center justify-content-center">
+            <div>{children}</div>
+            <i className="bi bi-box-arrow-up-right ms-3"></i>
+          </div>
+        </a>
+      )}
+      {!link && (
+        <button
+          className={linkClassNames}
+          disabled
+          title={`${title ?? 'Ouvrir dans un autre onglet'}`}
+          aria-label={ariaLabel}
+        >
+          <div className="d-flex flex-row align-items-center justify-content-center">
+            <div>{children}</div>
+            <i className="bi bi-box-arrow-up-right ms-3"></i>
+          </div>
+        </button>
+      )}
     </>
   );
 };

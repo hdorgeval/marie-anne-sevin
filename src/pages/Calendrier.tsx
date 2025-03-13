@@ -209,6 +209,19 @@ const upcomingEvents: UpcomingEvent[] = [
       title: "S'inscrire à la soirée",
     },
   },
+
+  {
+    startDate: '2025/06/13',
+    endDate: '2025/06/15',
+    title: "Stage lutte tantra et massage avec Oliv'eros",
+    theme: '',
+    locationInfos: ['Bournéville (27)'],
+    locationType: 'Stage en résidentiel',
+    detailsLink: {
+      url: '',
+      title: 'Détails à venir',
+    },
+  },
 ];
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {
