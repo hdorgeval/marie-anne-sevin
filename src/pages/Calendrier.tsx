@@ -342,14 +342,10 @@ export const Calendrier: FC = () => {
           )}
         </div>
         <div className="container w-100">
-          <div
-            className={`row row-cols ${
-              hasManyEvents ? ' row-cols-lg-2 row-cols-xl-3 row-cols-xxl-5' : ''
-            } g-4`}
-          >
+          <div className={`row row-cols g-4`}>
             {hasEvents &&
               sortedUpcomingEvents.map((event) => (
-                <div className="col" key={buildKeyFromEvent(event)}>
+                <div className="col-12 col-md-6 col-lg-4" key={buildKeyFromEvent(event)}>
                   <div className="card h-100 bg-color-dark-semi-transparent text-start text-light font-monserrat">
                     <div className="card-header fs-5">
                       <div className="card-title mb-1">{event.title}</div>
@@ -385,9 +381,9 @@ export const Calendrier: FC = () => {
                       )}
                       {event.price && (
                         <div className="d-flex flex-row align-items-center">
-                          <i className="bi bi-currency-euro fs-5 me-4 ms-1" />
+                          <i className="bi bi-currency-euro fs-5 me-4" />
                           <div className="d-flex flex-column card-subtitle">
-                            <span className="text-wrap mt-1 ms-2">{event.price}</span>
+                            <span className="text-wrap mt-1 ms-1">{event.price}</span>
                           </div>
                         </div>
                       )}
