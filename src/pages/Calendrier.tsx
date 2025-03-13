@@ -22,6 +22,7 @@ export interface UpcomingEvent {
   locationType?: LocationType;
   preSubscribtionLink?: LinkDetails;
   detailsLink?: LinkDetails;
+  price?: string;
 }
 
 const upcomingEvents: UpcomingEvent[] = [
@@ -203,6 +204,7 @@ const upcomingEvents: UpcomingEvent[] = [
     endDate: '2025/04/08',
     title: 'Soirée tantra',
     theme: 'Grande vague tantrique',
+    price: '30 €',
     locationInfos: ['Vallée Rose (près de Houdan)'],
     preSubscribtionLink: {
       url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
@@ -220,6 +222,49 @@ const upcomingEvents: UpcomingEvent[] = [
     detailsLink: {
       url: '',
       title: 'Détails à venir',
+    },
+  },
+  {
+    startDate: '2025/05/09',
+    endDate: '2025/05/11',
+    title: 'Stage sons, mantras, tantra',
+    theme: 'En chemin sur la voix tantrique',
+    locationInfos: ['Yvelines (78)'],
+    locationType: 'Stage en résidentiel',
+    detailsLink: {
+      url: '',
+      title: 'Détails à venir',
+    },
+  },
+
+  {
+    startDate: '2025/04/24',
+    endDate: '2025/04/24',
+    startTime: '09h00',
+    endTime: '12h00',
+    title: 'Matinée business',
+    theme: 'Santé du dirigeant et constellations systémiques',
+    locationInfos: ['Yvelines (78)'],
+
+    detailsLink: {
+      url: '',
+      title: 'Détails à venir',
+    },
+  },
+
+  {
+    startDate: '2025/03/25',
+    endDate: '2025/03/25',
+    startTime: '18h30',
+    endTime: '20h30',
+    title: "Soirée constellation de l'oedipe",
+    theme: '',
+    price: '25 €',
+    locationInfos: ['Trappes (78)'],
+
+    detailsLink: {
+      url: 'https://forms.gle/kPEf1FQpqcNmKqjs9',
+      title: "S'inscrire à la soirée",
     },
   },
 ];
@@ -323,7 +368,7 @@ export const Calendrier: FC = () => {
                           <i className="bi bi-geo-alt fs-3 me-4" />
                           <div className="d-flex flex-column card-subtitle">
                             {event.locationInfos.map((location) => (
-                              <span className="text-nowrap" key={location}>
+                              <span className="text-wrap" key={location}>
                                 {location}
                               </span>
                             ))}
@@ -334,7 +379,15 @@ export const Calendrier: FC = () => {
                         <div className="d-flex flex-row align-items-center">
                           <i className="bi bi-house-heart fs-3 me-4" />
                           <div className="d-flex flex-column card-subtitle">
-                            <span className="text-nowrap">{event.locationType}</span>
+                            <span className="text-wrap">{event.locationType}</span>
+                          </div>
+                        </div>
+                      )}
+                      {event.price && (
+                        <div className="d-flex flex-row align-items-center">
+                          <i className="bi bi-currency-euro fs-5 me-4 ms-1" />
+                          <div className="d-flex flex-column card-subtitle">
+                            <span className="text-wrap mt-1 ms-2">{event.price}</span>
                           </div>
                         </div>
                       )}
