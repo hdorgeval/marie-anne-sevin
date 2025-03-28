@@ -245,7 +245,10 @@ const upcomingEvents: UpcomingEvent[] = [
     title: 'Matinée business',
     theme: 'Santé du dirigeant et constellations systémiques',
     locationInfos: ['Yvelines (78)'],
-
+    preSubscribtionLink: {
+      url: 'https://www.billetweb.fr/sante-du-dirigeant-et-constellations',
+      title: "S'inscrire à la matinée",
+    },
     detailsLink: {
       url: '',
       title: 'Détails à venir',
