@@ -54,7 +54,7 @@ export const SonsMantrasTantra: FC = () => {
                 <div className="d-flex flex-row align-items-center card-subtitle">
                   <i className="bi bi-geo-alt fs-3 me-4" />
                   <div className="d-flex flex-column card-subtitle">
-                    <span className="text-nowrap fs-7"> Yvelines (78)</span>
+                    <span className="text-nowrap fs-7"> Breuil-Bois-Robert (78)</span>
                   </div>
                 </div>
               </TransparentListGroupItem>
@@ -155,7 +155,7 @@ export const SonsMantrasTantra: FC = () => {
             <div className="card-body">
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-100 mt-0"
-                link="https://forms.gle/4U937a7KkQ5hGDZD9"
+                link="https://www.billetweb.fr/sons-mantras-tantra"
                 analyticsEvent="pre-inscription-sons-mantras-tantra"
                 title="Se pré-inscrire au stage"
               >

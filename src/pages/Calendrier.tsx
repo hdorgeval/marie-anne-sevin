@@ -235,6 +235,10 @@ const upcomingEvents: UpcomingEvent[] = [
       url: '',
       title: 'Détails à venir',
     },
+    preSubscribtionLink: {
+      url: 'https://www.billetweb.fr/sons-mantras-tantra',
+      title: 'Se pré-inscrire au stage',
+    },
   },
 
   {
