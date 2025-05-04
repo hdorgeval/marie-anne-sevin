@@ -23,6 +23,7 @@ export interface UpcomingEvent {
   preSubscribtionLink?: LinkDetails;
   detailsLink?: LinkDetails;
   price?: string;
+  description?: string;
 }
 
 const upcomingEvents: UpcomingEvent[] = [
@@ -258,7 +259,6 @@ const upcomingEvents: UpcomingEvent[] = [
       title: 'Détails à venir',
     },
   },
-
   {
     startDate: '2025/03/25',
     endDate: '2025/03/25',
@@ -273,6 +273,23 @@ const upcomingEvents: UpcomingEvent[] = [
       url: 'https://forms.gle/kPEf1FQpqcNmKqjs9',
       title: "S'inscrire à la soirée",
     },
+  },
+
+  {
+    startDate: '2025/05/11',
+    endDate: '2025/05/11',
+    startTime: '09h00',
+    endTime: '17h00',
+    title: 'Journée "Vibrer sa voix"',
+    theme: '',
+    price: '90 €',
+    locationInfos: ['Trappes (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/9EX5HfxXVwbXpkBQ8',
+      title: "S'inscrire à la journée",
+    },
+    description:
+      "Lors de cette journée, nous utiliserons les mantras, des exercices d'éveil corporel, et les instruments (bols tibétains, tambours, percussions, carillons…) pour libérer la voix et inviter le corps à vibrer la vie !",
   },
 ];
 
@@ -394,6 +411,16 @@ export const Calendrier: FC = () => {
                         </div>
                       )}
                     </div>
+                    {event.description && (
+                      <div className="card-body border-0 border-top border-light border-opacity-10">
+                        <div className="d-flex flex-row align-items-center ">
+                          <i className="bi bi-info-circle fs-5 me-4" />
+                          <div className="d-flex flex-column card-subtitle">
+                            <span className="text-wrap mt-1 ms-1">{event.description}</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                     <div className="card-footer">
                       {event.preSubscribtionLink && (
                         <OpenExternalLinkButton
