@@ -155,7 +155,7 @@ export const SonsMantrasTantra: FC = () => {
             <div className="card-body">
               <OpenExternalLinkButton
                 className="btn btn-outline-light fw-bolder w-100 mt-0"
-                link="https://www.billetweb.fr/sons-mantras-tantra"
+                link="https://forms.gle/9EX5HfxXVwbXpkBQ8"
                 analyticsEvent="pre-inscription-sons-mantras-tantra"
                 title="Se pré-inscrire au stage"
               >

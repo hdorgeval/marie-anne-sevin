@@ -113,6 +113,12 @@ const events: Events[] = [
     trailer: '',
     location: ['Vallée Rose (près de Houdan)'],
   },
+  {
+    date: '2025/05/20',
+    theme: '',
+    trailer: '',
+    location: ['Trappes (78)'],
+  },
 ];
 
 function getEventThemeByDate(

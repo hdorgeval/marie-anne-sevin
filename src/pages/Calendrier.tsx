@@ -297,6 +297,19 @@ const upcomingEvents: UpcomingEvent[] = [
     description:
       "Lors de cette journée, nous utiliserons les mantras, des exercices d'éveil corporel, et les instruments (bols tibétains, tambours, percussions, carillons…) pour libérer la voix et inviter le corps à vibrer la vie !",
   },
+  {
+    startDate: '2025/05/20',
+    startTime: '19h30',
+    endDate: '2025/05/20',
+    title: 'Soirée tantra',
+    theme: '',
+    locationInfos: ['Trappes (78)'],
+    price: '30 €',
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
+    },
+  },
 ];
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {
