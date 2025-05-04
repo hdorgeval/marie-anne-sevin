@@ -218,12 +218,16 @@ const upcomingEvents: UpcomingEvent[] = [
     startDate: '2025/06/13',
     endDate: '2025/06/15',
     title: "Stage lutte tantra et massage avec Oliv'eros",
-    theme: '',
-    locationInfos: ['Bournéville (27)'],
+    theme: "L'intensité du combat dans la douceur du massage",
+    locationInfos: ['Normandie (27)'],
     locationType: 'Stage en résidentiel',
+    preSubscribtionLink: {
+      url: 'https://www.billetweb.fr/lutte-tantra-et-massage',
+      title: "S'inscrire au stage",
+    },
     detailsLink: {
-      url: '',
-      title: 'Détails à venir',
+      url: 'https://www.canva.com/design/DAGhCs_9tBI/lJVKpF9go_vE21wOVmfw7g/view?utm_content=DAGhCs_9tBI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc2ac15c02f',
+      title: 'Détails du stage',
     },
   },
   {
