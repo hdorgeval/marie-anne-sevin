@@ -24,6 +24,7 @@ export interface UpcomingEvent {
   detailsLink?: LinkDetails;
   price?: string;
   description?: string;
+  isCancelled?: boolean;
 }
 
 const upcomingEvents: UpcomingEvent[] = [
@@ -228,6 +229,7 @@ const upcomingEvents: UpcomingEvent[] = [
   {
     startDate: '2025/05/09',
     endDate: '2025/05/11',
+    isCancelled: true,
     title: 'Stage sons, mantras, tantra',
     theme: 'En chemin sur la voix tantrique',
     locationInfos: ['Yvelines (78)'],
@@ -295,6 +297,7 @@ const upcomingEvents: UpcomingEvent[] = [
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {
   return upcomingEvents
+    .filter((event) => !event.isCancelled)
     .filter((event) => new Date() < new Date(event.startDate))
     .sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
 }
