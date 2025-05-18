@@ -65,7 +65,7 @@ export const LandingProPage: FC = () => {
 
             <Link
               to="/professionnels/calendrier"
-              className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
+              className="text-decoration-none btn btn-outline-light fw-bolder w-75 mt-4"
               title="Calendrier 2025"
               aria-label="Calendrier 2025"
             >
