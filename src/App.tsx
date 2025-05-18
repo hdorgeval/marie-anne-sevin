@@ -1,12 +1,14 @@
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { UserContext, useUserContextInfo } from './contexts/userContext';
 import { Calendrier } from './pages/Calendrier';
+import { CalendrierPro } from './pages/CalendrierPro';
 import { Constellations } from './pages/Constellations';
 import { ErrorPage } from './pages/ErrorPage';
 import { FemmeSauvage } from './pages/FemmeSauvage';
 import { InitiationMassageMeditatif } from './pages/InitiationMassageMeditatif';
 import { LaVoixDuCorps } from './pages/LaVoixDuCorps';
 import { LandingPage } from './pages/LandingPage';
+import { LandingProPage } from './pages/LandingProPage';
 import { MassageMeditatif } from './pages/MassageMeditatif';
 import { MentionsLegales } from './pages/MentionsLegales';
 import { QuiSuisJe } from './pages/QuiSuisJe';
@@ -97,6 +99,15 @@ const router = createBrowserRouter([
   {
     path: '/soiree-tantra',
     element: <SoireeTantra />,
+  },
+  {
+    path: '/professionnels',
+    element: <LandingProPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/professionnels/calendrier',
+    element: <CalendrierPro />,
   },
 ]);
 

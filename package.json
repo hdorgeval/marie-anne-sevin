@@ -14,7 +14,7 @@
     "tsc-init": "tsc --init",
     "tsc": "tsc --listEmittedFiles",
     "test-sendgrid": "ts-node netlify/sendgrid/hello-world.ts",
-    "compress-image": "cwebp -q 15 src/assets/video-thumbnail-2025.png -o src/assets/video-thumbnail-2025.webp"
+    "compress-image": "cwebp -q 90 public/images/marie-anne-sevin-pro.png -o public/images/marie-anne-sevin-pro.webp"
   },
   "dependencies": {
     "@netlify/functions": "2.5.1",

@@ -150,6 +150,28 @@ export const HambugerMenu: FC = () => {
               </li>
               <li className="nav-item w-100 text-start mt-3">
                 <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
+                  Entreprises, Thérapeutes et Institutions
+                </div>
+                <div className="d-flex p-1 flex-row flex-wrap align-items-center">
+                  <Link to="/professionnels">
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Accueil
+                    </span>
+                  </Link>
+                  <Link
+                    to="/professionnels/calendrier"
+                    className="text-decoration-none text-light"
+                    title="Calendrier 2025 pour les Professionnels et Institutions"
+                    aria-label="Calendrier 2025 pour les Professionnels et Institutions"
+                  >
+                    <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+                      Calendrier 2025
+                    </span>
+                  </Link>
+                </div>
+              </li>
+              <li className="nav-item w-100 text-start mt-3">
+                <div className=" w-100 border-bottom border-secondary fs-5 text-secondary">
                   Particuliers
                 </div>
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
