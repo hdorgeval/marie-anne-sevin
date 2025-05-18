@@ -57,6 +57,17 @@ export const LandingPage: FC = () => {
               </div>
             </Link>
 
+            <Link
+              to="/professionnels"
+              className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
+              title="Espace Professionnels et Institutions"
+              aria-label="Espace Professionnels et Institutions"
+            >
+              <div className="d-flex flex-column align-items-center">
+                <span>Espace Professionnels et Institutions</span>
+              </div>
+            </Link>
+
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"
               link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
