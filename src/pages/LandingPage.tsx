@@ -40,6 +40,10 @@ export const LandingPage: FC = () => {
               <PageSubTitle className="fs-7">
                 Accompagnement Relationnel, Thérapeutique et Systémique
               </PageSubTitle>
+              <PageSubTitle className="fs-7">
+                Au service des particuliers, des entreprises et des institutions (écoles, crèches,
+                ephad ...)
+              </PageSubTitle>
             </div>
 
             <Link
