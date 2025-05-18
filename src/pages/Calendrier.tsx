@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { extractDateInfosFromIsoDate } from '../hooks/useCalendar';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -385,6 +386,16 @@ export const Calendrier: FC = () => {
           )}
         </div>
         <div className="container w-100">
+          <Link
+            to="/professionnels/calendrier"
+            className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4 mb-4"
+            title="Calendrier 2025"
+            aria-label="Calendrier 2025"
+          >
+            <div className="d-flex flex-column align-items-center">
+              <span>Calendrier 2025 pour les professionnels et institutions</span>
+            </div>
+          </Link>
           <div className={`row row-cols g-4`}>
             {hasEvents &&
               sortedUpcomingEvents.map((event) => (
