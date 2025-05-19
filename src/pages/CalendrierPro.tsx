@@ -15,13 +15,13 @@ const upcomingEvents: UpcomingEvent[] = [
     title: 'Matinée business',
     theme: 'Santé du dirigeant et constellations systémiques',
     locationInfos: ['Elancourt (78)'],
-    // preSubscribtionLink: {
-    //   url: 'https://www.billetweb.fr/sante-du-dirigeant-et-constellations',
-    //   title: "S'inscrire à la matinée",
-    // },
+    preSubscribtionLink: {
+      url: 'https://www.billetweb.fr/sante-du-dirigeant-et-constellations1',
+      title: "S'inscrire à la matinée",
+    },
     detailsLink: {
-      url: '',
-      title: 'Détails à venir',
+      url: 'https://www.canva.com/design/DAGhB-qnLfY/SLYEo_w2i_Nb7hoqv_W6sw/view?utm_content=DAGhB-qnLfY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8d3b5c3860',
+      title: 'Détails de la matinée',
     },
   },
 ];
