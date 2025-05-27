@@ -328,6 +328,54 @@ const upcomingEvents: UpcomingEvent[] = [
       title: 'Détails de la matinée',
     },
   },
+  {
+    startDate: '2025/06/02',
+    endDate: '2025/06/02',
+    startTime: '19h30',
+    endTime: '21h00',
+    title: 'Soirée bien-être par la voix',
+    theme: '',
+    price: '25 € (ou 100 euros la carte de 5 séances)',
+    locationInfos: ['Trappes village (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/ty9JF3x6Xp3kCwKb6',
+      title: "S'inscrire à la soirée",
+    },
+    detailsLink: {
+      url: 'https://www.canva.com/design/DADoRRRX86Y/xfng4FNTk0dvuYkv2_CFYQ/view?utm_content=DADoRRRX86Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h30558c1901',
+      title: 'Détails de la soirée',
+    },
+  },
+  {
+    startDate: '2025/06/30',
+    endDate: '2025/06/30',
+    startTime: '19h30',
+    endTime: '21h00',
+    title: 'Soirée bien-être par la voix',
+    theme: '',
+    price: '25 € (ou 100 euros la carte de 5 séances)',
+    locationInfos: ['Trappes village (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/ty9JF3x6Xp3kCwKb6',
+      title: "S'inscrire à la soirée",
+    },
+    detailsLink: {
+      url: 'https://www.canva.com/design/DADoRRRX86Y/xfng4FNTk0dvuYkv2_CFYQ/view?utm_content=DADoRRRX86Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h30558c1901',
+      title: 'Détails de la soirée',
+    },
+  },
+  {
+    startDate: '2025/06/17',
+    startTime: '19h30',
+    endDate: '2025/06/17',
+    title: 'Soirée tantra',
+    theme: 'La relation consciente',
+    locationInfos: ['Versailles (78)'],
+    preSubscribtionLink: {
+      url: 'https://forms.gle/4aY62NqVqtd6ghKH7',
+      title: "S'inscrire à la soirée",
+    },
+  },
 ];
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {
