@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 
 export type MyAnalyticsEvent =
   | 'appel-telephone'
+  | 'billet-web-calendrier'
   | 'envoie-mail'
   | 'has-completed-guided-tour'
   | 'open-amazon-on-my-book'

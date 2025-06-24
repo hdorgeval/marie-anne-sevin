@@ -46,7 +46,7 @@ export const LandingPage: FC = () => {
               </PageSubTitle>
             </div>
 
-            <Link
+            {/* <Link
               to="/calendrier"
               className="text-decoration-none text-light btn btn-outline-light fw-bolder w-75 mt-4"
               title="Calendrier 2025"
@@ -55,7 +55,18 @@ export const LandingPage: FC = () => {
               <div className="d-flex flex-column align-items-center">
                 <span>Calendrier 2025</span>
               </div>
-            </Link>
+            </Link> */}
+
+            <OpenExternalLinkButton
+              className="btn btn-outline-light fw-bolder w-75 mt-4"
+              link="https://www.billetweb.fr/pro/mas"
+              title="Calendrier 2025"
+              analyticsEvent="billet-web-calendrier"
+            >
+              <div className="d-flex flex-column align-items-center">
+                <span>Calendrier 2025</span>
+              </div>
+            </OpenExternalLinkButton>
 
             <Link
               to="/professionnels"
