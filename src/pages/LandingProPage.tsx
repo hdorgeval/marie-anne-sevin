@@ -70,7 +70,7 @@ export const LandingProPage: FC = () => {
               aria-label="Calendrier 2025"
             >
               <div className="d-flex flex-column align-items-center">
-                <span>Calendrier 2025</span>
+                <span>Inscriptions ateliers et stages</span>
               </div>
             </Link>
 

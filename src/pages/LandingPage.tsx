@@ -64,7 +64,7 @@ export const LandingPage: FC = () => {
               analyticsEvent="billet-web-calendrier"
             >
               <div className="d-flex flex-column align-items-center">
-                <span>Calendrier 2025</span>
+                <span>Inscriptions ateliers et stages</span>
               </div>
             </OpenExternalLinkButton>
 
