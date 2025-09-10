@@ -24,6 +24,23 @@ const upcomingEvents: UpcomingEvent[] = [
       title: 'Détails de la matinée',
     },
   },
+  {
+    startDate: '2025/09/22',
+    endDate: '2025/09/22',
+    startTime: '09h00',
+    endTime: '12h00',
+    title: 'Matinée business',
+    theme: 'Santé du dirigeant et constellations systémiques',
+    locationInfos: ['Elancourt (78)'],
+    preSubscribtionLink: {
+      url: 'https://www.billetweb.fr/sante-du-dirigeant-et-constellations2',
+      title: "S'inscrire à la matinée",
+    },
+    detailsLink: {
+      url: 'https://www.canva.com/design/DAGhB-qnLfY/SLYEo_w2i_Nb7hoqv_W6sw/watch?utm_content=DAGhB-qnLfY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8d3b5c3860',
+      title: 'Détails de la matinée',
+    },
+  },
 ];
 
 function filterAndSortUpcomingEvents(upcomingEvents: UpcomingEvent[]): UpcomingEvent[] {
