@@ -128,7 +128,7 @@ export const FemmeSauvage: FC = () => {
                   <div className="d-flex flex-column justify-content-between ">
                     <span className="">Animation : 160€</span>
                     <span className="">
-                      Hébergement : 40 € pour le stage avec possibilité d'arriver la veille ou de
+                      Hébergement : 50 € pour le stage avec possibilité d'arriver la veille ou de
                       repartir le lendemain sans surcoût
                     </span>
                     <span className="">Repas : repas partagés</span>
