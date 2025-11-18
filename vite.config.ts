@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
+	esbuild: {
+		legalComments: "none",
+	},
 	build: {
 		rollupOptions: {
 			output: {
