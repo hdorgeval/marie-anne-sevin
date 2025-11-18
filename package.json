@@ -10,7 +10,7 @@
     "build": "rimraf dist && npm run lint && tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "biome lint . --fix",
-    "lint": "biome lint .",
+    "lint": "biome lint",
     "tsc-init": "tsc --init",
     "tsc": "tsc --listEmittedFiles",
     "test-sendgrid": "ts-node netlify/sendgrid/hello-world.ts",
