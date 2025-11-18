@@ -1,5 +1,4 @@
 import { type FC, useMemo } from "react";
-import { usePublicPage } from "../../contexts/userContext";
 import { useGuidedTour } from "../../hooks/useGuidedTour";
 import { useMetaDescription } from "../../hooks/useMetaDescription";
 import { useTitle } from "../../hooks/useTitle";
@@ -28,7 +27,6 @@ export const PublicPageLayoutWithFixedBackgroundImage: FC<
 	children,
 	htmlTitle,
 }) => {
-	usePublicPage();
 	useGuidedTour();
 	useTitle(htmlTitle);
 	useMetaDescription(htmlTitle);

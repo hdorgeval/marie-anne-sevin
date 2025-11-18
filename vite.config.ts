@@ -13,7 +13,6 @@ export default defineConfig({
 				manualChunks: {
 					"intro-js": ["intro.js"],
 					"use-local-storage-state": ["use-local-storage-state"],
-					"netlify-identity-widget": ["netlify-identity-widget"],
 				},
 			},
 		},
