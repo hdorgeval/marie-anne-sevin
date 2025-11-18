@@ -38,11 +38,11 @@
     "@types/grecaptcha": "3.0.7",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "@vitejs/plugin-react": "4.2.1",
+    "@vitejs/plugin-react": "5.1.1",
     "netlify-cli": "17.15.3",
     "rimraf": "6.1.0",
     "tsx": "4.20.6",
     "typescript": "5.9.3",
-    "vite": "5.0.12"
+    "vite": "7.2.2"
   }
 }
