@@ -17,7 +17,7 @@
     "compress-image": "cwebp -q 90 public/images/marie-anne-sevin-pro.png -o public/images/marie-anne-sevin-pro.webp"
   },
   "dependencies": {
-    "@netlify/functions": "2.5.1",
+    "@netlify/functions": "5.1.0",
     "@sendgrid/mail": "8.1.0",
     "@types/intro.js": "5.1.5",
     "@types/netlify-identity-widget": "1.9.6",
