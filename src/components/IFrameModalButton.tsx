@@ -23,7 +23,7 @@ export const IFrameModalButton: React.FC<IFrameModalButtonOwnProps> = ({
 
       <Modal show={show} onHide={handleClose} fullscreen={true}>
         <Modal.Body>
-          <iframe src={link} style={{ width: '100%', height: '100%' }} />
+          <iframe src={link} style={{ width: '100%', height: '100%' }} title="iframe-modal" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

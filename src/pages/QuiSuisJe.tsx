@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import logo from '../assets/arts-logo-medium.png';
 import { usePublicPage } from '../contexts/userContext';
 import { useMetaDescription } from '../hooks/useMetaDescription';

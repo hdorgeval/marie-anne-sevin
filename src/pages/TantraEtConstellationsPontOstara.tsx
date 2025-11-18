@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import portrait1 from '../assets/portrait-mas-1.png';
 import portrait2 from '../assets/portrait-severine.jpeg';
 import { CallablePhoneNumber } from '../components/CallablePhoneNumber';

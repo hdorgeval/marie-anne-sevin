@@ -1,239 +1,240 @@
+/** biome-ignore-all lint/complexity/noImportantStyles: false */
 .bg-image {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 29%;
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 29%;
 }
 
 .cursor-pointer {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .font-monserrat {
-  font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .font-playfair {
-  font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 }
 
 .font-raleway {
-  font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 .font-sans-serif {
-  font-family: sans-serif, system-ui;
+	font-family: sans-serif, system-ui;
 }
 
 .fs-7 {
-  font-size: 0.8rem !important;
+	font-size: 0.8rem !important;
 }
 
 .fs-8 {
-  font-size: 0.75rem !important;
+	font-size: 0.75rem !important;
 }
 
 .bi-rotate-180::before {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
 }
 
 .photo-crop-elipse-portrait {
-  border: solid 5px rgba(200, 200, 200, 0.1);
-  position: relative;
-  width: 150px;
-  height: 87px;
-  border-radius: 50% / 50%;
-  overflow: hidden;
-  transform: rotate(-40deg) translateZ(0);
+	border: solid 5px rgba(200, 200, 200, 0.1);
+	position: relative;
+	width: 150px;
+	height: 87px;
+	border-radius: 50% / 50%;
+	overflow: hidden;
+	transform: rotate(-40deg) translateZ(0);
 }
 
 .photo-crop-elipse-portrait img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(40deg);
-  min-width: 100%;
-  min-height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(40deg);
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .bg-color-dark-semi-transparent {
-  background-color: rgba(25, 25, 25, 0.8) !important;
+	background-color: rgba(25, 25, 25, 0.8) !important;
 }
 
 .navbar-toggler .toggler-horizontal-bar {
-  width: 33px;
-  height: 3px;
-  background-color: #fcf8f8;
-  display: block;
-  margin: 5px 0;
-  position: relative;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+	width: 33px;
+	height: 3px;
+	background-color: #fcf8f8;
+	display: block;
+	margin: 5px 0;
+	position: relative;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
 }
 
 .px-3-a {
-  padding-right: 1.01rem !important;
-  padding-left: 1.01rem !important;
+	padding-right: 1.01rem !important;
+	padding-left: 1.01rem !important;
 }
 
 .px-3-b {
-  padding-right: 1.02rem !important;
-  padding-left: 1.02rem !important;
+	padding-right: 1.02rem !important;
+	padding-left: 1.02rem !important;
 }
 
 .px-3-c {
-  padding-right: 1.03rem !important;
-  padding-left: 1.03rem !important;
+	padding-right: 1.03rem !important;
+	padding-left: 1.03rem !important;
 }
 
 .px-3-d {
-  padding-right: 1.04rem !important;
-  padding-left: 1.04rem !important;
+	padding-right: 1.04rem !important;
+	padding-left: 1.04rem !important;
 }
 
 .px-3-e {
-  padding-right: 1.05rem !important;
-  padding-left: 1.05rem !important;
+	padding-right: 1.05rem !important;
+	padding-left: 1.05rem !important;
 }
 
 .px-3-f {
-  padding-right: 1.06rem !important;
-  padding-left: 1.06rem !important;
+	padding-right: 1.06rem !important;
+	padding-left: 1.06rem !important;
 }
 
 .px-3-g {
-  padding-right: 1.07rem !important;
-  padding-left: 1.07rem !important;
+	padding-right: 1.07rem !important;
+	padding-left: 1.07rem !important;
 }
 
 .px-3-h {
-  padding-right: 1.08rem !important;
-  padding-left: 1.08rem !important;
+	padding-right: 1.08rem !important;
+	padding-left: 1.08rem !important;
 }
 
 .px-3-i {
-  padding-right: 1.09rem !important;
-  padding-left: 1.09rem !important;
+	padding-right: 1.09rem !important;
+	padding-left: 1.09rem !important;
 }
 
 .px-3-j {
-  padding-right: 1.1rem !important;
-  padding-left: 1.1rem !important;
+	padding-right: 1.1rem !important;
+	padding-left: 1.1rem !important;
 }
 
 .px-3-k {
-  padding-right: 1.11rem !important;
-  padding-left: 1.11rem !important;
+	padding-right: 1.11rem !important;
+	padding-left: 1.11rem !important;
 }
 
 .px-3-l {
-  padding-right: 1.12rem !important;
-  padding-left: 1.12rem !important;
+	padding-right: 1.12rem !important;
+	padding-left: 1.12rem !important;
 }
 
 .px-3-m {
-  padding-right: 1.13rem !important;
-  padding-left: 1.13rem !important;
+	padding-right: 1.13rem !important;
+	padding-left: 1.13rem !important;
 }
 
 .px-3-n {
-  padding-right: 1.14rem !important;
-  padding-left: 1.14rem !important;
+	padding-right: 1.14rem !important;
+	padding-left: 1.14rem !important;
 }
 
 .px-3-o {
-  padding-right: 1.15rem !important;
-  padding-left: 1.15rem !important;
+	padding-right: 1.15rem !important;
+	padding-left: 1.15rem !important;
 }
 
 .px-3-p {
-  padding-right: 1.16rem !important;
-  padding-left: 1.16rem !important;
+	padding-right: 1.16rem !important;
+	padding-left: 1.16rem !important;
 }
 
 .px-3-q {
-  padding-right: 1.17rem !important;
-  padding-left: 1.17rem !important;
+	padding-right: 1.17rem !important;
+	padding-left: 1.17rem !important;
 }
 
 .px-3-r {
-  padding-right: 1.18rem !important;
-  padding-left: 1.18rem !important;
+	padding-right: 1.18rem !important;
+	padding-left: 1.18rem !important;
 }
 
 .px-3-s {
-  padding-right: 1.19rem !important;
-  padding-left: 1.19rem !important;
+	padding-right: 1.19rem !important;
+	padding-left: 1.19rem !important;
 }
 
 .px-3-t {
-  padding-right: 1.2rem !important;
-  padding-left: 1.2rem !important;
+	padding-right: 1.2rem !important;
+	padding-left: 1.2rem !important;
 }
 
 .px-3-u {
-  padding-right: 1.21rem !important;
-  padding-left: 1.21rem !important;
+	padding-right: 1.21rem !important;
+	padding-left: 1.21rem !important;
 }
 .px-3-v {
-  padding-right: 1.22rem !important;
-  padding-left: 1.22rem !important;
+	padding-right: 1.22rem !important;
+	padding-left: 1.22rem !important;
 }
 .px-3-w {
-  padding-right: 1.23rem !important;
-  padding-left: 1.23rem !important;
+	padding-right: 1.23rem !important;
+	padding-left: 1.23rem !important;
 }
 
 .px-3-x {
-  padding-right: 1.24rem !important;
-  padding-left: 1.24rem !important;
+	padding-right: 1.24rem !important;
+	padding-left: 1.24rem !important;
 }
 
 .px-3-y {
-  padding-right: 1.25rem !important;
-  padding-left: 1.25rem !important;
+	padding-right: 1.25rem !important;
+	padding-left: 1.25rem !important;
 }
 
 .px-3-z {
-  padding-right: 1.26rem !important;
-  padding-left: 1.26rem !important;
+	padding-right: 1.26rem !important;
+	padding-left: 1.26rem !important;
 }
 
 .pt-2-a {
-  padding-top: 0.51rem !important;
+	padding-top: 0.51rem !important;
 }
 
 .pt-2-b {
-  padding-top: 0.52rem !important;
+	padding-top: 0.52rem !important;
 }
 
 .pt-2-c {
-  padding-top: 0.53rem !important;
+	padding-top: 0.53rem !important;
 }
 
 .pt-2-d {
-  padding-top: 0.54rem !important;
+	padding-top: 0.54rem !important;
 }
 
 .pt-2-e {
-  padding-top: 0.55rem !important;
+	padding-top: 0.55rem !important;
 }
 
 .pt-2-f {
-  padding-top: 0.56rem !important;
+	padding-top: 0.56rem !important;
 }
 
 .pt-2-g {
-  padding-top: 0.57rem !important;
+	padding-top: 0.57rem !important;
 }
 
 .pt-1-half {
-  padding-top: 0.12rem !important;
+	padding-top: 0.12rem !important;
 }

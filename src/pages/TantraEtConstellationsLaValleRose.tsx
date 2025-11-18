@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import chalet1 from '../assets/la-vallee-rose/chalet1.jpg';
 import exterieur1 from '../assets/la-vallee-rose/exterieur1.jpg';
 import exterieur2 from '../assets/la-vallee-rose/exterieur2.jpg';

@@ -1,4 +1,4 @@
-import { FC, useMemo } from 'react';
+import { type FC, useMemo } from 'react';
 
 export type Letter = 'A' | 'B' | 'C' | 'D' | 'J' | 'S' | 'V';
 export type BsFontSizeClassName = 'fs-3';

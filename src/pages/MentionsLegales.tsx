@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
 import { useTitle } from '../hooks/useTitle';
 import { Footer } from './page-layout/Footer';

@@ -1,7 +1,7 @@
-import { FC, useMemo } from 'react';
+import { type FC, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { buildDateRangeLabel } from '../hooks/useCalendar';
-import { NextToComeEvent, useMultipleEventsCalendar } from '../hooks/useMultipleEvents';
+import { type NextToComeEvent, useMultipleEventsCalendar } from '../hooks/useMultipleEvents';
 
 export const events: NextToComeEvent[] = [
   {

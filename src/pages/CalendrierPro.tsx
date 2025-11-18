@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { extractDateInfosFromIsoDate } from '../hooks/useCalendar';
-import { UpcomingEvent } from './Calendrier';
+import type { UpcomingEvent } from './Calendrier';
 import { PageSubTitle } from './page-layout/PageSubTitle';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';

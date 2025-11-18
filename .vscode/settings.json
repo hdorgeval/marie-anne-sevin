@@ -1,21 +1,34 @@
 {
-  "languageTool.enabled": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit",
-    "source.fixAll.markdownlint": "explicit"
+  "cSpell.enabled": false,
+  "ltex.enabled": true,
+  "ltex.language": "fr",
+  "biome.configurationPath": "./biome.json",
+  "editor.defaultFormatter": "biomejs.biome",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnPaste": true,
-  "editor.guides.indentation": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "files.associations": {
+    "_headers": "plaintext"
+  },
   "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "files.insertFinalNewline": true,
-  "files.eol": "\n",
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "prettier.endOfLine": "lf",
-  "ltex.language": "fr"
+  "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

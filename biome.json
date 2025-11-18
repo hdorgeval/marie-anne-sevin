@@ -1,0 +1,27 @@
+{
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"nursery": {
+				"noFloatingPromises": "error",
+				"noMisusedPromises": "error"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"files": {
+		"includes": [
+			"**",
+			"!!**/node_modules",
+			"!!**/dist",
+			"!!**/build",
+			"!!**/.next",
+			"!!**/.turbo",
+			"!!**/coverage",
+			"!!**/playwright-report"
+		]
+	}
+}

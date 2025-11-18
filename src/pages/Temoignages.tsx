@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { Description } from '../components/Description';
 import { FiveStarRating } from '../components/FiveStarRating';
 import { OneLetterPill } from '../components/OneLetterPill';

@@ -1,4 +1,4 @@
-import { FC, useCallback, useMemo } from 'react';
+import { type FC, useCallback, useMemo } from 'react';
 import ReactPlayer from 'react-player';
 import { useAnalytics } from '../../hooks/useAnalytics';
 import './VideoPlayer.css';

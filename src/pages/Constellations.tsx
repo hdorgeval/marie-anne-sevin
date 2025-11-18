@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { Description } from '../components/Description';
 import { OpenExternalLinkButton } from '../components/OpenExternalLinkButton';
 import { ReadMoreReadLess } from '../components/ReadMoreReadLess';

@@ -35,8 +35,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G9MNJP5SH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
+    function gtag(...args) {
+      dataLayer.push(args);
     }
     gtag('js', new Date());
     gtag('config', 'G-0G9MNJP5SH');

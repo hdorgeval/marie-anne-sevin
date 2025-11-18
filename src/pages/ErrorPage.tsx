@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { isRouteErrorResponse, Link, useRouteError } from 'react-router-dom';
 
 export interface ErrorResponse {
