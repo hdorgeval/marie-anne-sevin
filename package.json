@@ -27,7 +27,6 @@
     "intro.js": "7.2.0",
     "netlify-identity-widget": "1.9.2",
     "react": "18.2.0",
-    "react-bootstrap": "2.10.0",
     "react-dom": "18.2.0",
     "react-player": "2.14.1",
     "react-router-dom": "6.21.3",
