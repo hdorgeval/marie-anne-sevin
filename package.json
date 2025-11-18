@@ -13,7 +13,7 @@
     "lint": "biome lint .",
     "tsc-init": "tsc --init",
     "tsc": "tsc --listEmittedFiles",
-    "test-sendgrid": "ts-node netlify/sendgrid/hello-world.ts",
+    "test-sendgrid": "tsx netlify/sendgrid/hello-world.ts",
     "compress-image": "cwebp -q 90 public/images/marie-anne-sevin-pro.png -o public/images/marie-anne-sevin-pro.webp"
   },
   "dependencies": {
@@ -41,7 +41,7 @@
     "@vitejs/plugin-react": "4.2.1",
     "netlify-cli": "17.15.3",
     "rimraf": "6.1.0",
-    "ts-node": "10.9.2",
+    "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vite": "5.0.12"
   }
