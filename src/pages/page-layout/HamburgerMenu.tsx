@@ -1,8 +1,9 @@
 import { type FC, useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 import thumbnail from "../../assets/video-thumbnail-2025.webp";
+import { AudioPlayer } from "../../components/audio-player/AudioPlayer";
 import { OpenExternalLinkButton } from "../../components/OpenExternalLinkButton";
-import { VideoPlayer } from "../../components/video-player";
+import { VideoPlayer } from "../../components/video-player/VideoPlayer";
 
 export const HambugerMenu: FC = () => {
 	const location = useLocation();
@@ -144,23 +145,11 @@ export const HambugerMenu: FC = () => {
 										</OpenExternalLinkButton>
 									</span>
 
-									<span className="badge rounded-pill text-bg-dark fs-7  m-0 p-0 pt-1">
-										<audio
-											controls={true}
-											className="w-80 ps-4"
-											style={{ height: "1.5rem" }}
-										>
-											<source
-												src="https://hearthis.at/marmitefm884/sacrement-feminin-202209-5-la-sexualite-sacree-v2/stream.mp3?s=coF&t=1664204379"
-												type="audio/mpeg"
-											/>
-											<track
-												kind="captions"
-												srcLang="fr"
-												label="Sous-titres français"
-											/>
-										</audio>
-									</span>
+									<AudioPlayer
+										className="w-100 h-100 text-bg-dark fs-7"
+										title="Podcast: la sexualité sacrée"
+										audioUrl="https://hearthis.at/marmitefm884/sacrement-feminin-202209-5-la-sexualite-sacree-v2/stream.mp3?s=coF&t=1664204379"
+									/>
 								</div>
 							</li>
 							<li className="nav-item w-100 text-start mt-3">
@@ -290,8 +279,9 @@ export const HambugerMenu: FC = () => {
 									<span>Rétrospective 2024</span>
 								</div>
 								<div className="d-flex p-1 flex-row flex-wrap align-items-center">
-									<div className="container-fluid mt-4 w-100 m-auto">
+									<div className="container-fluid mt-1 w-100 m-auto">
 										<VideoPlayer
+											title="Rétrospective 2024"
 											thumbnailUrl={thumbnail}
 											videoUrl="/videos/VIDEO-2025.mp4"
 										/>

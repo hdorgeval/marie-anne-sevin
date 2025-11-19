@@ -1,121 +1,52 @@
-import ReactPlayer from "react-player";
+import "@vidstack/react/player/styles/default/theme.css";
+import "@vidstack/react/player/styles/default/layouts/audio.css";
+import { MediaPlayer, MediaProvider, Poster } from "@vidstack/react";
+import {
+	DefaultAudioLayout,
+	defaultLayoutIcons,
+} from "@vidstack/react/player/layouts/default";
 import "./AudioPlayer.css";
-import { type FC, useCallback, useMemo, useRef, useState } from "react";
-
-export interface AudioProgressEvent {
-	played: number;
-	playedSeconds: number;
-	loaded: number;
-	loadedSeconds: number;
-}
+import { type FC, useCallback } from "react";
 
 export interface AudioPlayerOwnProps {
+	title: string;
 	audioUrl: string;
-	autoStart: boolean;
-	forcePause?: boolean;
-	forceContinue?: boolean;
 	startTime?: string;
 	endTime?: string;
 	thumbnailUrl?: string;
-	onClickPreview?: () => void;
-	onPause?: () => void;
-	onPlay?: () => void;
-	onReady?: (player: ReactPlayer | null) => void;
-	onStart?: () => void;
-	onSeek?: (seconds: number) => void;
-	onProgress?: (progress: AudioProgressEvent) => void;
+	className?: string;
 }
 
 export const AudioPlayer: FC<AudioPlayerOwnProps> = ({
 	audioUrl,
-	autoStart,
-	endTime,
-	forceContinue,
-	forcePause,
-	startTime,
+	title,
 	thumbnailUrl,
-	onClickPreview,
-	onPause,
-	onPlay,
-	onProgress,
-	onReady,
-	onSeek,
-	onStart,
+	className,
 }) => {
-	const [isReady, setIsReady] = useState(false);
-	const reactPlayerRef = useRef<ReactPlayer>(null);
-
-	const framedUrl = useMemo(() => {
-		if (startTime && endTime) {
-			return `${audioUrl}#t=${startTime},${endTime}`;
-		}
-		if (startTime) {
-			return `${audioUrl}#t=${startTime}`;
-		}
-		return audioUrl;
-	}, [endTime, startTime, audioUrl]);
-
-	const light = useMemo(() => {
-		if (thumbnailUrl) {
-			return thumbnailUrl;
-		}
-		return true;
-	}, [thumbnailUrl]);
-
-	const playing = useMemo(() => {
-		if (forceContinue) {
-			return true;
-		}
-
-		if (forcePause) {
-			return false;
-		}
-
-		if (autoStart) {
-			return true;
-		}
-
-		return false;
-	}, [forceContinue, forcePause, autoStart]);
-
-	const wrapperClassName = useMemo(() => {
-		return isReady ? "audio-player-wrapper-on-ready" : "audio-player-wrapper";
-	}, [isReady]);
-
-	const handleOnReady = useCallback(() => {
-		setIsReady(true);
-		if (onReady) {
-			onReady(reactPlayerRef.current);
-		}
-	}, [onReady]);
-
-	const handleOnClickPreview = useCallback(() => {
-		if (onClickPreview) {
-			onClickPreview();
-		}
-	}, [onClickPreview]);
+	const handleOnStarted = useCallback(() => {
+		console.log("Audio started");
+	}, []);
 
 	return (
-		<div className="position-relative w-100 h-100 mt-4">
-			<div className={wrapperClassName}>
-				<ReactPlayer
-					ref={reactPlayerRef}
-					className="audio-react-player"
-					url={framedUrl}
-					controls={true}
-					width="100%"
-					height="100%"
-					light={light}
-					playing={playing}
-					onStart={onStart}
-					onReady={handleOnReady}
-					onSeek={onSeek}
-					onProgress={onProgress}
-					onClickPreview={handleOnClickPreview}
-					onPause={onPause}
-					onPlay={onPlay}
-				/>
-			</div>
+		<div className={className}>
+			<MediaPlayer
+				className="ads-player"
+				title={title}
+				preload="none"
+				load="play" // ⬅️ clé : ne charge qu'au moment du play
+				src={audioUrl}
+				viewType="audio"
+				playsInline={true}
+				autoPlay={false}
+				muted={false}
+				crossOrigin="anonymous"
+				onStarted={handleOnStarted}
+				poster={thumbnailUrl}
+			>
+				<MediaProvider />
+				{thumbnailUrl && <Poster className="ads-poster" />}
+				<DefaultAudioLayout icons={defaultLayoutIcons} />
+			</MediaPlayer>
 		</div>
 	);
 };

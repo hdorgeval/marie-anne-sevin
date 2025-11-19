@@ -13,6 +13,7 @@ export default defineConfig({
 				manualChunks: {
 					"intro-js": ["intro.js"],
 					"use-local-storage-state": ["use-local-storage-state"],
+					"vidstack-player": ["@vidstack/react"],
 				},
 			},
 		},
