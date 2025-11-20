@@ -61,16 +61,17 @@ export const HambugerMenu: FC = () => {
 						<ul className="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
 							<li className="nav-item w-100 text-start">
 								<div className="d-flex p-1 flex-row flex-wrap align-items-center">
-									<Link
-										to="/calendrier"
-										className="text-decoration-none text-light"
-										title="Calendrier 2025"
-										aria-label="Calendrier 2025"
-									>
-										<span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+									<span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
+										<OpenExternalLinkButton
+											className="text-decoration-none text-light"
+											link="https://www.billetweb.fr/pro/mas"
+											analyticsEvent="billet-web-calendrier"
+											title="Calendrier 2025"
+											aria-label="Calendrier 2025"
+										>
 											Calendrier 2025
-										</span>
-									</Link>
+										</OpenExternalLinkButton>
+									</span>
 									<Link
 										to="/"
 										className="text-decoration-none text-light"
