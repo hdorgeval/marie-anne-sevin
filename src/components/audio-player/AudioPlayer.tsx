@@ -39,7 +39,6 @@ export const AudioPlayer: FC<AudioPlayerOwnProps> = ({
 				playsInline={true}
 				autoPlay={false}
 				muted={false}
-				crossOrigin="anonymous"
 				onStarted={handleOnStarted}
 				poster={thumbnailUrl}
 			>

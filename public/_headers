@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' ; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.openai.com; font-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; media-src 'self' https://hearthis.at https://*.hearthis.at blob:
+  Content-Security-Policy: default-src 'self'; script-src 'self' ; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.openai.com; font-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; media-src 'self' https://hearthis.at https://*.hearthis.at blob:;
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
