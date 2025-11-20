@@ -1,9 +1,10 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import ReplaceCSPMetaPlugin from "./vite-plugins/vite-plugin-replace-csp-meta";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
+	plugins: [react(), ReplaceCSPMetaPlugin()],
 	esbuild: {
 		legalComments: "none",
 	},

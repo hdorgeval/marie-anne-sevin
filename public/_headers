@@ -1,0 +1,8 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' ; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.openai.com; font-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; media-src 'self' https://hearthis.at https://*.hearthis.at blob:
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: geolocation=(self), fullscreen=(self), camera=(self), microphone=(self), autoplay=(self), payment=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=(), xr-spatial-tracking=(), midi=(), clipboard-read=(), clipboard-write=(), ch-ua=(self), ch-ua-mobile=(self), ch-ua-platform=(self), ch-ua-platform-version=(self), ch-ua-model=(self), ch-ua-full-version=(self)
+  Accept-CH: Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version

@@ -24,7 +24,8 @@
   },
   "include": [
     "vite.config.ts",
-    "netlify"
+    "api",
+    "vite-plugins"
   ],
   "exclude": [
     "_headers",

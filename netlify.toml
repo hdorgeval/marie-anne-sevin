@@ -1,0 +1,21 @@
+[functions]
+  directory = "api/netlify-functions"
+
+# backend API for webhooks
+[[redirects]]
+  from = "/api/webhook/*"
+  to   = "/.netlify/functions/webhook-gateway?path=:splat"
+  status = 200
+  force = true
+
+# backend API for front
+[[redirects]]
+  from = "/api/:target"
+  to = "/.netlify/functions/front-gateway?target=:target"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200

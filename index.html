@@ -3,21 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.openai.com https://marie-anne-sevin.com; font-src 'self'; object-src 'none'; frame-src 'none'; media-src 'self' https://hearthis.at https://*.hearthis.at blob: " />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Accompagnement Relationnel Thérapeutique et Systémique" />
+  <meta name="description"
+    content="Accompagnement Relationnel Thérapeutique et Systémique pour les Particuliers et les Institutionnels" />
   <meta name="twitter:title" content="Marie-Anne Sévin" />
-  <meta name="twitter:description" content="Accompagnement Relationnel Thérapeutique et Systémique" />
+  <meta name="twitter:description"
+    content="Accompagnement Relationnel Thérapeutique et Systémique pour les Particuliers et les Institutionnels" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:label1" content="Temps de lecture" />
   <meta name="twitter:data1" content="Moins d’une minute" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://marie-anne-sevin.com/" />
   <meta property="og:title" content="Marie-Anne Sévin" />
-  <meta property="og:description" content="Accompagnement Relationnel Thérapeutique et Systémique" />
+  <meta property="og:description"
+    content="Accompagnement Relationnel Thérapeutique et Systémique pour les Particuliers et les Institutionnels" />
   <meta name="msvalidate.01" content="FA525C98DA4067065E620059F37B8859" />
   <title>Accueil | Marie-Anne Sévin</title>
 </head>
@@ -26,17 +31,6 @@
   <noscript>You need to enable JavaScript in the Site Settings to run this app.</noscript>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G9MNJP5SH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(...args) {
-      dataLayer.push(args);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-0G9MNJP5SH');
-  </script>
 </body>
 
 </html>

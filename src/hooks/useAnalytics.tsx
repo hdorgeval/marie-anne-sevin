@@ -37,7 +37,7 @@ export type MyAnalyticsEvent =
 export type CommandType = "js" | "config" | "event";
 declare global {
 	interface Window {
-		gtag: (
+		gtag?: (
 			command: CommandType,
 			event: MyAnalyticsEvent,
 			params?: Record<string, string>,
@@ -48,7 +48,7 @@ declare global {
 export const useAnalytics = () => {
 	const trackSimpleEvent = useCallback((myEvent: MyAnalyticsEvent) => {
 		try {
-			window.gtag("event", myEvent);
+			window.gtag?.("event", myEvent);
 		} catch (_error) {
 			// no op
 		}
@@ -56,7 +56,7 @@ export const useAnalytics = () => {
 
 	const trackOpenExternalLinkEvent = useCallback((url: string) => {
 		try {
-			window.gtag("event", "open-external-link", { url });
+			window.gtag?.("event", "open-external-link", { url });
 		} catch (_error) {
 			// no op
 		}
