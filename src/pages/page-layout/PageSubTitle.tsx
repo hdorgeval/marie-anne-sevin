@@ -9,7 +9,7 @@ export const PageSubTitle: FC<PageSubTitleProps> = ({
 	children,
 }) => {
 	return (
-		<h2 className={`fs-2 fw-bolder text-light font-monserrat ${className}`}>
+		<h2 className={`fs-2 text-light font-monserrat ${className}`}>
 			{children}
 		</h2>
 	);
