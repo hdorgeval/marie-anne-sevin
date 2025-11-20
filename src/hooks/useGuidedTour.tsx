@@ -1,5 +1,6 @@
 import introJs from "intro.js";
-import type { IntroStep, TooltipPosition } from "intro.js/src/core/steps";
+import type { TooltipPosition } from "intro.js/src/packages/tooltip";
+import type { TourStep } from "intro.js/src/packages/tour/steps";
 import { useCallback, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import useLocalStorageState from "use-local-storage-state";
@@ -14,7 +15,7 @@ export interface AppStep {
 	position: TooltipPosition;
 }
 
-export interface ExtendedIntrojsStep extends IntroStep {
+export interface ExtendedTourStep extends TourStep {
 	id: string;
 }
 
@@ -34,7 +35,7 @@ export const useGuidedTour = () => {
 	const [hasStarted, setHasStarted] = useState(false);
 	const location = useLocation();
 	const [tour, setTour] = useState(
-		introJs().setOptions({
+		introJs.tour().setOptions({
 			overlayOpacity: 0,
 			showBullets: false,
 			showProgress: false,
@@ -50,7 +51,7 @@ export const useGuidedTour = () => {
 		}),
 	);
 	const [doneSteps, setDoneSteps] = useLocalStorageState<string[]>(
-		"marie-anne-sevin.com.guided-tour.done-steps",
+		"marie-anne-sevin-guided-tour.done-steps",
 		{
 			defaultValue: [],
 		},
@@ -145,7 +146,7 @@ export const useGuidedTour = () => {
 			try {
 				const remainingSteps = buildRemainingSteps(allSteps);
 				setTour(
-					tour.setOptions({ steps: remainingSteps }).oncomplete(() => {
+					tour.setOptions({ steps: remainingSteps }).onComplete(() => {
 						setDoneSteps([...doneSteps, ...remainingSteps.map((s) => s.id)]);
 						trackSimpleEvent("has-completed-guided-tour");
 					}),
