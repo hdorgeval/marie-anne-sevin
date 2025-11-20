@@ -36,10 +36,10 @@ export const LandingPage: FC = () => {
 							<PageTitle>Marie-Anne Sévin</PageTitle>
 						</div>
 						<div>
-							<PageSubTitle className="fs-7">
+							<PageSubTitle className="fs-6">
 								Accompagnement Relationnel, Thérapeutique et Systémique
 							</PageSubTitle>
-							<PageSubTitle className="fs-7">
+							<PageSubTitle className="fs-6">
 								Au service des particuliers, des entreprises et des institutions
 								(écoles, crèches, ephad ...)
 							</PageSubTitle>
